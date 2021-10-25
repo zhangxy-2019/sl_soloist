@@ -86,7 +86,6 @@ python RLrewardmodel_train.py --output_dir=MODEL_SAVE_PATH --model_type=gpt2 --m
 <code>output_dir </code>: Path of the saving model.
 <code>model_name_or_path </code>: Initial dialog model checkpoint.
 <code>rewardmodel_type </code>: Classifier model type ; gpt2, bert, roberta.
-<code>rewardmodel_type </code>: Classifier model type ; gpt2, bert, or roberta.
 <code>rewardmodel_name_or_path </code>: Classifier checkpoint.
 <code>num_train_epochs </code>: Number of training epochs; 5 is enough.  
 <code>train_data_file </code>: Path of interactive log data; in simulated setting using valid data. 
