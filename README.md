@@ -83,8 +83,9 @@ sh scripts/train_reward_bert.sh
 python RLrewardmodel_train.py --output_dir=MODEL_SAVE_PATH --model_type=gpt2 --model_name_or_path=TRAINED_MODEL_PATH --rewardmodel_type=gpt2 --rewardmodel_name_or_path=TRAINED_CLASSIFIER_PATH --do_train --train_data_file=TRAIN_FILE  --add_special_action_tokens=TOKEN_FILE --per_gpu_train_batch_size 1 --num_train_epochs EPOCH --learning_rate 5e-6 
 --num_samples 1 --max_grad_norm 1.0 --adam_epsilon 1e-8  --stop_token '<|endoftext|>' --save_steps 10 --max_seq 500 --overwrite_output_dir --max_turn 15 --num_candidates 1 --logging_steps 10 --overwrite_cache --max_turn 15  --positive_reward 0.5 --negative_reward -0.001 --replace_systurn
 ```
-<code>output_dir </code>: Path of the saving model.  
+<code>output_dir </code>: Path of the saving model.
 <code>model_name_or_path </code>: Initial dialog model checkpoint.
+<code>rewardmodel_type </code>: Classifier model type ; gpt2, bert, roberta.
 <code>rewardmodel_type </code>: Classifier model type ; gpt2, bert, or roberta.
 <code>rewardmodel_name_or_path </code>: Classifier checkpoint.
 <code>num_train_epochs </code>: Number of training epochs; 5 is enough.  
