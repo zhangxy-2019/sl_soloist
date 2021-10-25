@@ -1,0 +1,1230 @@
+[
+  {
+    "history": [
+      "user : i want somewhere that serves traditional food."
+    ],
+    "belief": "belief : restaurant food = modern",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+    "name": "WOZ20005.json",
+    "dp": "dp : restaurant ( request ( food ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want somewhere that serves traditional food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer a restaurant that serves traditional food."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = dont care",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+    "name": "WOZ20005.json",
+    "dp": "dp : restaurant ( request ( price , area ) ; inform ( choice = 5 ) )"
+  },
+  {
+    "history": [
+      "user : i want somewhere that serves traditional food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer a restaurant that serves traditional food.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i need a restaurant that serves traditional food."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = dont care ; area = santa",
+    "reply": "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_area]price range does not matter.",
+    "name": "WOZ20005.json",
+    "dp": "dp : restaurant ( request ( price , area ) ; inform ( choice = 5 ) )"
+  },
+  {
+    "history": [
+      "user : i want somewhere that serves traditional food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer a restaurant that serves traditional food.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i need a restaurant that serves traditional food.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_area]price range does not matter.",
+      "user : what is the address and phone number?"
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = dont care",
+    "reply": "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "WOZ20005.json",
+    "dp": "dp : restaurant ( request ( price , area ) ; inform ( choice = 5 ) )"
+  },
+  {
+    "history": [
+      "user : i want somewhere that serves traditional food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer a restaurant that serves traditional food.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i need a restaurant that serves traditional food.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_area]price range does not matter.",
+      "user : what is the address and phone number?",
+      "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : thank you. good bye."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = dont care ; area = santa Rosa",
+    "reply": "system : you are welcome. have a nice day.",
+    "name": "WOZ20005.json",
+    "dp": "dp : restaurant ( request ( price , area ) ; inform ( choice = 5 ) )"
+  },
+  {
+    "history": [
+      "user : i want to eat at a moderately priced restaurant please"
+    ],
+    "belief": "belief : restaurant pricerange = moderate",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+    "name": "SNG01172.json",
+    "dp": "dp : restaurant ( request ( food ) )"
+  },
+  {
+    "history": [
+      "user : i want to eat at a moderately priced restaurant please",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : i would like a restaurant that serves belgian food, i'm craving that lately."
+    ],
+    "belief": "belief : restaurant food = belgian ; pricerange = moderate ; area = south",
+    "reply": "system : [restaurant_name]is an excellent choice. would you like to book there?",
+    "name": "SNG01172.json",
+    "dp": "dp : restaurant ( request ( food ) )"
+  },
+  {
+    "history": [
+      "user : i want to eat at a moderately priced restaurant please",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : i would like a restaurant that serves belgian food, i'm craving that lately.",
+      "system : [restaurant_name]is an excellent choice. would you like to book there?",
+      "user : can you book for 1 at 20:00 on tuesday?"
+    ],
+    "belief": "belief : restaurant food = belgian ; pricerange = moderate ; name = the bar | booking day = tuesday ; time = 20:00",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG01172.json",
+    "dp": "dp : restaurant ( request ( food ) )"
+  },
+  {
+    "history": [
+      "user : i want to eat at a moderately priced restaurant please",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : i would like a restaurant that serves belgian food, i'm craving that lately.",
+      "system : [restaurant_name]is an excellent choice. would you like to book there?",
+      "user : can you book for 1 at 20:00 on tuesday?",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : thanks so much! you've been helpful."
+    ],
+    "belief": "belief : restaurant food = belgian ; pricerange = moderate ; name = the bar | booking day = tuesday ; time = 20:00",
+    "reply": "system : you are more than welcome!",
+    "name": "SNG01172.json",
+    "dp": "dp : restaurant ( request ( food ) )"
+  },
+  {
+    "history": [
+      "user : i need an expensive restaurant in the centre."
+    ],
+    "belief": "belief : restaurant pricerange = expensive ; area = centre",
+    "reply": "system : what type of food are you looking for?",
+    "name": "SNG0608.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = a lot of tasty choices ) )"
+  },
+  {
+    "history": [
+      "user : i need an expensive restaurant in the centre.",
+      "system : what type of food are you looking for?",
+      "user : yes indian sounds good to me!"
+    ],
+    "belief": "belief : restaurant food = indian ; pricerange = expensive ; area = centre",
+    "reply": "system : we have [value_food]in the [value_area]area in several price range s. do you have a preference?",
+    "name": "SNG0608.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = a lot of tasty choices ) )"
+  },
+  {
+    "history": [
+      "user : i need an expensive restaurant in the centre.",
+      "system : what type of food are you looking for?",
+      "user : yes indian sounds good to me!",
+      "system : we have [value_food]in the [value_area]area in several price range s. do you have a preference?",
+      "user : i prefer an expensive restaurant."
+    ],
+    "belief": "belief : restaurant food = indian ; pricerange = expensive ; area = centre",
+    "reply": "system : [restaurant_name]is good but [value_pricerange]. would you like their address or phone number?",
+    "name": "SNG0608.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = a lot of tasty choices ) )"
+  },
+  {
+    "history": [
+      "user : i need an expensive restaurant in the centre.",
+      "system : what type of food are you looking for?",
+      "user : yes indian sounds good to me!",
+      "system : we have [value_food]in the [value_area]area in several price range s. do you have a preference?",
+      "user : i prefer an expensive restaurant.",
+      "system : [restaurant_name]is good but [value_pricerange]. would you like their address or phone number?",
+      "user: yeah, that sounds great."
+    ],
+    "belief": "belief : restaurant food = indian ; pricerange = expensive ; area = centre",
+    "reply": "system : their address is [restaurant_address]and their phone number is [restaurant_phone]",
+    "name": "SNG0608.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = a lot of tasty choices ) )"
+  },
+  {
+    "history": [
+      "user : i need an expensive restaurant in the centre.",
+      "system : what type of food are you looking for?",
+      "user : yes indian sounds good to me!",
+      "system : we have [value_food]in the [value_area]area in several price range s. do you have a preference?",
+      "user : i prefer an expensive restaurant.",
+      "system : [restaurant_name]is good but [value_pricerange]. would you like their address or phone number?",
+      "user: yeah, that sounds great.",
+      "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : thank you goodbye."
+    ],
+    "belief": "belief : restaurant food = indian ; pricerange = expensive ; area = centre",
+    "reply": "system : you are welcome. have a nice day.",
+    "name": "SNG0608.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = a lot of tasty choices ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a restaurant that offers british food in a moderate price range, can you help me with that?"
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = moderate",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+    "name": "SNG0624.json",
+    "dp": "dp : restaurant ( request ( area ) ; inform ( choice = many , area = center of town , area =  in the west ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a restaurant that offers british food in a moderate price range, can you help me with that?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i would prefer the one in the west."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = moderate ; area = west",
+    "reply": "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+    "name": "SNG0624.json",
+    "dp": "dp : restaurant ( request ( area ) ; inform ( choice = many , area = center of town , area =  in the west ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a restaurant that offers british food in a moderate price range, can you help me with that?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i would prefer the one in the west.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+      "user : can i get the phone number and postcode?"
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = moderate ; area = west",
+    "reply": "system : their number is [restaurant_phone] . postcode is [restaurant_postcode] .",
+    "name": "SNG0624.json",
+    "dp": "dp : restaurant ( request ( area ) ; inform ( choice = many , area = center of town , area =  in the west ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a restaurant that offers british food in a moderate price range, can you help me with that?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i would prefer the one in the west.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+      "user : can i get the phone number and postcode?",
+      "system : their number is [restaurant_phone] . postcode is [restaurant_postcode] .",
+      "user : thanks, that's everything i need."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = moderate ; area = west",
+    "reply": "system : have a nice day.",
+    "name": "SNG0624.json",
+    "dp": "dp : restaurant ( request ( area ) ; inform ( choice = many , area = center of town , area =  in the west ) )"
+  },
+  {
+    "history": [
+      "user : i want a reservation that has expensive price range and should be in the centre"
+    ],
+    "belief": "belief : restaurant pricerange = expensive ; area = centre",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+    "name": "SNG01879.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = 33 ) )"
+  },
+  {
+    "history": [
+      "user : i want a reservation that has expensive price range and should be in the centre",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : i want british food."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = expensive ; area = centre",
+    "reply": "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_area]price range is [value_pricerange].",
+    "name": "SNG01879.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = 33 ) )"
+  },
+  {
+    "history": [
+      "user : i want a reservation that has expensive price range and should be in the centre",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : i want british food.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_area]price range is [value_pricerange].",
+      "user : thanks, please give me the phone and address."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = expensive ; area = centre",
+    "reply": "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "SNG01879.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = 33 ) )"
+  },
+  {
+    "history": [
+      "user : i want a reservation that has expensive price range and should be in the centre",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : i want british food.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_area]price range is [value_pricerange].",
+      "user : thanks, please give me the phone and address.",
+      "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : thanks, enjoy the rest of your day."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = expensive ; area = centre",
+    "reply": "system : you are welcome.",
+    "name": "SNG01879.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = 33 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant in the west part of town"
+    ],
+    "belief": "belief : restaurant food = dont care",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+    "name": "WOZ20100.json",
+    "dp": "dp : restaurant ( request ( food , price ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant in the west part of town",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : i prefer a restaurant serving vietnamese food in the west."
+    ],
+    "belief": "belief : restaurant food = vietnamese",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+    "name": "WOZ20100.json",
+    "dp": "dp : restaurant ( request ( food , price ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant in the west part of town",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : i prefer a restaurant serving vietnamese food in the west.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : no that won't be necessary. i'll just need the phone and address please."
+    ],
+    "belief": "belief : restaurant food = vietnamese",
+    "reply": "system : the [restaurant_name]restaurant in the [value_area] is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "WOZ20100.json",
+    "dp": "dp : restaurant ( request ( food , price ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant in the west part of town",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : i prefer a restaurant serving vietnamese food in the west.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : no that won't be necessary. i'll just need the phone and address please.",
+      "system : the [restaurant_name]restaurant in the [value_area] is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : thank you, good bye."
+    ],
+    "belief": "belief : restaurant food = vietnamese ; pricerange = dont care ; area = west",
+    "reply": "system : you are welcome, enjoy your dining experience!",
+    "name": "WOZ20100.json",
+    "dp": "dp : restaurant ( request ( food , price ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place to dine. the restaurant should be in the centre and should serve mediterranean food."
+    ],
+    "belief": "belief : restaurant food = mediterranean ; area = centre",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+    "name": "SNG1343.json",
+    "dp": "dp : restaurant ( inform ( price = not expensive , addr = 2 rose crescent city centre , name = the gardenia ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place to dine. the restaurant should be in the centre and should serve mediterranean food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : sounds great!  can you help me book a reservation for 4 people on sunday?"
+    ],
+    "belief": "belief : restaurant food = mediterranean ; pricerange = dont care ; name = british kitchen | booking day = sunday ; people = 4 ; time = 10:30 am",
+    "reply": "system : you booking was successful. the table will be reserved for [value_count]minutes. reference number is [restaurant_reference].",
+    "name": "SNG1343.json",
+    "dp": "dp : restaurant ( inform ( price = not expensive , addr = 2 rose crescent city centre , name = the gardenia ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place to dine. the restaurant should be in the centre and should serve mediterranean food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : sounds great!  can you help me book a reservation for 4 people on sunday?",
+      "system : you booking was successful. the table will be reserved for [value_count]minutes. reference number is [restaurant_reference].",
+      "user : thank you for the help."
+    ],
+    "belief": "belief : restaurant food = mediterranean ; pricerange = dont care ; name = british house | booking day = sunday ; people = 4 ; time = 10:30 am",
+    "reply": "system : you are more than welcome!",
+    "name": "SNG1343.json",
+    "dp": "dp : restaurant ( inform ( price = not expensive , addr = 2 rose crescent city centre , name = the gardenia ) )"
+  },
+  {
+    "history": [
+      "user : yes. i am looking for a moderately priced restaurant in the west part of town."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = moderate ; area = west",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+    "name": "WOZ20215.json",
+    "dp": "dp : restaurant ( select ( food = british , food =  indian , food =  italian ) )"
+  },
+  {
+    "history": [
+      "user : yes. i am looking for a moderately priced restaurant in the west part of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : i want indian food, please.",
+      "system : what time would you like me to make your reservation for you?",
+      "user: i need the restaurant name and phone number first."
+    ],
+    "belief": "belief : restaurant food = indian ; pricerange = moderate ; area = west",
+    "reply": "system : you booking was successful. the table will be reserved for [value_count]minutes.",
+    "name": "WOZ20215.json",
+    "dp": "dp : restaurant ( select ( food = british , food =  indian , food =  italian ) )"
+  },
+  {
+    "history": [
+      "user : yes. i am looking for a moderately priced restaurant in the west part of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : i want indian food, please.",
+      "system : what time would you like me to make your reservation for you?",
+      "user: i need the restaurant name and phone number first.",
+      "system : you booking was successful. the table will be reserved for [value_count]minutes.",
+      "user: please give me the restaurant name."
+    ],
+    "belief": "belief : restaurant food = indian ; pricerange = moderate ; area = west",
+    "reply": "system : the table will be reserved for [value_count]minutes.",
+    "name": "WOZ20215.json",
+    "dp": "dp : restaurant ( select ( food = british , food =  indian , food =  italian ) )"
+  },
+  {
+    "history": [
+      "user : i'd like to find a restaurant that serves swiss food."
+    ],
+    "belief": "belief : restaurant food = swiss",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+    "name": "WOZ20013.json",
+    "dp": "dp : restaurant ( nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'd like to find a restaurant that serves swiss food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : what's the address?"
+    ],
+    "belief": "belief : restaurant food = swiss",
+    "reply": "system : [restaurant_name]is located at [restaurant_address] [value_area]and their phone number is [restaurant_phone].",
+    "name": "WOZ20013.json",
+    "dp": "dp : restaurant ( nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'd like to find a restaurant that serves swiss food.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : what's the address?",
+      "system : [restaurant_name]is located at [restaurant_address] [value_area]and their phone number is [restaurant_phone].",
+      "user : thank you, goodbye."
+    ],
+    "belief": "belief : restaurant food = swiss ; pricerange = dont care",
+    "reply": "system : you are welcome, goodbye",
+    "name": "WOZ20013.json",
+    "dp": "dp : restaurant ( nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i would like an expensive restaurant in the south of town."
+    ],
+    "belief": "belief : restaurant pricerange = expensive ; area = south",
+    "reply": "system : what type of food are you looking for?",
+    "name": "WOZ20285.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = five ) )"
+  },
+  {
+    "history": [
+      "user : i would like an expensive restaurant in the south of town.",
+      "system : what type of food are you looking for?",
+      "user : i don't care."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = expensive ; area = south",
+    "reply": "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+    "name": "WOZ20285.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = five ) )"
+  },
+  {
+    "history": [
+      "user : i would like an expensive restaurant in the south of town.",
+      "system : what type of food are you looking for?",
+      "user : i don't care.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+      "user : can you tell me what type of food they serve and give me the phone number?"
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = expensive ; area = south",
+    "reply": "system : their number is [restaurant_phone].",
+    "name": "WOZ20285.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = five ) )"
+  },
+  {
+    "history": [
+      "user : i would like an expensive restaurant in the south of town.",
+      "system : what type of food are you looking for?",
+      "user : i don't care.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+      "user : can you tell me what type of food they serve and give me the phone number?",
+      "system : their number is [restaurant_phone].",
+      "user: thanks for your help."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = expensive ; area = south",
+    "reply": "system : you are welcome.",
+    "name": "WOZ20285.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( choice = five ) )"
+  },
+  {
+    "history": [
+      "user : i want to visit an expensive restaurant in the south part of town. i need the address, phone number, and type of food."
+    ],
+    "belief": "belief : restaurant pricerange = expensive ; area = south",
+    "reply": "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+    "name": "WOZ20566.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( food = mexican , food =  italian , food =  indian , food =  chinese , price = expensive , choice = five , area = south ) )"
+  },
+  {
+    "history": [
+      "user : i want to visit an expensive restaurant in the south part of town. i need the address, phone number, and type of food.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+      "user : could i have the address and phone please?"
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = expensive ; area = south",
+    "reply": "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "WOZ20566.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( food = mexican , food =  italian , food =  indian , food =  chinese , price = expensive , choice = five , area = south ) )"
+  },
+  {
+    "history": [
+      "user : i want to visit an expensive restaurant in the south part of town. i need the address, phone number, and type of food.",
+      "system : the [restaurant_name]serves [value_food]food, is located in the [value_area]part of town and in the [value_pricerange]price range.",
+      "user : could i have the address and phone please?",
+      "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : thank you. goodbye."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = expensive ; area = south",
+    "reply": "system : you are welcome.",
+    "name": "WOZ20566.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( food = mexican , food =  italian , food =  indian , food =  chinese , price = expensive , choice = five , area = south ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant that is expensive and is in the east part of town."
+    ],
+    "belief": "belief : restaurant pricerange = expensive ; area = east",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+    "name": "WOZ20120.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( food = british , food =  indian , food =  chinese , food =  gastropub ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant that is expensive and is in the east part of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : no that won't be necessary. i'll just need the phone and address please."
+    ],
+    "belief": "belief : restaurant pricerange = expensive ; area = east",
+    "reply": "system : the [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "WOZ20120.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( food = british , food =  indian , food =  chinese , food =  gastropub ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant that is expensive and is in the east part of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : no that won't be necessary. i'll just need the phone and address please.",
+      "system : the [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : yes please. i would like to book a table for 8 people on tuesday at 15:00."
+    ],
+    "belief": "belief : restaurant food = expensive ; area = east ; people = 8 ; time = 15:00",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "WOZ20120.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( food = british , food =  indian , food =  chinese , food =  gastropub ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant that is expensive and is in the east part of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. would you like to book there?",
+      "user : no that won't be necessary. i'll just need the phone and address please.",
+      "system : the [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : yes please. i would like to book a table for 8 people on tuesday at 15:00.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : thanks so much."
+    ],
+    "belief": "belief : restaurant food = expensive ; area = east ; people = 8 ; time = 15:00",
+    "reply": "system : you are more than welcome.",
+    "name": "WOZ20120.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( food = british , food =  indian , food =  chinese , food =  gastropub ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. i would like european food in the expensive price range."
+    ],
+    "belief": "belief : restaurant food = european ; pricerange = expensive",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+    "name": "SNG0480.json",
+    "dp": "dp : booking ( inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. i would like european food in the expensive price range.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+      "user : is there any one in the north area?"
+    ],
+    "belief": "belief : restaurant food = european ; pricerange = expensive ; area = north",
+    "reply": "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant. would you like to book there?",
+    "name": "SNG0480.json",
+    "dp": "dp : booking ( inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. i would like european food in the expensive price range.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+      "user : is there any one in the north area?",
+      "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant. would you like to book there?",
+      "user : yes please. i would like to book a table for 8 people on tuesday at 15:00."
+    ],
+    "belief": "belief : restaurant food = european ; pricerange = expensive ; name = chinese garden | booking day = tuesday ; people = 8 ; time = 15:00",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG0480.json",
+    "dp": "dp : booking ( inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. i would like european food in the expensive price range.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+      "user : is there any one in the north area?",
+      "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant. would you like to book there?",
+      "user : yes please. i would like to book a table for 8 people on tuesday at 15:00.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : that's great - can you give me the phone number?"
+    ],
+    "belief": "belief : restaurant food = european ; pricerange = expensive ; name = chinese garden | booking day = tuesday ; people = 8 ; time = 15:00",
+    "reply": "system : their number is [restaurant_phone].",
+    "name": "SNG0480.json",
+    "dp": "dp : booking ( inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. i would like european food in the expensive price range.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+      "user : is there any one in the north area?",
+      "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant. would you like to book there?",
+      "user : yes please. i would like to book a table for 8 people on tuesday at 15:00.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : that's great - can you give me the phone number?",
+      "system : their number is [restaurant_phone].",
+      "user : thanks for great service!"
+    ],
+    "belief": "belief : restaurant food = european ; pricerange = expensive ; name = chinese garden | booking day = tuesday ; people = 8 ; time = 15:00",
+    "reply": "system : you are more than welcome!",
+    "name": "SNG0480.json",
+    "dp": "dp : booking ( inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a cheap restaurant in the west area."
+    ],
+    "belief": "belief : restaurant pricerange = cheap ; area = west",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area].",
+    "name": "SSNG0186.json",
+    "dp": "dp : restaurant ( inform ( food =  italian , food =  vietnamese , name = la margherita , name =  thanh binh ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a cheap restaurant in the west area.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area].",
+      "user : let's go with la margherita. could you book a table for 2 people at 13:30 on saturday?"
+    ],
+    "belief": "belief : restaurant food = cheap ; name = la margherita ; time = 13:30",
+    "reply": "system : i've made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SSNG0186.json",
+    "dp": "dp : restaurant ( inform ( food =  italian , food =  vietnamese , name = la margherita , name =  thanh binh ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a cheap restaurant in the west area.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area].",
+      "user : let's go with la margherita. could you book a table for 2 people at 13:30 on saturday?",
+      "system : i've made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : okay that is all i need for now."
+    ],
+    "belief": "belief : restaurant food = la margherita ; pricerange = cheap ; name = la margherita | booking day = saturday ; people = 2 ; time = 13:30",
+    "reply": "system : have a nice day.",
+    "name": "SSNG0186.json",
+    "dp": "dp : restaurant ( inform ( food =  italian , food =  vietnamese , name = la margherita , name =  thanh binh ) )"
+  },
+  {
+    "history": [
+      "user : is there a moderately priced restaurant in the north part of town?"
+    ],
+    "belief": "belief : restaurant pricerange = moderate ; area = north",
+    "reply": "system : yes, [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+    "name": "WOZ20175.json",
+    "dp": "dp : restaurant ( select ( none = none ) ; inform ( food = chinese , food =  indian , price = moderately priced , choice = two , area = north , name = golden wok , name =  the nirala ) )"
+  },
+  {
+    "history": [
+      "user : is there a moderately priced restaurant in the north part of town?",
+      "system : yes, [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : yes i would like the phone number of the nirala."
+    ],
+    "belief": "belief : restaurant pricerange = moderate ; area = north",
+    "reply": "system : their number is [restaurant_phone].",
+    "name": "WOZ20175.json",
+    "dp": "dp : restaurant ( select ( none = none ) ; inform ( food = chinese , food =  indian , price = moderately priced , choice = two , area = north , name = golden wok , name =  the nirala ) )"
+  },
+  {
+    "history": [
+      "user : is there a moderately priced restaurant in the north part of town?",
+      "system : yes, [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : yes i would like the phone number of the nirala.",
+      "system : their number is [restaurant_phone].",
+      "user : i would like the address of the nirala please?"
+    ],
+    "belief": "belief : restaurant pricerange = moderate ; area = north",
+    "reply": "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "WOZ20175.json",
+    "dp": "dp : restaurant ( select ( none = none ) ; inform ( food = chinese , food =  indian , price = moderately priced , choice = two , area = north , name = golden wok , name =  the nirala ) )"
+  },
+  {
+    "history": [
+      "user : is there a moderately priced restaurant in the north part of town?",
+      "system : yes, [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : yes i would like the phone number of the nirala.",
+      "system : their number is [restaurant_phone].",
+      "user : i would like the address of the nirala please?",
+      "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : i think that's all i need, thank you for your help."
+    ],
+    "belief": "belief : restaurant pricerange = moderate ; area = north",
+    "reply": "system : you are welcome, enjoy your dining experience.",
+    "name": "WOZ20175.json",
+    "dp": "dp : restaurant ( select ( none = none ) ; inform ( food = chinese , food =  indian , price = moderately priced , choice = two , area = north , name = golden wok , name =  the nirala ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. the restaurant should be in the east and should serve swiss food"
+    ],
+    "belief": "belief : restaurant food = swiss ; area = east",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+    "name": "SNG02239.json",
+    "dp": "dp : restaurant ( nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. the restaurant should be in the east and should serve swiss food.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : i'll book that for 13:00 thursday. there will be 6 of us."
+    ],
+    "belief": "belief : restaurant name = the west | booking day = thursday ; people = 6 ; time = 13:00",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG02239.json",
+    "dp": "dp : restaurant ( nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. the restaurant should be in the east and should serve swiss food.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : i'll book that for 13:00 thursday. there will be 6 of us.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : no, you have been very helpful. thank you so much."
+    ],
+    "belief": "belief : restaurant food = swiss ; pricerange = dont care ; name = british house | booking day = thursday ; people = 6 ; time = 13:00",
+    "reply": "system : you are more than welcome!",
+    "name": "SNG02239.json",
+    "dp": "dp : restaurant ( nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hello, i need some french food. any price range is fine."
+    ],
+    "belief": "belief : restaurant food = french ; pricerange = dont care",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+    "name": "WOZ20077.json",
+    "dp": "dp : restaurant ( recommend ( price = expensive  , area = the city centre , name = cote  , food = french  ) )"
+  },
+  {
+    "history": [
+      "user : hello, i need some french food. any price range is fine.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+      "user : for now, i only need the address and phone number."
+    ],
+    "belief": "belief : restaurant food = french ; pricerange = dont care",
+    "reply": "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "WOZ20077.json",
+    "dp": "dp : restaurant ( recommend ( price = expensive  , area = the city centre , name = cote  , food = french  ) )"
+  },
+  {
+    "history": [
+      "user : hello, i need some french food. any price range is fine.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food. would you like to book there?",
+      "user : for now, i only need the address and phone number.",
+      "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : thank you, goodbye."
+    ],
+    "belief": "belief : restaurant food = french ; pricerange = dont care",
+    "reply": "system : you are welcome, goodbye.",
+    "name": "WOZ20077.json",
+    "dp": "dp : restaurant ( recommend ( price = expensive  , area = the city centre , name = cote  , food = french  ) )"
+  },
+  {
+    "history": [
+      "user : i could really need something to eat."
+    ],
+    "belief": "belief : restaurant food = dont care",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+    "name": "SNG0553.json",
+    "dp": "dp : restaurant ( request ( food , price ) ; inform ( choice = 100 ) )"
+  },
+  {
+    "history": [
+      "user : i could really need something to eat.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer an expensive restaurant in the centre, please."
+    ],
+    "belief": "belief : restaurant pricerange = expensive ; area = centre",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]that serves [value_food]food.",
+    "name": "SNG0553.json",
+    "dp": "dp : restaurant ( request ( food , price ) ; inform ( choice = 100 ) )"
+  },
+  {
+    "history": [
+      "user : i could really need something to eat.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer an expensive restaurant in the centre, please.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]that serves [value_food]food.",
+      "user : great, i'll book that for 13:00 thursday. there will be 6 of us."
+    ],
+    "belief": "belief : pricerange = expensive ; name = the golden bar | booking day = thursday ; people = 6 ; time = 13:00",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG0553.json",
+    "dp": "dp : restaurant ( request ( food , price ) ; inform ( choice = 100 ) )"
+  },
+  {
+    "history": [
+      "user : i could really need something to eat.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer an expensive restaurant in the centre, please.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]that serves [value_food]food.",
+      "user : great, i'll book that for 13:00 thursday. there will be 6 of us.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : yes, i need the address and phone number please."
+    ],
+    "belief": "belief : pricerange = expensive ; name = the golden bar | booking day = thursday ; people = 6 ; time = 13:00",
+    "reply": "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "SNG0553.json",
+    "dp": "dp : restaurant ( request ( food , price ) ; inform ( choice = 100 ) )"
+  },
+  {
+    "history": [
+      "user : i could really need something to eat.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : i prefer an expensive restaurant in the centre, please.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]that serves [value_food]food.",
+      "user : great, i'll book that for 13:00 thursday. there will be 6 of us.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : yes, i need the address and phone number please.",
+      "system : their address is [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : thank you for your help. this is all i needed."
+    ],
+    "belief": "belief : pricerange = expensive ; name = the golden bar | booking day = thursday ; people = 6 ; time = 13:00",
+    "reply": "system : you are more than welcome!",
+    "name": "SNG0553.json",
+    "dp": "dp : restaurant ( request ( food , price ) ; inform ( choice = 100 ) )"
+  },
+  {
+    "history": [
+      "user : hello, i am looking for a moderately priced restaurant on the north side of town."
+    ],
+    "belief": "belief : restaurant pricerange = moderate ; area = north",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+    "name": "WOZ20449.json",
+    "dp": "dp : restaurant ( recommend ( price = moderate  , area = north part of town , name = golden wok ) )"
+  },
+  {
+    "history": [
+      "user : hello, i am looking for a moderately priced restaurant on the north side of town.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : i don't want golden wok, is there anything else?"
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = moderate ; area = north",
+    "reply": "system : yes, there is also [restaurant_name]which is an [value_food]restaurant. would you be interested in more information on that [value_count]?",
+    "name": "WOZ20449.json",
+    "dp": "dp : restaurant ( recommend ( price = moderate  , area = north part of town , name = golden wok ) )"
+  },
+  {
+    "history": [
+      "user : hello, i am looking for a moderately priced restaurant on the north side of town.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : i don't want golden wok, is there anything else?",
+      "system : yes, there is also [restaurant_name]which is an [value_food]restaurant. would you be interested in more information on that [value_count]?",
+      "user : okay. what is their phone number?"
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = moderate ; area = north",
+    "reply": "system : their number is [restaurant_phone].",
+    "name": "WOZ20449.json",
+    "dp": "dp : restaurant ( recommend ( price = moderate  , area = north part of town , name = golden wok ) )"
+  },
+  {
+    "history": [
+      "user : hello, i am looking for a moderately priced restaurant on the north side of town.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : i don't want golden wok, is there anything else?",
+      "system : yes, there is also [restaurant_name]which is an [value_food]restaurant. would you be interested in more information on that [value_count]?",
+      "user : okay. what is their phone number?",
+      "system : their number is [restaurant_phone].",
+      "user : thank you. goodbye."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = moderate ; area = north",
+    "reply": "system : you are welcome, i am happy to help you make a reservation for you.",
+    "name": "WOZ20449.json",
+    "dp": "dp : restaurant ( recommend ( price = moderate  , area = north part of town , name = golden wok ) )"
+  },
+  {
+    "history": [
+      "user : i'm interested in finding a restaurant that serves tuscan food.  do you know of any in the moderate price range?"
+    ],
+    "belief": "belief : restaurant food = tuscan ; pricerange = moderate",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]price range. do you have a preference?",
+    "name": "SNG0658.json",
+    "dp": "dp : restaurant ( select ( food = italian ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm interested in finding a restaurant that serves tuscan food. do you know of any in the moderate price range?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]price range. do you have a preference?",
+      "user : yes. i'm only looking for a place that is moderately priced and serves tuscan food in the north."
+    ],
+    "belief": "belief : restaurant food = tuscan ; pricerange = moderate ; area = north",
+    "reply": "system : [restaurant_name]is an.",
+    "name": "SNG0658.json",
+    "dp": "dp : restaurant ( select ( food = italian ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm interested in finding a restaurant that serves tuscan food. do you know of any in the moderate price range?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]price range. do you have a preference?",
+      "user : yes. i'm only looking for a place that is moderately priced and serves tuscan food in the north.",
+      "system : [restaurant_name]is an.",
+      "user : nice. please book a table for 8 people at 19:00 on wednesday. can you do that?"
+    ],
+    "belief": "belief : restaurant food = tuscan ; pricerange = moderate ; name = chinese garden | booking day = wednesday ; people = 8 ; time = 19:00",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG0658.json",
+    "dp": "dp : restaurant ( select ( food = italian ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm interested in finding a restaurant that serves tuscan food. do you know of any in the moderate price range?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]price range. do you have a preference?",
+      "user : yes. i'm only looking for a place that is moderately priced and serves tuscan food in the north.",
+      "system : [restaurant_name]is an.",
+      "user : nice. please book a table for 8 people at 19:00 on wednesday. can you do that?",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : thank you, that's all i need!"
+    ],
+    "belief": "belief : restaurant food = tuscan ; pricerange = moderate ; name = chinese garden | booking day = wednesday ; people = 8 ; time = 19:00",
+    "reply": "system : you are welcome, enjoy your dining experience!",
+    "name": "SNG0658.json",
+    "dp": "dp : restaurant ( select ( food = italian ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi! can you find me a moderately priced restaurant for my girlfriend and i?"
+    ],
+    "belief": "belief : restaurant pricerange = moderate ; name = cambridge house restaurant | booking day = day of the party = 3 ; people = 3",
+    "reply": "system : [restaurant_reference]!",
+    "name": "SSNG0080.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( price = moderately priced , choice = 31 ) )"
+  },
+  {
+    "history": [
+      "user : hi! can you find me a moderately priced restaurant for my girlfriend and i?",
+      "system : [restaurant_reference]!",
+      "user : no, i want a moderately priced restaurant."
+    ],
+    "belief": "belief : restaurant food = dont care ; pricerange = moderate ; name = naya | booking day = today ; people = 3",
+    "reply": "system : [restaurant_name]is good but [value_pricerange]. would you like to book there?",
+    "name": "SSNG0080.json",
+    "dp": "dp : restaurant ( request ( food ) ; inform ( price = moderately priced , choice = 31 ) )"
+  },
+  {
+    "history": [
+      "user : please help me find a restaurant that serves british food near the centre of town."
+    ],
+    "belief": "belief : restaurant food = british",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+    "name": "SNG01436.json",
+    "dp": "dp : restaurant ( request ( price ) ; inform ( food = british , price = moderate , price =  expensive , choice = seven , area = centre of town ) )"
+  },
+  {
+    "history": [
+      "user : please help me find a restaurant that serves british food near the centre of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : no, i prefer a restaurant in the centre of the town."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = dont care ; area = centre",
+    "reply": "system : [restaurant_name]is an.",
+    "name": "SNG01436.json",
+    "dp": "dp : restaurant ( request ( price ) ; inform ( food = british , price = moderate , price =  expensive , choice = seven , area = centre of town ) )"
+  },
+  {
+    "history": [
+      "user : please help me find a restaurant that serves british food near the centre of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : no, i prefer a restaurant in the centre of the town.",
+      "system : [restaurant_name]is an.",
+      "user : thanks, what is the address and phone number?"
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = dont care ; area = centre",
+    "reply": "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "SNG01436.json",
+    "dp": "dp : restaurant ( request ( price ) ; inform ( food = british , price = moderate , price =  expensive , choice = seven , area = centre of town ) )"
+  },
+  {
+    "history": [
+      "user : please help me find a restaurant that serves british food near the centre of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : no, i prefer a restaurant in the centre of the town.",
+      "system : [restaurant_name]is an.",
+      "user : thanks, what is the address and phone number?",
+      "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : please help me book a table for 3. i'd like it for wednesday at 12:15."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = dont care ; name = british centre",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG01436.json",
+    "dp": "dp : restaurant ( request ( price ) ; inform ( food = british , price = moderate , price =  expensive , choice = seven , area = centre of town ) )"
+  },
+  {
+    "history": [
+      "user : please help me find a restaurant that serves british food near the centre of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : no, i prefer a restaurant in the centre of the town.",
+      "system : [restaurant_name]is an.",
+      "user : thanks, what is the address and phone number?",
+      "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : please help me book a table for 3. i'd like it for wednesday at 12:15.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : please give me the postcode."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = dont care ; name = charlie | booking day = wednesday ; people = 3 ; time = 12:15",
+    "reply": "system : the [restaurant_name]serves [value_food]food, is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "SNG01436.json",
+    "dp": "dp : restaurant ( request ( price ) ; inform ( food = british , price = moderate , price =  expensive , choice = seven , area = centre of town ) )"
+  },
+  {
+    "history": [
+      "user : please help me find a restaurant that serves british food near the centre of town.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : no, i prefer a restaurant in the centre of the town.",
+      "system : [restaurant_name]is an.",
+      "user : thanks, what is the address and phone number?",
+      "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : please help me book a table for 3. i'd like it for wednesday at 12:15.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : please give me the postcode.",
+      "system : the [restaurant_name]serves [value_food]food, is located at [restaurant_address]and their phone number is [restaurant_phone].",
+      "user : no, i need the postcode."
+    ],
+    "belief": "belief : restaurant food = british ; pricerange = dont care ; name = charlie | booking day = wednesday ; people = 3 ; time = 12:15",
+    "reply": "system : the [restaurant_name]serves [value_food]food, is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "SNG01436.json",
+    "dp": "dp : restaurant ( request ( price ) ; inform ( food = british , price = moderate , price =  expensive , choice = seven , area = centre of town ) )"
+  },
+  {
+    "history": [
+      "user : could you help me find a restaurant that's moderately priced, and services sri lankan cuisine?"
+    ],
+    "belief": "belief : restaurant food = sri lankan ; pricerange = moderate",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+    "name": "SSNG0025.json",
+    "dp": "dp : restaurant ( request ( food ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : could you help me find a restaurant that's moderately priced, and services sri lankan cuisine?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : yes see if there is booking for 6 people at 11:15 on thursday."
+    ],
+    "belief": "belief : restaurant food = sri lankan ; pricerange = moderate ; name = tandoori restaurant | booking day = thursday ; people = 6 ; time = 11:15",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SSNG0025.json",
+    "dp": "dp : restaurant ( request ( food ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : could you help me find a restaurant that's moderately priced, and services sri lankan cuisine?",
+      "system : [restaurant_name]is an [value_pricerange] [value_food] [value_food]restaurant on the [value_area]side. would you like to book there?",
+      "user : yes see if there is booking for 6 people at 11:15 on thursday.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : nope, that should do it! thanks!"
+    ],
+    "belief": "belief : restaurant food = sri lankan ; pricerange = moderate ; name = tandoori restaurant | booking day = thursday ; people = 6 ; time = 11:15",
+    "reply": "system : you are welcome, have a nice day!",
+    "name": "SSNG0025.json",
+    "dp": "dp : restaurant ( request ( food ) ; nooffer ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for information on the varsity restaurant."
+    ],
+    "belief": "belief : restaurant name = the varsity restaurant",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+    "name": "SNG0746.json",
+    "dp": "dp : restaurant ( recommend ( price = moderately , name = the varsity , food = international ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for information on the varsity restaurant.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : could you book me a table for 2 at 20:00 on tuesday evening?"
+    ],
+    "belief": "belief : restaurant name = the varsity restaurant | booking day = tuesday ; people = 2 ; time = 20:00",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG0746.json",
+    "dp": "dp : restaurant ( recommend ( price = moderately , name = the varsity , food = international ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for information on the varsity restaurant.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]. would you like to book there?",
+      "user : could you book me a table for 2 at 20:00 on tuesday evening?",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : thank you so much, that is all."
+    ],
+    "belief": "belief : restaurant name = the varsity restaurant | booking day = tuesday ; people = 2 ; time = 20:00",
+    "reply": "system : have a nice day!",
+    "name": "SNG0746.json",
+    "dp": "dp : restaurant ( recommend ( price = moderately , name = the varsity , food = international ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant on the eastern side of town."
+    ],
+    "belief": "belief : restaurant area = east",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+    "name": "WOZ20260.json",
+    "dp": "dp : restaurant ( inform ( price = moderately priced , area = east side of the city , name = pizza hut fen ditton ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant on the eastern side of town.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : is there another one as well?"
+    ],
+    "belief": "belief : restaurant area = east",
+    "reply": "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant.",
+    "name": "WOZ20260.json",
+    "dp": "dp : restaurant ( inform ( price = moderately priced , area = east side of the city , name = pizza hut fen ditton ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant on the eastern side of town.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : is there another one as well?",
+      "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant.",
+      "user : is there anything british available?"
+    ],
+    "belief": "belief : restaurant food = british ; area = east",
+    "reply": "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]city [value_area]that serves [value_food]food.",
+    "name": "WOZ20260.json",
+    "dp": "dp : restaurant ( inform ( price = moderately priced , area = east side of the city , name = pizza hut fen ditton ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant on the eastern side of town.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : is there another one as well?",
+      "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant.",
+      "user : is there anything british available?",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]city [value_area]that serves [value_food]food.",
+      "user : what is the address and postcode?"
+    ],
+    "belief": "belief : restaurant food = british ; area = east",
+    "reply": "system : [restaurant_name]is located at [restaurant_address].",
+    "name": "WOZ20260.json",
+    "dp": "dp : restaurant ( inform ( price = moderately priced , area = east side of the city , name = pizza hut fen ditton ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a restaurant on the eastern side of town.",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the city [value_area]that serves [value_food]food.",
+      "user : is there another one as well?",
+      "system : there is [restaurant_name]if you are looking for a [value_pricerange]restaurant.",
+      "user : is there anything british available?",
+      "system : [restaurant_name]is an [value_pricerange]restaurant in the [value_area]city [value_area]that serves [value_food]food.",
+      "user : what is the address and postcode?",
+      "system : [restaurant_name]is located at [restaurant_address].",
+      "user : i need the postcode."
+    ],
+    "belief": "belief : restaurant food = british ; area = east",
+    "reply": "system : [restaurant_name]is located at [restaurant_address]and their phone number is [restaurant_phone].",
+    "name": "WOZ20260.json",
+    "dp": "dp : restaurant ( inform ( price = moderately priced , area = east side of the city , name = pizza hut fen ditton ) )"
+  },
+  {
+    "history": [
+      "user : i want a place for dinner and serves a mexican food,where can i find it?please first pick for me a taxi to that place should be to the north."
+    ],
+    "belief": "belief : restaurant food = mexican ; area = north",
+    "reply": "system : [restaurant_name]is good but [restaurant_name]. would you like a shared ride?",
+    "name": "SNG01407.json",
+    "dp": "dp : restaurant ( nooffer ( food = mexican , area = north ) )"
+  },
+  {
+    "history": [
+      "user : i want a place for dinner and serves a mexican food,where can i find it?please first pick for me a taxi to that place should be to the north.",
+      "system : [restaurant_name]is good but [restaurant_name]. would you like a shared ride?",
+      "user : please book a table for 6 people at 11:30 on sunday."
+    ],
+    "belief": "belief : restaurant food = mexican ; pricerange = dont care ; name = michael mccormick restaurant | booking day = sunday ; people = 6 ; time = 11:30",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG01407.json",
+    "dp": "dp : restaurant ( nooffer ( food = mexican , area = north ) )"
+  },
+  {
+    "history": [
+      "user : i want a place for dinner and serves a mexican food,where can i find it?please first pick for me a taxi to that place should be to the north.",
+      "system : [restaurant_name]is good but [restaurant_name]. would you like a shared ride?",
+      "user : please book a table for 6 people at 11:30 on sunday.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : that was all. thanks."
+    ],
+    "belief": "belief : restaurant food = mexican ; pricerange = dont care ; name = michael mccormick restaurant | booking day = sunday ; people = 6 ; time = 11:30",
+    "reply": "system : have a nice day.",
+    "name": "SNG01407.json",
+    "dp": "dp : restaurant ( nooffer ( food = mexican , area = north ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. the restaurant should serve chinese food and should be in the center."
+    ],
+    "belief": "belief : restaurant food = chinese ; area = centre",
+    "reply": "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+    "name": "SNG1353.json",
+    "dp": "dp : restaurant ( recommend ( name = rice house ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. the restaurant should serve chinese food and should be in the center.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : sure.  can you make a reservation for me?  there will be 8 of us, at 12:30 on saturday."
+    ],
+    "belief": "belief : restaurant name = chinese restaurant | booking day = saturday ; people = 8 ; time = 12:30",
+    "reply": "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+    "name": "SNG1353.json",
+    "dp": "dp : restaurant ( recommend ( name = ugly duckling ) ; inform ( price = cheap , name = rice house ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a place to dine. the restaurant should serve chinese food and should be in the center.",
+      "system : [restaurant_name]is an [value_pricerange] [value_food]restaurant in the [value_area]. their phone number is [restaurant_phone]. would you like me to make a reservation for you?",
+      "user : sure.  can you make a reservation for me?  there will be 8 of us, at 12:30 on saturday.",
+      "system : i have made your reservation. the reference number is [restaurant_reference]. is there anything else i can assist you with today?",
+      "user : no, that is it for today, thank you and goodbye."
+    ],
+    "belief": "belief : restaurant name = chinese restaurant | booking day = saturday ; people = 8 ; time = 12:30",
+    "reply": "system : you are more than welcome!",
+    "name": "SNG1353.json",
+    "dp": "dp : restaurant ( recommend ( name = ugly duckling ) ; inform ( price = cheap , name = rice house ) )"
+  }
+]

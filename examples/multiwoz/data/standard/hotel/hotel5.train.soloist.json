@@ -1,0 +1,295 @@
+[
+  {
+    "history": [
+      "user : i am looking for a 4 star hotel with free wifi in the west side of town."
+    ],
+    "belief": "belief : hotel area = west ; stars = 4 ; internet = yes ; type = hotel",
+    "reply": "system : there are [value_count] options available , which would you prefer [value_pricerange] or [value_pricerange] ?",
+    "name": "SNG1205.json",
+    "dp": "dp : hotel ( select ( choice = two  , price = cheap , price =  expensive ) ; inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a 4 star hotel with free wifi in the west side of town.",
+      "system : there are [value_count] options available , which would you prefer [value_pricerange] or [value_pricerange] ?",
+      "user : either is fine. can you book a room for 7 people for 2 nights? we'll arrive on friday."
+    ],
+    "belief": "belief : hotel area = west ; stars = 4 ; internet = yes ; type = hotel",
+    "reply": "system : i do recommend [hotel_name] , but it is in the [value_pricerange] price range . i want to confirm this is okay before booking .",
+    "name": "SNG1205.json",
+    "dp": "dp : hotel ( recommend ( price = expensive  , name = huntingdon marriott hotel ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a 4 star hotel with free wifi in the west side of town.",
+      "system : there are [value_count] options available , which would you prefer [value_pricerange] or [value_pricerange] ?",
+      "user : either is fine. can you book a room for 7 people for 2 nights? we'll arrive on friday.",
+      "system : i do recommend [hotel_name] , but it is in the [value_pricerange] price range . i want to confirm this is okay before booking .",
+      "user : that sounds great.  thanks."
+    ],
+    "belief": "belief : hotel name = huntingdon marriott hotel ; area = west ; stars = 4 ; internet = yes ; type = hotel | booking day = friday ; people = 7 ; stay = 3",
+    "reply": "system : your booking for a party of [value_count] arriving on [value_day] for [value_count] days [value_count] nights was successful . your reference number is [hotel_reference] . is there anything else i can assist you with ?",
+    "name": "SNG1205.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a 4 star hotel with free wifi in the west side of town.",
+      "system : there are [value_count] options available , which would you prefer [value_pricerange] or [value_pricerange] ?",
+      "user : either is fine. can you book a room for 7 people for 2 nights? we'll arrive on friday.",
+      "system : i do recommend [hotel_name] , but it is in the [value_pricerange] price range . i want to confirm this is okay before booking .",
+      "user : that sounds great.  thanks.",
+      "system : your booking for a party of [value_count] arriving on [value_day] for [value_count] days [value_count] nights was successful . your reference number is [hotel_reference] . is there anything else i can assist you with ?",
+      "user : no, that is all.  thanks for the help.  bye."
+    ],
+    "belief": "belief : hotel name = huntingdon marriott hotel ; area = west ; stars = 4 ; internet = yes ; type = hotel | booking day = friday ; people = 7 ; stay = 3",
+    "reply": "system : thank you , have a great day , goodbye !",
+    "name": "SNG1205.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a 2 star hotel in the north."
+    ],
+    "belief": "belief : hotel area = north ; stars = 2",
+    "reply": "system : i have [value_count] hotel -s meeting your criteria . ashely hotel located at [hotel_address] and [hotel_name] located at [hotel_address] .",
+    "name": "SSNG0222.json",
+    "dp": "dp : hotel ( inform ( name = ashely hotel , name =  lovell lodge , choice = two  , addr = 74 chesterton road , addr =  365 milton road , type = hotels  ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a 2 star hotel in the north.",
+      "system : i have [value_count] hotel -s meeting your criteria . ashely hotel located at [hotel_address] and [hotel_name] located at [hotel_address] .",
+      "user : i would like to book at 74 chesterton road."
+    ],
+    "belief": "belief : hotel area = north ; stars = 2",
+    "reply": "system : great , how many people will be staying ? also , how many days you will be staying ?",
+    "name": "SSNG0222.json",
+    "dp": "dp : booking ( request ( people , stay ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a 2 star hotel in the north.",
+      "system : i have [value_count] hotel -s meeting your criteria . ashely hotel located at [hotel_address] and [hotel_name] located at [hotel_address] .",
+      "user : i would like to book at 74 chesterton road.",
+      "system : great , how many people will be staying ? also , how many days you will be staying ?",
+      "user : wait, before we do that i should probably check on the prices. what sort of room rates am i looking at?"
+    ],
+    "belief": "belief : hotel area = north ; stars = 2",
+    "reply": "system : it appears to be in the [value_pricerange] price range . would that work for you ?",
+    "name": "SSNG0222.json",
+    "dp": "dp : booking ( inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a 2 star hotel in the north.",
+      "system : i have [value_count] hotel -s meeting your criteria . ashely hotel located at [hotel_address] and [hotel_name] located at [hotel_address] .",
+      "user : i would like to book at 74 chesterton road.",
+      "system : great , how many people will be staying ? also , how many days you will be staying ?",
+      "user : wait, before we do that i should probably check on the prices. what sort of room rates am i looking at?",
+      "system : it appears to be in the [value_pricerange] price range . would that work for you ?",
+      "user : yes that would work"
+    ],
+    "belief": "belief : hotel area = north ; stars = 2",
+    "reply": "system : okay great , so how many people will be staying and for how many nights ?",
+    "name": "SSNG0222.json",
+    "dp": "dp : booking ( request ( people , stay ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a 2 star hotel in the north.",
+      "system : i have [value_count] hotel -s meeting your criteria . ashely hotel located at [hotel_address] and [hotel_name] located at [hotel_address] .",
+      "user : i would like to book at 74 chesterton road.",
+      "system : great , how many people will be staying ? also , how many days you will be staying ?",
+      "user : wait, before we do that i should probably check on the prices. what sort of room rates am i looking at?",
+      "system : it appears to be in the [value_pricerange] price range . would that work for you ?",
+      "user : yes that would work",
+      "system : okay great , so how many people will be staying and for how many nights ?",
+      "user : there will be 5 people for a total of 4 nights starting from monday."
+    ],
+    "belief": "belief : hotel area = north ; pricerange = moderate ; stars = 2 | booking day = monday ; people = 5 ; stay = 4",
+    "reply": "system : i was able to book your stay at [hotel_name] motel . your reference number is [hotel_reference] . is there anything else today ?",
+    "name": "SSNG0222.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a 2 star hotel in the north.",
+      "system : i have [value_count] hotel -s meeting your criteria . ashely hotel located at [hotel_address] and [hotel_name] located at [hotel_address] .",
+      "user : i would like to book at 74 chesterton road.",
+      "system : great , how many people will be staying ? also , how many days you will be staying ?",
+      "user : wait, before we do that i should probably check on the prices. what sort of room rates am i looking at?",
+      "system : it appears to be in the [value_pricerange] price range . would that work for you ?",
+      "user : yes that would work",
+      "system : okay great , so how many people will be staying and for how many nights ?",
+      "user : there will be 5 people for a total of 4 nights starting from monday.",
+      "system : i was able to book your stay at [hotel_name] motel . your reference number is [hotel_reference] . is there anything else today ?",
+      "user : okay thank you for everything."
+    ],
+    "belief": "belief : hotel area = north ; pricerange = moderate ; stars = 2 | booking day = monday ; people = 5 ; stay = 4",
+    "reply": "system : thank you , enjoy your stay .",
+    "name": "SSNG0222.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : can you search for a guesthouse that includes free wifi?"
+    ],
+    "belief": "belief : hotel internet = yes ; type = guesthouse",
+    "reply": "system : we have [value_count] such place -s . any preference on area ?",
+    "name": "SNG1014.json",
+    "dp": "dp : hotel ( request ( area ) ; inform ( choice = 23 ) )"
+  },
+  {
+    "history": [
+      "user : can you search for a guesthouse that includes free wifi?",
+      "system : we have [value_count] such place -s . any preference on area ?",
+      "user : no, that doesn't matter, but i'd like something in the moderate price range."
+    ],
+    "belief": "belief : hotel pricerange = moderate ; internet = yes ; type = guesthouse",
+    "reply": "system : there are [value_count] options . how about the [hotel_name] ? it has [value_count] stars and free parking and wifi .",
+    "name": "SNG1014.json",
+    "dp": "dp : hotel ( inform ( choice = 14 , internet = none , parking = none , name = avalon , stars = 4 ) )"
+  },
+  {
+    "history": [
+      "user : can you search for a guesthouse that includes free wifi?",
+      "system : we have [value_count] such place -s . any preference on area ?",
+      "user : no, that doesn't matter, but i'd like something in the moderate price range.",
+      "system : there are [value_count] options . how about the [hotel_name] ? it has [value_count] stars and free parking and wifi .",
+      "user : that sounds perfect. can i book it for 5 nights starting on monday for 3 people?"
+    ],
+    "belief": "belief : hotel pricerange = moderate ; internet = yes ; type = guesthouse | booking day = monday ; people = 3 ; stay = 5",
+    "reply": "system : the [hotel_name] does not have room for [value_count] nights starting [value_day] . how about a different day or a shorter stay ?",
+    "name": "SNG1014.json",
+    "dp": "dp : booking ( nobook ( stay = 5 , day = monday ) ; request ( stay , day ) )"
+  },
+  {
+    "history": [
+      "user : can you search for a guesthouse that includes free wifi?",
+      "system : we have [value_count] such place -s . any preference on area ?",
+      "user : no, that doesn't matter, but i'd like something in the moderate price range.",
+      "system : there are [value_count] options . how about the [hotel_name] ? it has [value_count] stars and free parking and wifi .",
+      "user : that sounds perfect. can i book it for 5 nights starting on monday for 3 people?",
+      "system : the [hotel_name] does not have room for [value_count] nights starting [value_day] . how about a different day or a shorter stay ?",
+      "user : let's try 4 nights."
+    ],
+    "belief": "belief : hotel name = avalon ; pricerange = moderate ; internet = yes ; type = guesthouse | booking day = monday ; people = 3 ; stay = 4",
+    "reply": "system : [hotel_name] is available for [value_count] nights starting on [value_day] . your reference number is [hotel_reference] . can i do anything else for you ?",
+    "name": "SNG1014.json",
+    "dp": "dp : hotel ( inform ( name = avalon ) )"
+  },
+  {
+    "history": [
+      "user : can you search for a guesthouse that includes free wifi?",
+      "system : we have [value_count] such place -s . any preference on area ?",
+      "user : no, that doesn't matter, but i'd like something in the moderate price range.",
+      "system : there are [value_count] options . how about the [hotel_name] ? it has [value_count] stars and free parking and wifi .",
+      "user : that sounds perfect. can i book it for 5 nights starting on monday for 3 people?",
+      "system : the [hotel_name] does not have room for [value_count] nights starting [value_day] . how about a different day or a shorter stay ?",
+      "user : let's try 4 nights.",
+      "system : [hotel_name] is available for [value_count] nights starting on [value_day] . your reference number is [hotel_reference] . can i do anything else for you ?",
+      "user : no, that's all i needed. thanks for your help today!"
+    ],
+    "belief": "belief : hotel name = avalon ; pricerange = moderate ; internet = yes ; type = guesthouse | booking day = monday ; people = 3 ; stay = 4",
+    "reply": "system : you are welcome . thank you for calling the [value_place] towninfo [value_area] . goodbye .",
+    "name": "SNG1014.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a place to stay that is a guesthouse."
+    ],
+    "belief": "belief : hotel type = guesthouse",
+    "reply": "system : of course , in which area of town will you be staying ?",
+    "name": "SNG1309.json",
+    "dp": "dp : hotel ( request ( area ) )"
+  },
+  {
+    "history": [
+      "user : i need a place to stay that is a guesthouse.",
+      "system : of course , in which area of town will you be staying ?",
+      "user : i want it in the west, and it should be moderately priced."
+    ],
+    "belief": "belief : hotel area = south ; type = guesthouse",
+    "reply": "system : there are [value_count] in the [value_area] all of them have free parking and internet . would you like me to book a room ?",
+    "name": "SNG1309.json",
+    "dp": "dp : booking ( inform ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a place to stay that is a guesthouse.",
+      "system : of course , in which area of town will you be staying ?",
+      "user : i want it in the west, and it should be moderately priced.",
+      "system : there are [value_count] in the [value_area] all of them have free parking and internet . would you like me to book a room ?",
+      "user : yes, please book one for 4 people and 3 nights starting from wednesday. i will need the reference number also."
+    ],
+    "belief": "belief : hotel area = south ; type = guesthouse | booking day = wednesday ; people = 4 ; stay = 3",
+    "reply": "system : you are booked at the [hotel_name] , ref# [hotel_reference] . is there anything else i can help you with today ?",
+    "name": "SNG1309.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a place to stay that is a guesthouse.",
+      "system : of course , in which area of town will you be staying ?",
+      "user : i want it in the west, and it should be moderately priced.",
+      "system : there are [value_count] in the [value_area] all of them have free parking and internet . would you like me to book a room ?",
+      "user : yes, please book one for 4 people and 3 nights starting from wednesday. i will need the reference number also.",
+      "system : you are booked at the [hotel_name] , ref# [hotel_reference] . is there anything else i can help you with today ?",
+      "user : that would be all thank you very much."
+    ],
+    "belief": "belief : hotel name = bridge guest house ; area = south ; type = guesthouse | booking day = wednesday ; people = 4 ; stay = 3",
+    "reply": "system : you are welcome and enjoy your stay .",
+    "name": "SNG1309.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : do they have any cheap places to stay on the west side?"
+    ],
+    "belief": "belief : hotel area = west ; pricerange = cheap",
+    "reply": "system : there is [value_count] guesthouse and [value_count] hotel that are [value_pricerange] on the [value_area] side . which [value_count] do you prefer ?",
+    "name": "SNG0762.json",
+    "dp": "dp : hotel ( select ( none = none ) ; inform ( area = west side , choice = 1 , choice =  1 , price = cheap , type = guesthouse , type =  hotel ) )"
+  },
+  {
+    "history": [
+      "user : do they have any cheap places to stay on the west side?",
+      "system : there is [value_count] guesthouse and [value_count] hotel that are [value_pricerange] on the [value_area] side . which [value_count] do you prefer ?",
+      "user : the guest house, please."
+    ],
+    "belief": "belief : hotel area = west ; pricerange = cheap ; type = guesthouse",
+    "reply": "system : [hotel_name] is a [value_pricerange] guesthouse in the [value_area] area . would you like me to book a room for you ?",
+    "name": "SNG0762.json",
+    "dp": "dp : hotel ( recommend ( type = guesthouse , price = cheap , name = finches bed and breakfast , area = west area ) )"
+  },
+  {
+    "history": [
+      "user : do they have any cheap places to stay on the west side?",
+      "system : there is [value_count] guesthouse and [value_count] hotel that are [value_pricerange] on the [value_area] side . which [value_count] do you prefer ?",
+      "user : the guest house, please.",
+      "system : [hotel_name] is a [value_pricerange] guesthouse in the [value_area] area . would you like me to book a room for you ?",
+      "user : no thank you, but could you tell me the phone number? and do they have free internet?"
+    ],
+    "belief": "belief : hotel area = west ; pricerange = cheap ; type = guesthouse",
+    "reply": "system : yes they do have free internet , and the phone number is [hotel_phone] .",
+    "name": "SNG0762.json",
+    "dp": "dp : hotel ( inform ( phone = 01223276653 , internet = none ) )"
+  },
+  {
+    "history": [
+      "user : do they have any cheap places to stay on the west side?",
+      "system : there is [value_count] guesthouse and [value_count] hotel that are [value_pricerange] on the [value_area] side . which [value_count] do you prefer ?",
+      "user : the guest house, please.",
+      "system : [hotel_name] is a [value_pricerange] guesthouse in the [value_area] area . would you like me to book a room for you ?",
+      "user : no thank you, but could you tell me the phone number? and do they have free internet?",
+      "system : yes they do have free internet , and the phone number is [hotel_phone] .",
+      "user : thank you so much!"
+    ],
+    "belief": "belief : hotel area = west ; pricerange = cheap ; type = guesthouse",
+    "reply": "system : you are welcome . have a great day .",
+    "name": "SNG0762.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  }
+]

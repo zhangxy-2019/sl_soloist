@@ -1,0 +1,7 @@
+[attraction_address]
+[attraction_name]
+[attraction_phone]
+[attraction_postcode]
+[value_count]
+[value_place]
+[value_area]

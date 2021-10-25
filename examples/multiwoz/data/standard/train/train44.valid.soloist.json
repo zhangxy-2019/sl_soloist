@@ -1,0 +1,2975 @@
+[
+  {
+    "history": [
+      "user : i'd like to find a train that departs from ely on monday, please!"
+    ],
+    "belief": "belief : train destination = cambridge ; day = monday ; departure = ely",
+    "reply": "system : ok , i just need a little more information . what s your destination and what time would you like to leave ?",
+    "name": "SNG0290.json",
+    "dp": "dp : train ( request ( leave , dest ) )"
+  },
+  {
+    "history": [
+      "user : i'd like to find a train that departs from ely on monday, please!",
+      "system : ok , i just need a little more information . what s your destination and what time would you like to leave ?",
+      "user : i need to leave after 13:15 and i am going to cambridge."
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = monday ; departure = ely",
+    "reply": "system : we have [value_count] trains leaving after [value_time] on [value_day] . was there a specific time you wanted to arrive by ?",
+    "name": "SNG0290.json",
+    "dp": "dp : train ( inform ( day = monday , choice = 6 , leave = 13:15 ) ; request ( arrive ) )"
+  },
+  {
+    "history": [
+      "user : i'd like to find a train that departs from ely on monday, please!",
+      "system : ok , i just need a little more information . what s your destination and what time would you like to leave ?",
+      "user : i need to leave after 13:15 and i am going to cambridge.",
+      "system : we have [value_count] trains leaving after [value_time] on [value_day] . was there a specific time you wanted to arrive by ?",
+      "user : any of them will do. can you tell me the price, arrival time and train id of at least one option?"
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = monday ; departure = ely",
+    "reply": "system : i have the [train_id] that leaves at [value_time] and arrives by [value_time] . it is [value_price] pounds . is there anything else i can help you with ?",
+    "name": "SNG0290.json",
+    "dp": "dp : train ( inform ( ticket = 4.40 pounds , id = tr4849 , arrive = 13:52 , leave = 13:35 ) )"
+  },
+  {
+    "history": [
+      "user : i'd like to find a train that departs from ely on monday, please!",
+      "system : ok , i just need a little more information . what s your destination and what time would you like to leave ?",
+      "user : i need to leave after 13:15 and i am going to cambridge.",
+      "system : we have [value_count] trains leaving after [value_time] on [value_day] . was there a specific time you wanted to arrive by ?",
+      "user : any of them will do. can you tell me the price, arrival time and train id of at least one option?",
+      "system : i have the [train_id] that leaves at [value_time] and arrives by [value_time] . it is [value_price] pounds . is there anything else i can help you with ?",
+      "user : i think that is all i need, thank you."
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = monday ; departure = ely",
+    "reply": "system : you are welcome . have a great day !",
+    "name": "SNG0290.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train. the train should depart from cambridge and should go to broxbourne"
+    ],
+    "belief": "belief : train destination = broxbourne ; departure = cambridge",
+    "reply": "system : what day are you traveling ?",
+    "name": "SNG1351.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train. the train should depart from cambridge and should go to broxbourne",
+      "system : what day are you traveling ?",
+      "user : i'm traveling on tuesday and i want to arrive by 16:15"
+    ],
+    "belief": "belief : train destination = broxbourne ; day = tuesday ; arriveby = 16:15 ; departure = cambridge",
+    "reply": "system : [train_id] leaves at [value_time] and arrives at [value_time] . would you like me to book a ticket for you ?",
+    "name": "SNG1351.json",
+    "dp": "dp : train ( inform ( arrive = 06:01 , leave = 05:01 , id = tr6357 ) ; select ( none = none ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train. the train should depart from cambridge and should go to broxbourne",
+      "system : what day are you traveling ?",
+      "user : i'm traveling on tuesday and i want to arrive by 16:15",
+      "system : [train_id] leaves at [value_time] and arrives at [value_time] . would you like me to book a ticket for you ?",
+      "user : no, but i do need the price."
+    ],
+    "belief": "belief : train destination = broxbourne ; day = tuesday ; arriveby = 16:15 ; departure = cambridge",
+    "reply": "system : alright . the price for tr [value_count] is [value_price] pounds . anything else ?",
+    "name": "SNG1351.json",
+    "dp": "dp : train ( inform ( ticket = 17.90 pounds , id = tr 6357 ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train. the train should depart from cambridge and should go to broxbourne",
+      "system : what day are you traveling ?",
+      "user : i'm traveling on tuesday and i want to arrive by 16:15",
+      "system : [train_id] leaves at [value_time] and arrives at [value_time] . would you like me to book a ticket for you ?",
+      "user : no, but i do need the price.",
+      "system : alright . the price for tr [value_count] is [value_price] pounds . anything else ?",
+      "user : nope, that's all i needed. thanks!"
+    ],
+    "belief": "belief : train destination = broxbourne ; day = tuesday ; arriveby = 16:15 ; departure = cambridge",
+    "reply": "system : i hope you have a wonderful day goodbye !",
+    "name": "SNG1351.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a train from ely to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; departure = ely",
+    "reply": "system : what day and time would you like to travel ?",
+    "name": "SNG1250.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a train from ely to cambridge.",
+      "system : what day and time would you like to travel ?",
+      "user : i would like to leave on monday."
+    ],
+    "belief": "belief : train destination = cambridge ; day = monday ; departure = ely",
+    "reply": "system : when would you like to arrive in [value_place] on [value_day] ?",
+    "name": "SNG1250.json",
+    "dp": "dp : train ( request ( arrive ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a train from ely to cambridge.",
+      "system : what day and time would you like to travel ?",
+      "user : i would like to leave on monday.",
+      "system : when would you like to arrive in [value_place] on [value_day] ?",
+      "user : i really just need to leave after 15:45. the arrival time doesn't really matter."
+    ],
+    "belief": "belief : train leaveat = 15:45 ; destination = cambridge ; day = monday ; departure = ely",
+    "reply": "system : should i book it for you ?",
+    "name": "SNG1250.json",
+    "dp": "dp : train ( offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a train from ely to cambridge.",
+      "system : what day and time would you like to travel ?",
+      "user : i would like to leave on monday.",
+      "system : when would you like to arrive in [value_place] on [value_day] ?",
+      "user : i really just need to leave after 15:45. the arrival time doesn't really matter.",
+      "system : should i book it for you ?",
+      "user : yes for 5. all i would need is the reference number."
+    ],
+    "belief": "belief : train leaveat = 15:45 ; destination = cambridge ; day = monday ; departure = ely | booking people = 5",
+    "reply": "system : i have booked [value_count] tickets for you on [train_id] . your reference number is [train_reference] . what else can i assist with ?",
+    "name": "SNG1250.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a train from ely to cambridge.",
+      "system : what day and time would you like to travel ?",
+      "user : i would like to leave on monday.",
+      "system : when would you like to arrive in [value_place] on [value_day] ?",
+      "user : i really just need to leave after 15:45. the arrival time doesn't really matter.",
+      "system : should i book it for you ?",
+      "user : yes for 5. all i would need is the reference number.",
+      "system : i have booked [value_count] tickets for you on [train_id] . your reference number is [train_reference] . what else can i assist with ?",
+      "user : thanks for being so helpful! i appreciate your time. i'm all set now."
+    ],
+    "belief": "belief : train leaveat = 15:45 ; destination = cambridge ; day = monday ; departure = ely | booking people = 5",
+    "reply": "system : you are very welcome , i am so glad to have been of service ! have a wonderful day now , bye !",
+    "name": "SNG1250.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train please."
+    ],
+    "belief": "belief : none",
+    "reply": "system : certainly . on what day do you want me to look ?",
+    "name": "SNG01734.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train please.",
+      "system : certainly . on what day do you want me to look ?",
+      "user : on tuesday from cambridge to norway leaving at 2030 hrs"
+    ],
+    "belief": "belief : train leaveat = 20:30 ; day = tuesday ; departure = cambridge",
+    "reply": "system : i am sorry , could you confirm your destination so i can get an accurate schedule .",
+    "name": "SNG01734.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train please.",
+      "system : certainly . on what day do you want me to look ?",
+      "user : on tuesday from cambridge to norway leaving at 2030 hrs",
+      "system : i am sorry , could you confirm your destination so i can get an accurate schedule .",
+      "user : i'm sorry, i meant norwich, not norway."
+    ],
+    "belief": "belief : train leaveat = 20:30 ; destination = norwich ; day = tuesday ; departure = cambridge",
+    "reply": "system : i could not get you to norway but [value_place] is much more doable . i have got the [train_id] to [value_place] leaving at [value_time] with a fare of [value_price] gbp . would that suit you ?",
+    "name": "SNG01734.json",
+    "dp": "dp : n"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train please.",
+      "system : certainly . on what day do you want me to look ?",
+      "user : on tuesday from cambridge to norway leaving at 2030 hrs",
+      "system : i am sorry , could you confirm your destination so i can get an accurate schedule .",
+      "user : i'm sorry, i meant norwich, not norway.",
+      "system : i could not get you to norway but [value_place] is much more doable . i have got the [train_id] to [value_place] leaving at [value_time] with a fare of [value_price] gbp . would that suit you ?",
+      "user : that would be perfect. could you book it for 1 person and provide me a reference number?"
+    ],
+    "belief": "belief : train leaveat = 20:30 ; destination = norwich ; day = tuesday ; departure = cambridge | booking people = 1",
+    "reply": "system : [train_reference] is your reference number . what else may i do for you ?",
+    "name": "SNG01734.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train please.",
+      "system : certainly . on what day do you want me to look ?",
+      "user : on tuesday from cambridge to norway leaving at 2030 hrs",
+      "system : i am sorry , could you confirm your destination so i can get an accurate schedule .",
+      "user : i'm sorry, i meant norwich, not norway.",
+      "system : i could not get you to norway but [value_place] is much more doable . i have got the [train_id] to [value_place] leaving at [value_time] with a fare of [value_price] gbp . would that suit you ?",
+      "user : that would be perfect. could you book it for 1 person and provide me a reference number?",
+      "system : [train_reference] is your reference number . what else may i do for you ?",
+      "user : no, thank you. good bye"
+    ],
+    "belief": "belief : train leaveat = 20:30 ; destination = norwich ; day = tuesday ; departure = cambridge | booking people = 1",
+    "reply": "system : okay , have a great time and be safe .",
+    "name": "SNG01734.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train. the train should arrive by 21:00 and should leave on sunday"
+    ],
+    "belief": "belief : train day = sunday ; arriveby = 21:00",
+    "reply": "system : okay , where are you departing from ?",
+    "name": "SNG01518.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train. the train should arrive by 21:00 and should leave on sunday",
+      "system : okay , where are you departing from ?",
+      "user : i am departing from cambridge."
+    ],
+    "belief": "belief : train day = sunday ; arriveby = 21:00 ; departure = cambridge",
+    "reply": "system : where are you heading to from [value_place] ?",
+    "name": "SNG01518.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train. the train should arrive by 21:00 and should leave on sunday",
+      "system : okay , where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : where are you heading to from [value_place] ?",
+      "user : i'm trying to get to broxbourne."
+    ],
+    "belief": "belief : taxi destination = anatolia ; departure = cafe jello gallery ; arriveby = 01:00 | train destination = broxbourne ; day = sunday ; arriveby = 21:00 ; departure = cambridge",
+    "reply": "system : train [train_id] leaves at [value_time] and arrives at [value_time] .",
+    "name": "SNG01518.json",
+    "dp": "dp : train ( inform ( id = tr8736 , arrive = 6:01 , leave = 5:01 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train. the train should arrive by 21:00 and should leave on sunday",
+      "system : okay , where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : where are you heading to from [value_place] ?",
+      "user : i'm trying to get to broxbourne.",
+      "system : train [train_id] leaves at [value_time] and arrives at [value_time] .",
+      "user : perfect. please book it for 3 people."
+    ],
+    "belief": "belief : taxi destination = anatolia ; departure = cafe jello gallery ; arriveby = 01:00 | train destination = broxbourne ; day = sunday ; arriveby = 21:00 ; departure = cambridge | booking people = 3",
+    "reply": "system : i have it booked the reference number is [train_reference] and the price is [value_price] gbp .",
+    "name": "SNG01518.json",
+    "dp": "dp : train ( offerbooked ( ticket = 42.96 gbp , ref = iyhxk218 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train. the train should arrive by 21:00 and should leave on sunday",
+      "system : okay , where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : where are you heading to from [value_place] ?",
+      "user : i'm trying to get to broxbourne.",
+      "system : train [train_id] leaves at [value_time] and arrives at [value_time] .",
+      "user : perfect. please book it for 3 people.",
+      "system : i have it booked the reference number is [train_reference] and the price is [value_price] gbp .",
+      "user : great, thanks for your help."
+    ],
+    "belief": "belief : taxi destination = anatolia ; departure = cafe jello gallery ; arriveby = 01:00 | train destination = broxbourne ; day = sunday ; arriveby = 21:00 ; departure = cambridge | booking people = 3",
+    "reply": "system : absolutely , have a great day !",
+    "name": "SNG01518.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am wanting to book a train arriving in stevenage by 19:15. can you help me?"
+    ],
+    "belief": "belief : train destination = stevenage ; arriveby = 19:15",
+    "reply": "system : certainly , where will you be departing from and what time would you like to leave ?",
+    "name": "SNG0274.json",
+    "dp": "dp : train ( request ( depart , leave ) )"
+  },
+  {
+    "history": [
+      "user : i am wanting to book a train arriving in stevenage by 19:15. can you help me?",
+      "system : certainly , where will you be departing from and what time would you like to leave ?",
+      "user : i will be leaving cambridge on thursday."
+    ],
+    "belief": "belief : train destination = stevenage ; arriveby = 19:15",
+    "reply": "system : [train_id] arrives at [value_time] and departs at [value_time] .",
+    "name": "SNG0274.json",
+    "dp": "dp : train ( inform ( arrive = 18:10 , leave = 17:21 , id = tr1165 ) )"
+  },
+  {
+    "history": [
+      "user : i am wanting to book a train arriving in stevenage by 19:15. can you help me?",
+      "system : certainly , where will you be departing from and what time would you like to leave ?",
+      "user : i will be leaving cambridge on thursday.",
+      "system : [train_id] arrives at [value_time] and departs at [value_time] .",
+      "user : that sounds good. what is the travel time for that train?"
+    ],
+    "belief": "belief : train destination = stevenage ; day = thursday ; arriveby = 19:15 ; departure = cambridge",
+    "reply": "system : [train_id] seems to be a better match for what you are looking for , it arrives by [value_time] and total travel time is [value_count] minutes . would you like to book a ticket ?",
+    "name": "SNG0274.json",
+    "dp": "dp : train ( inform ( id = tr4765 , arrive = 18:10 , time = 49 minutes ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am wanting to book a train arriving in stevenage by 19:15. can you help me?",
+      "system : certainly , where will you be departing from and what time would you like to leave ?",
+      "user : i will be leaving cambridge on thursday.",
+      "system : [train_id] arrives at [value_time] and departs at [value_time] .",
+      "user : that sounds good. what is the travel time for that train?",
+      "system : [train_id] seems to be a better match for what you are looking for , it arrives by [value_time] and total travel time is [value_count] minutes . would you like to book a ticket ?",
+      "user : no need to book a ticket. i can take care of that later. but thank you. have a nice night!"
+    ],
+    "belief": "belief : train destination = stevenage ; day = thursday ; arriveby = 19:15 ; departure = cambridge",
+    "reply": "system : you as well ! thank you !",
+    "name": "SNG0274.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi, i'm looking for a train departing from stansted airport. i'd like it to arrive at the destination by 9:15."
+    ],
+    "belief": "belief : train arriveby = 09:15 ; departure = stansted airport",
+    "reply": "system : sure ! it looks like we have [value_count] morning trains daily the are early enough for you . what day are you planning to travel ?",
+    "name": "SNG0433.json",
+    "dp": "dp : train ( inform ( choice = four ) ; request ( day ) )"
+  },
+  {
+    "history": [
+      "user : hi, i'm looking for a train departing from stansted airport. i'd like it to arrive at the destination by 9:15.",
+      "system : sure ! it looks like we have [value_count] morning trains daily the are early enough for you . what day are you planning to travel ?",
+      "user : i need to leave on thursday."
+    ],
+    "belief": "belief : train day = thursday ; arriveby = 09:15 ; departure = stansted airport",
+    "reply": "system : we only have trains going to [value_place] then , is that your destination ?",
+    "name": "SNG0433.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : hi, i'm looking for a train departing from stansted airport. i'd like it to arrive at the destination by 9:15.",
+      "system : sure ! it looks like we have [value_count] morning trains daily the are early enough for you . what day are you planning to travel ?",
+      "user : i need to leave on thursday.",
+      "system : we only have trains going to [value_place] then , is that your destination ?",
+      "user : yes, i want to go to cambridge. can you make a booking for 7 people and give me the reference number?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:15 ; departure = stansted airport",
+    "reply": "system : i have train [train_id] that leaves the airport at [value_time] and gets to [value_place] at [value_time] . would that train work for you ?",
+    "name": "SNG0433.json",
+    "dp": "dp : train ( inform ( dest = cambridge , id = tr9084  , arrive = 08:52 , leave = 08:24 , depart = airport ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi, i'm looking for a train departing from stansted airport. i'd like it to arrive at the destination by 9:15.",
+      "system : sure ! it looks like we have [value_count] morning trains daily the are early enough for you . what day are you planning to travel ?",
+      "user : i need to leave on thursday.",
+      "system : we only have trains going to [value_place] then , is that your destination ?",
+      "user : yes, i want to go to cambridge. can you make a booking for 7 people and give me the reference number?",
+      "system : i have train [train_id] that leaves the airport at [value_time] and gets to [value_place] at [value_time] . would that train work for you ?",
+      "user : yes, that's great can i get 7 tickets please?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:15 ; departure = stansted airport | booking people = 7",
+    "reply": "system : alright , your [value_count] tickets for the [train_id] train has been purchased for [value_price] gbp . the reference number is [train_reference] . is there anything else i can do for you ?",
+    "name": "SNG0433.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi, i'm looking for a train departing from stansted airport. i'd like it to arrive at the destination by 9:15.",
+      "system : sure ! it looks like we have [value_count] morning trains daily the are early enough for you . what day are you planning to travel ?",
+      "user : i need to leave on thursday.",
+      "system : we only have trains going to [value_place] then , is that your destination ?",
+      "user : yes, i want to go to cambridge. can you make a booking for 7 people and give me the reference number?",
+      "system : i have train [train_id] that leaves the airport at [value_time] and gets to [value_place] at [value_time] . would that train work for you ?",
+      "user : yes, that's great can i get 7 tickets please?",
+      "system : alright , your [value_count] tickets for the [train_id] train has been purchased for [value_price] gbp . the reference number is [train_reference] . is there anything else i can do for you ?",
+      "user : i think that's all i needed. thanks. have a good night!"
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:15 ; departure = stansted airport | booking people = 7",
+    "reply": "system : thank you for using our services , goodbye .",
+    "name": "SNG0433.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi.  i am looking for a train that goes to cambridge on saturday.  can you help me?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = saturday",
+    "reply": "system : there are [value_count] trains departing from [value_place] station to [value_place] on [value_day] . each will take [value_count] minutes . is there a specific time you would prefer to depart ?",
+    "name": "SNG0258.json",
+    "dp": "dp : train ( inform ( choice = 5 , depart = london kings cross station , day = saturday , dest = cambridge , time = 51 minutes ) ; request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : hi.  i am looking for a train that goes to cambridge on saturday.  can you help me?",
+      "system : there are [value_count] trains departing from [value_place] station to [value_place] on [value_day] . each will take [value_count] minutes . is there a specific time you would prefer to depart ?",
+      "user : i would like to leave after 12:00."
+    ],
+    "belief": "belief : train leaveat = 12:15 ; destination = cambridge ; day = saturday ; departure = london kings cross",
+    "reply": "system : there is a train leaving [value_place] for [value_place] at [value_time] on [value_day] . would you like me to book it ?",
+    "name": "SNG0258.json",
+    "dp": "dp : train ( inform ( day = saturday , leave = 13:17 , depart = london kings cross , dest = cambridge ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi.  i am looking for a train that goes to cambridge on saturday.  can you help me?",
+      "system : there are [value_count] trains departing from [value_place] station to [value_place] on [value_day] . each will take [value_count] minutes . is there a specific time you would prefer to depart ?",
+      "user : i would like to leave after 12:00.",
+      "system : there is a train leaving [value_place] for [value_place] at [value_time] on [value_day] . would you like me to book it ?",
+      "user : yes, i will need to be on that train."
+    ],
+    "belief": "belief : train leaveat = 12:15 ; destination = cambridge ; day = saturday ; departure = london kings cross",
+    "reply": "system : okay , how many tickets would you like ?",
+    "name": "SNG0258.json",
+    "dp": "dp : train ( request ( people ) )"
+  },
+  {
+    "history": [
+      "user : hi.  i am looking for a train that goes to cambridge on saturday.  can you help me?",
+      "system : there are [value_count] trains departing from [value_place] station to [value_place] on [value_day] . each will take [value_count] minutes . is there a specific time you would prefer to depart ?",
+      "user : i would like to leave after 12:00.",
+      "system : there is a train leaving [value_place] for [value_place] at [value_time] on [value_day] . would you like me to book it ?",
+      "user : yes, i will need to be on that train.",
+      "system : okay , how many tickets would you like ?",
+      "user : i need 8 tickets."
+    ],
+    "belief": "belief : train leaveat = 12:15 ; destination = cambridge ; day = saturday ; departure = london kings cross | booking people = 8",
+    "reply": "system : your booking was successful . the total fee is [value_price] gbp and the booking number is [train_reference] . thank you again .",
+    "name": "SNG0258.json",
+    "dp": "dp : train ( offerbooked ( ref = x1nec9s5 , ticket = 151.04 gbp ) )"
+  },
+  {
+    "history": [
+      "user : hi.  i am looking for a train that goes to cambridge on saturday.  can you help me?",
+      "system : there are [value_count] trains departing from [value_place] station to [value_place] on [value_day] . each will take [value_count] minutes . is there a specific time you would prefer to depart ?",
+      "user : i would like to leave after 12:00.",
+      "system : there is a train leaving [value_place] for [value_place] at [value_time] on [value_day] . would you like me to book it ?",
+      "user : yes, i will need to be on that train.",
+      "system : okay , how many tickets would you like ?",
+      "user : i need 8 tickets.",
+      "system : your booking was successful . the total fee is [value_price] gbp and the booking number is [train_reference] . thank you again .",
+      "user : actually, i need to depart from kings lynn, not kings cross. can you change that please?"
+    ],
+    "belief": "belief : train leaveat = 12:15 ; destination = cambridge ; day = saturday ; departure = kings lynn | booking people = 8",
+    "reply": "system : [train_id] departs from [value_place] to [value_place] [value_day] at [value_time] , arriving [value_place] at [value_time] , would you like to book this [value_count] ?",
+    "name": "SNG0258.json",
+    "dp": "dp : n"
+  },
+  {
+    "history": [
+      "user : hi.  i am looking for a train that goes to cambridge on saturday.  can you help me?",
+      "system : there are [value_count] trains departing from [value_place] station to [value_place] on [value_day] . each will take [value_count] minutes . is there a specific time you would prefer to depart ?",
+      "user : i would like to leave after 12:00.",
+      "system : there is a train leaving [value_place] for [value_place] at [value_time] on [value_day] . would you like me to book it ?",
+      "user : yes, i will need to be on that train.",
+      "system : okay , how many tickets would you like ?",
+      "user : i need 8 tickets.",
+      "system : your booking was successful . the total fee is [value_price] gbp and the booking number is [train_reference] . thank you again .",
+      "user : actually, i need to depart from kings lynn, not kings cross. can you change that please?",
+      "system : [train_id] departs from [value_place] to [value_place] [value_day] at [value_time] , arriving [value_place] at [value_time] , would you like to book this [value_count] ?",
+      "user : yes, please book 8 tickets for that train.  may i please have the reference number?"
+    ],
+    "belief": "belief : train leaveat = 12:15 ; destination = cambridge ; day = saturday ; departure = kings lynn | booking people = 8",
+    "reply": "system : your reference number is pohlz[value_count]ey and [value_price] gbp will be due at the station . the train leaves [value_place] at [value_time] . can i further assist you ?",
+    "name": "SNG0258.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi.  i am looking for a train that goes to cambridge on saturday.  can you help me?",
+      "system : there are [value_count] trains departing from [value_place] station to [value_place] on [value_day] . each will take [value_count] minutes . is there a specific time you would prefer to depart ?",
+      "user : i would like to leave after 12:00.",
+      "system : there is a train leaving [value_place] for [value_place] at [value_time] on [value_day] . would you like me to book it ?",
+      "user : yes, i will need to be on that train.",
+      "system : okay , how many tickets would you like ?",
+      "user : i need 8 tickets.",
+      "system : your booking was successful . the total fee is [value_price] gbp and the booking number is [train_reference] . thank you again .",
+      "user : actually, i need to depart from kings lynn, not kings cross. can you change that please?",
+      "system : [train_id] departs from [value_place] to [value_place] [value_day] at [value_time] , arriving [value_place] at [value_time] , would you like to book this [value_count] ?",
+      "user : yes, please book 8 tickets for that train.  may i please have the reference number?",
+      "system : your reference number is pohlz[value_count]ey and [value_price] gbp will be due at the station . the train leaves [value_place] at [value_time] . can i further assist you ?",
+      "user : no, thank you. that is all."
+    ],
+    "belief": "belief : train leaveat = 12:15 ; destination = cambridge ; day = saturday ; departure = kings lynn | booking people = 8",
+    "reply": "system : you are welcome . have a nice day . bye .",
+    "name": "SNG0258.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hello, i'm looking for a train. i need to leave on wednesday from norwich."
+    ],
+    "belief": "belief : train day = wednesday ; departure = norwich",
+    "reply": "system : any idea where you want to go ?",
+    "name": "SNG02085.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : hello, i'm looking for a train. i need to leave on wednesday from norwich.",
+      "system : any idea where you want to go ?",
+      "user : i am looking to go to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; departure = norwich",
+    "reply": "system : to help narrow down the choices , what time would you like to depart at ?",
+    "name": "SNG02085.json",
+    "dp": "dp : train ( request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : hello, i'm looking for a train. i need to leave on wednesday from norwich.",
+      "system : any idea where you want to go ?",
+      "user : i am looking to go to cambridge.",
+      "system : to help narrow down the choices , what time would you like to depart at ?",
+      "user : i'm leaving after 09:00."
+    ],
+    "belief": "belief : train leaveat = 09:00 ; destination = cambridge ; day = wednesday ; departure = norwich",
+    "reply": "system : how about [train_id] that leaves at [value_time] ?",
+    "name": "SNG02085.json",
+    "dp": "dp : train ( inform ( id = tr1180 , leave = 09:16 ) )"
+  },
+  {
+    "history": [
+      "user : hello, i'm looking for a train. i need to leave on wednesday from norwich.",
+      "system : any idea where you want to go ?",
+      "user : i am looking to go to cambridge.",
+      "system : to help narrow down the choices , what time would you like to depart at ?",
+      "user : i'm leaving after 09:00.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : what is the price and travel time?"
+    ],
+    "belief": "belief : train leaveat = 09:00 ; destination = cambridge ; day = wednesday ; departure = norwich",
+    "reply": "system : it is [value_price] pounds per person and the travel time is [value_count] minutes .",
+    "name": "SNG02085.json",
+    "dp": "dp : train ( inform ( ticket = 17.60 pounds per person , time = 79 minutes ) )"
+  },
+  {
+    "history": [
+      "user : hello, i'm looking for a train. i need to leave on wednesday from norwich.",
+      "system : any idea where you want to go ?",
+      "user : i am looking to go to cambridge.",
+      "system : to help narrow down the choices , what time would you like to depart at ?",
+      "user : i'm leaving after 09:00.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : what is the price and travel time?",
+      "system : it is [value_price] pounds per person and the travel time is [value_count] minutes .",
+      "user : ok great, can you book it for me please?"
+    ],
+    "belief": "belief : train leaveat = 09:00 ; destination = cambridge ; day = wednesday ; departure = norwich | booking people = 1",
+    "reply": "system : you are booked fee will be [value_price] payable at the station , the refernece number is [train_reference] . anything else today ?",
+    "name": "SNG02085.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hello, i'm looking for a train. i need to leave on wednesday from norwich.",
+      "system : any idea where you want to go ?",
+      "user : i am looking to go to cambridge.",
+      "system : to help narrow down the choices , what time would you like to depart at ?",
+      "user : i'm leaving after 09:00.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : what is the price and travel time?",
+      "system : it is [value_price] pounds per person and the travel time is [value_count] minutes .",
+      "user : ok great, can you book it for me please?",
+      "system : you are booked fee will be [value_price] payable at the station , the refernece number is [train_reference] . anything else today ?",
+      "user : that will be all, thank you for your help."
+    ],
+    "belief": "belief : train leaveat = 09:00 ; destination = cambridge ; day = wednesday ; departure = norwich | booking people = 1",
+    "reply": "system : welcome nice travel",
+    "name": "SNG02085.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train for 8:45 to go to london kings crossing."
+    ],
+    "belief": "belief : train leaveat = 8:45 ; destination = london kings cross ; departure = cambridge",
+    "reply": "system : what day are you planning to travel ?",
+    "name": "SNG1223.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train for 8:45 to go to london kings crossing.",
+      "system : what day are you planning to travel ?",
+      "user : i would like to travel on friday."
+    ],
+    "belief": "belief : train leaveat = 8:45 ; destination = london kings cross ; day = friday ; departure = cambridge",
+    "reply": "system : i am sorry i dont have any trains for that day . would you like to leave at a different time ?",
+    "name": "SNG1223.json",
+    "dp": "dp : train ( request ( leave ) ; offerbooked ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train for 8:45 to go to london kings crossing.",
+      "system : what day are you planning to travel ?",
+      "user : i would like to travel on friday.",
+      "system : i am sorry i dont have any trains for that day . would you like to leave at a different time ?",
+      "user : i will be leaving from cambridge on friday."
+    ],
+    "belief": "belief : train leaveat = 08:45 ; destination = london kings cross ; day = friday ; departure = cambridge",
+    "reply": "system : the earliest train i have is at [value_time] . is that ok ?",
+    "name": "SNG1223.json",
+    "dp": "dp : train ( inform ( leave = 09:00 ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train for 8:45 to go to london kings crossing.",
+      "system : what day are you planning to travel ?",
+      "user : i would like to travel on friday.",
+      "system : i am sorry i dont have any trains for that day . would you like to leave at a different time ?",
+      "user : i will be leaving from cambridge on friday.",
+      "system : the earliest train i have is at [value_time] . is that ok ?",
+      "user : that's fine. can you give me the arrival time, travel time, and train id please?"
+    ],
+    "belief": "belief : train leaveat = 08:45 ; destination = london kings cross ; day = friday ; departure = cambridge",
+    "reply": "system : [train_id] takes [value_count] minutes to arrive at by [value_time] . would you like me to reserve this for you ?",
+    "name": "SNG1223.json",
+    "dp": "dp : train ( inform ( time = 51 minutes , arrive = 9:51 , id = tr2000 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train for 8:45 to go to london kings crossing.",
+      "system : what day are you planning to travel ?",
+      "user : i would like to travel on friday.",
+      "system : i am sorry i dont have any trains for that day . would you like to leave at a different time ?",
+      "user : i will be leaving from cambridge on friday.",
+      "system : the earliest train i have is at [value_time] . is that ok ?",
+      "user : that's fine. can you give me the arrival time, travel time, and train id please?",
+      "system : [train_id] takes [value_count] minutes to arrive at by [value_time] . would you like me to reserve this for you ?",
+      "user : nope, that's all i needed. thanks!"
+    ],
+    "belief": "belief : train leaveat = 08:45 ; destination = london kings cross ; day = friday ; departure = cambridge",
+    "reply": "system : thank you for using the [value_place] towninfo [value_area] , and have a great day !",
+    "name": "SNG1223.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train into cambridge on wednesday, please."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday",
+    "reply": "system : i can certainly find [value_count] for you . can you tell me where you will be departing from ?",
+    "name": "SNG0378.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i need a train into cambridge on wednesday, please.",
+      "system : i can certainly find [value_count] for you . can you tell me where you will be departing from ?",
+      "user : sure.  i'm leaving from cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday",
+    "reply": "system : you are leaving from [value_place] going to [value_place] ?",
+    "name": "SNG0378.json",
+    "dp": "dp : train ( request ( dest , depart ) )"
+  },
+  {
+    "history": [
+      "user : i need a train into cambridge on wednesday, please.",
+      "system : i can certainly find [value_count] for you . can you tell me where you will be departing from ?",
+      "user : sure.  i'm leaving from cambridge.",
+      "system : you are leaving from [value_place] going to [value_place] ?",
+      "user : no. i need to leave from leicester and arrive in cambridge. i also need to arrive by 10:15."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; arriveby = 10:15 ; departure = leicester",
+    "reply": "system : [train_id] will depart [value_place] [value_day] at [value_time] , arriving in [value_place] by [value_time] , would you like to book a ticket ?",
+    "name": "SNG0378.json",
+    "dp": "dp : train ( inform ( day = wednesday , dest = cambridge , depart = leicester , id = tr7703 , arrive = 9:54 , leave = 8:09 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train into cambridge on wednesday, please.",
+      "system : i can certainly find [value_count] for you . can you tell me where you will be departing from ?",
+      "user : sure.  i'm leaving from cambridge.",
+      "system : you are leaving from [value_place] going to [value_place] ?",
+      "user : no. i need to leave from leicester and arrive in cambridge. i also need to arrive by 10:15.",
+      "system : [train_id] will depart [value_place] [value_day] at [value_time] , arriving in [value_place] by [value_time] , would you like to book a ticket ?",
+      "user : yes i would like to book a ticket on tr7703 for wednesday morning, thank you."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; arriveby = 10:15 ; departure = leicester | booking people = 1",
+    "reply": "system : booking was successful , the total fee is [value_price] gbp payable at the station . reference number is [train_reference] . is there anything else i can help with ?",
+    "name": "SNG0378.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train into cambridge on wednesday, please.",
+      "system : i can certainly find [value_count] for you . can you tell me where you will be departing from ?",
+      "user : sure.  i'm leaving from cambridge.",
+      "system : you are leaving from [value_place] going to [value_place] ?",
+      "user : no. i need to leave from leicester and arrive in cambridge. i also need to arrive by 10:15.",
+      "system : [train_id] will depart [value_place] [value_day] at [value_time] , arriving in [value_place] by [value_time] , would you like to book a ticket ?",
+      "user : yes i would like to book a ticket on tr7703 for wednesday morning, thank you.",
+      "system : booking was successful , the total fee is [value_price] gbp payable at the station . reference number is [train_reference] . is there anything else i can help with ?",
+      "user : okay great. thank you for your help."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; arriveby = 10:15 ; departure = leicester | booking people = 1",
+    "reply": "system : okay great . i am glad i could be of help !",
+    "name": "SNG0378.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from peterborough"
+    ],
+    "belief": "belief : train departure = peterborough",
+    "reply": "system : where are you headed , and what day and time did you need to leave ?",
+    "name": "SNG0413.json",
+    "dp": "dp : train ( request ( leave , dest , day ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from peterborough",
+      "system : where are you headed , and what day and time did you need to leave ?",
+      "user : i am going to cambridge and leaving after 8:00 on friday"
+    ],
+    "belief": "belief : train leaveat = 08:00 ; destination = cambridge ; day = friday ; departure = peterborough",
+    "reply": "system : sure , i have [train_id] departing at [value_time] , arriving at [value_time] , with a duration of [value_count] minutes . the cost is [value_price] pounds . would that work for you ?",
+    "name": "SNG0413.json",
+    "dp": "dp : train ( inform ( time = 50 minutes , arrive = 09:09 , leave = 08:19 , id = tr6496 , ticket = 16.50 pounds ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from peterborough",
+      "system : where are you headed , and what day and time did you need to leave ?",
+      "user : i am going to cambridge and leaving after 8:00 on friday",
+      "system : sure , i have [train_id] departing at [value_time] , arriving at [value_time] , with a duration of [value_count] minutes . the cost is [value_price] pounds . would that work for you ?",
+      "user : yes please book it for 5 people and give me a reference number."
+    ],
+    "belief": "belief : train leaveat = 08:00 ; destination = cambridge ; day = friday ; departure = peterborough | booking people = 5",
+    "reply": "system : booking was successful , the total fee is [value_price] gbp payable at the station , the feference number is [train_reference] . can i help with anything else ?",
+    "name": "SNG0413.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from peterborough",
+      "system : where are you headed , and what day and time did you need to leave ?",
+      "user : i am going to cambridge and leaving after 8:00 on friday",
+      "system : sure , i have [train_id] departing at [value_time] , arriving at [value_time] , with a duration of [value_count] minutes . the cost is [value_price] pounds . would that work for you ?",
+      "user : yes please book it for 5 people and give me a reference number.",
+      "system : booking was successful , the total fee is [value_price] gbp payable at the station , the feference number is [train_reference] . can i help with anything else ?",
+      "user : i think that takes care of everything, thanks!"
+    ],
+    "belief": "belief : train leaveat = 08:00 ; destination = cambridge ; day = friday ; departure = peterborough | booking people = 5",
+    "reply": "system : great . i am glad i could help ! please consider using our service again the future . goodbye .",
+    "name": "SNG0413.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a not later than 9:15 train to cambridge."
+    ],
+    "belief": "belief : taxi leaveat = 9:15 ; destination = cambridge | train destination = cambridge ; arriveby = 09:15",
+    "reply": "system : it looks like there s a train for [value_place] with an arrival time of [value_time] . would you like me to book that for you ?",
+    "name": "SNG0326.json",
+    "dp": "dp : train ( inform ( arrive = 07:07 , dest = cambridge ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a not later than 9:15 train to cambridge.",
+      "system : it looks like there s a train for [value_place] with an arrival time of [value_time] . would you like me to book that for you ?",
+      "user : yes, book me for sunday departing from london kings cross."
+    ],
+    "belief": "belief : taxi leaveat = 9:15 ; destination = cambridge | train destination = cambridge ; arriveby = 09:15",
+    "reply": "system : how many tickets will you require ?",
+    "name": "SNG0326.json",
+    "dp": "dp : train ( request ( people ) )"
+  },
+  {
+    "history": [
+      "user : i need a not later than 9:15 train to cambridge.",
+      "system : it looks like there s a train for [value_place] with an arrival time of [value_time] . would you like me to book that for you ?",
+      "user : yes, book me for sunday departing from london kings cross.",
+      "system : how many tickets will you require ?",
+      "user : 8, please"
+    ],
+    "belief": "belief : taxi leaveat = 9:15 ; destination = cambridge | train destination = cambridge ; day = sunday ; arriveby = 09:15 ; departure = london kings cross | booking people = 8",
+    "reply": "system : your booking is successful . train is leaving at [value_time] and it costs [value_price] gbp . your reference number is [train_reference] . anything else i can help with ?",
+    "name": "SNG0326.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a not later than 9:15 train to cambridge.",
+      "system : it looks like there s a train for [value_place] with an arrival time of [value_time] . would you like me to book that for you ?",
+      "user : yes, book me for sunday departing from london kings cross.",
+      "system : how many tickets will you require ?",
+      "user : 8, please",
+      "system : your booking is successful . train is leaving at [value_time] and it costs [value_price] gbp . your reference number is [train_reference] . anything else i can help with ?",
+      "user : no thank you that's i need!"
+    ],
+    "belief": "belief : taxi leaveat = 9:15 ; destination = cambridge | train destination = cambridge ; day = sunday ; arriveby = 09:15 ; departure = london kings cross | booking people = 8",
+    "reply": "system : okay thank you for calling . do not hesitate to call us again .",
+    "name": "SNG0326.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing cambridge."
+    ],
+    "belief": "belief : train departure = cambridge",
+    "reply": "system : i would love to help ! where is your destination ?",
+    "name": "SNG01432.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing cambridge.",
+      "system : i would love to help ! where is your destination ?",
+      "user : i need to g to london liverpool street on saturday."
+    ],
+    "belief": "belief : train destination = london liverpool street ; day = saturday ; departure = cambridge",
+    "reply": "system : is there a particular time you would like to leave by ?",
+    "name": "SNG01432.json",
+    "dp": "dp : train ( request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing cambridge.",
+      "system : i would love to help ! where is your destination ?",
+      "user : i need to g to london liverpool street on saturday.",
+      "system : is there a particular time you would like to leave by ?",
+      "user : no, i just need to arrive by 15:00"
+    ],
+    "belief": "belief : train destination = london liverpool street ; day = saturday ; arriveby = 15:00 ; departure = cambridge",
+    "reply": "system : train [train_id] arrives at [value_time] would that work ?",
+    "name": "SNG01432.json",
+    "dp": "dp : train ( inform ( id = tr2895 , arrive = 7:27 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing cambridge.",
+      "system : i would love to help ! where is your destination ?",
+      "user : i need to g to london liverpool street on saturday.",
+      "system : is there a particular time you would like to leave by ?",
+      "user : no, i just need to arrive by 15:00",
+      "system : train [train_id] arrives at [value_time] would that work ?",
+      "user : yes, that will be perfect. what's the travel time?"
+    ],
+    "belief": "belief : train destination = london liverpool street ; day = saturday ; arriveby = 15:00 ; departure = cambridge",
+    "reply": "system : the departure time from [value_place] to liverpool street on [value_day] will be at [value_time] .",
+    "name": "SNG01432.json",
+    "dp": "dp : train ( inform ( depart = cambridge , dest = liverpool street , day = saturday , leave = 05:59 ) )"
+  },
+  {
+    "history": [
+      "user : hi! i need a train to leicester. i want to leave after 14:45."
+    ],
+    "belief": "belief : train destination = leicester",
+    "reply": "system : no problem . what day will that be for ?",
+    "name": "SNG0270.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : hi! i need a train to leicester. i want to leave after 14:45.",
+      "system : no problem . what day will that be for ?",
+      "user : for thursday please and i want to go to cambridge."
+    ],
+    "belief": "belief : train leaveat = 14:45 ; destination = leicester ; day = thursday ; departure = cambridge",
+    "reply": "system : tr[value_count] leaves [value_place] and goes to [value_place] at [value_time] would that work for you ?",
+    "name": "SNG0270.json",
+    "dp": "dp : train ( inform ( leave = 15:21 , depart = cambridge , dest = leicester , id = tr939 ) ; select ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi! i need a train to leicester. i want to leave after 14:45.",
+      "system : no problem . what day will that be for ?",
+      "user : for thursday please and i want to go to cambridge.",
+      "system : tr[value_count] leaves [value_place] and goes to [value_place] at [value_time] would that work for you ?",
+      "user : actually i need a train leaving leicester going to cambridge. not the reverse."
+    ],
+    "belief": "belief : train leaveat = 14:45 ; destination = cambridge ; day = thursday ; departure = leicester",
+    "reply": "system : i am sorry . yes , train [train_id] will arrive in [value_place] by [value_time] . it leaves [value_place] at [value_time] . can i book it for you ?",
+    "name": "SNG0270.json",
+    "dp": "dp : train ( inform ( dest = cambridge  , depart = leicester  , id = tr1575  , arrive = 16:54 , leave = 15:09 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi! i need a train to leicester. i want to leave after 14:45.",
+      "system : no problem . what day will that be for ?",
+      "user : for thursday please and i want to go to cambridge.",
+      "system : tr[value_count] leaves [value_place] and goes to [value_place] at [value_time] would that work for you ?",
+      "user : actually i need a train leaving leicester going to cambridge. not the reverse.",
+      "system : i am sorry . yes , train [train_id] will arrive in [value_place] by [value_time] . it leaves [value_place] at [value_time] . can i book it for you ?",
+      "user : yes, please. i need tickets for 5 people and a reference number, if possible."
+    ],
+    "belief": "belief : train leaveat = 14:45 ; destination = cambridge ; day = thursday ; departure = leicester | booking people = 5",
+    "reply": "system : you got it , [value_count] tickets were booked , reference number is [train_reference] .",
+    "name": "SNG0270.json",
+    "dp": "dp : train ( offerbooked ( ref = 2ycgd64v ) )"
+  },
+  {
+    "history": [
+      "user : hi! i need a train to leicester. i want to leave after 14:45.",
+      "system : no problem . what day will that be for ?",
+      "user : for thursday please and i want to go to cambridge.",
+      "system : tr[value_count] leaves [value_place] and goes to [value_place] at [value_time] would that work for you ?",
+      "user : actually i need a train leaving leicester going to cambridge. not the reverse.",
+      "system : i am sorry . yes , train [train_id] will arrive in [value_place] by [value_time] . it leaves [value_place] at [value_time] . can i book it for you ?",
+      "user : yes, please. i need tickets for 5 people and a reference number, if possible.",
+      "system : you got it , [value_count] tickets were booked , reference number is [train_reference] .",
+      "user : thank you for your help."
+    ],
+    "belief": "belief : train leaveat = 14:45 ; destination = cambridge ; day = thursday ; departure = leicester | booking people = 5",
+    "reply": "system : no problem . glad to be of assistance .",
+    "name": "SNG0270.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train going to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge",
+    "reply": "system : where are you leaving from ?",
+    "name": "SNG02346.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i need a train going to cambridge.",
+      "system : where are you leaving from ?",
+      "user : the train should depart from kings lynn and should leave on thursday."
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; departure = kings lynn",
+    "reply": "system : there are [value_count] total trips available to you",
+    "name": "SNG02346.json",
+    "dp": "dp : train ( inform ( choice = 19 ) )"
+  },
+  {
+    "history": [
+      "user : i need a train going to cambridge.",
+      "system : where are you leaving from ?",
+      "user : the train should depart from kings lynn and should leave on thursday.",
+      "system : there are [value_count] total trips available to you",
+      "user : i wish to leave after 8:15."
+    ],
+    "belief": "belief : train leaveat = 08:15 ; destination = cambridge ; day = thursday ; departure = kings lynn",
+    "reply": "system : how about [train_id] ?",
+    "name": "SNG02346.json",
+    "dp": "dp : train ( inform ( id = tr3447 ) )"
+  },
+  {
+    "history": [
+      "user : i need a train going to cambridge.",
+      "system : where are you leaving from ?",
+      "user : the train should depart from kings lynn and should leave on thursday.",
+      "system : there are [value_count] total trips available to you",
+      "user : i wish to leave after 8:15.",
+      "system : how about [train_id] ?",
+      "user : can i get the price and time travel please"
+    ],
+    "belief": "belief : train leaveat = 08:15 ; destination = cambridge ; day = thursday ; departure = kings lynn",
+    "reply": "system : trainid departure destination day leaveat arriveby price duration book optional [train_id] [value_place] [value_place] [value_day] [value_time] [value_time] [value_price] pounds [value_count] minutes",
+    "name": "SNG02346.json",
+    "dp": "dp : train ( inform ( id = tr3447 , depart = kings lynn , dest = cambridge , ticket = 9.80 pounds , time = 47 minutes , day = thursday , arrive = 09:58 , leave = 09:11 ) )"
+  },
+  {
+    "history": [
+      "user : i need a train going to cambridge.",
+      "system : where are you leaving from ?",
+      "user : the train should depart from kings lynn and should leave on thursday.",
+      "system : there are [value_count] total trips available to you",
+      "user : i wish to leave after 8:15.",
+      "system : how about [train_id] ?",
+      "user : can i get the price and time travel please",
+      "system : trainid departure destination day leaveat arriveby price duration book optional [train_id] [value_place] [value_place] [value_day] [value_time] [value_time] [value_price] pounds [value_count] minutes",
+      "user : would you be able to send that in a different format?  i just need a price and travel time, that list is confusing."
+    ],
+    "belief": "belief : train leaveat = 08:15 ; destination = cambridge ; day = thursday ; departure = kings lynn",
+    "reply": "system : sorry about that . the travel time is [value_count] minutes and the cost is [value_price] pounds . anything else i can do for you ?",
+    "name": "SNG02346.json",
+    "dp": "dp : train ( inform ( ticket = 9.80 pounds , time = 47 minutes ) )"
+  },
+  {
+    "history": [
+      "user : i need a train going to cambridge.",
+      "system : where are you leaving from ?",
+      "user : the train should depart from kings lynn and should leave on thursday.",
+      "system : there are [value_count] total trips available to you",
+      "user : i wish to leave after 8:15.",
+      "system : how about [train_id] ?",
+      "user : can i get the price and time travel please",
+      "system : trainid departure destination day leaveat arriveby price duration book optional [train_id] [value_place] [value_place] [value_day] [value_time] [value_time] [value_price] pounds [value_count] minutes",
+      "user : would you be able to send that in a different format?  i just need a price and travel time, that list is confusing.",
+      "system : sorry about that . the travel time is [value_count] minutes and the cost is [value_price] pounds . anything else i can do for you ?",
+      "user : no, that is all. good bye."
+    ],
+    "belief": "belief : train leaveat = 08:15 ; destination = cambridge ; day = thursday ; departure = kings lynn",
+    "reply": "system : alright . thank you , and have a great day !",
+    "name": "SNG02346.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to what trains are leaving friday evening."
+    ],
+    "belief": "belief : none",
+    "reply": "system : where are you looking to depart from ?",
+    "name": "SNG0271.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i need to what trains are leaving friday evening.",
+      "system : where are you looking to depart from ?",
+      "user : i'm leaving from peterborough."
+    ],
+    "belief": "belief : train leaveat = 16:00 ; day = friday ; departure = peterborough",
+    "reply": "system : there are [value_count] trains an hour leaving [value_place] all evening . do you know what time you plan to leave ?",
+    "name": "SNG0271.json",
+    "dp": "dp : train ( inform ( choice = two trains an hour , depart = peterborough ) ; request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : i need to what trains are leaving friday evening.",
+      "system : where are you looking to depart from ?",
+      "user : i'm leaving from peterborough.",
+      "system : there are [value_count] trains an hour leaving [value_place] all evening . do you know what time you plan to leave ?",
+      "user : not really.  i want to get there by 20:45 though."
+    ],
+    "belief": "belief : train leaveat = 16:00 ; day = friday ; arriveby = 20:45 ; departure = peterborough",
+    "reply": "system : [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . will this work for you ?",
+    "name": "SNG0271.json",
+    "dp": "dp : train ( inform ( dest = cambridge , depart = peterborough , id = tr4182 , arrive = 19:09 , leave = 18:19 ) )"
+  },
+  {
+    "history": [
+      "user : i need to what trains are leaving friday evening.",
+      "system : where are you looking to depart from ?",
+      "user : i'm leaving from peterborough.",
+      "system : there are [value_count] trains an hour leaving [value_place] all evening . do you know what time you plan to leave ?",
+      "user : not really.  i want to get there by 20:45 though.",
+      "system : [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . will this work for you ?",
+      "user : yes, that's perfect. what is the price?"
+    ],
+    "belief": "belief : train leaveat = 16:00 ; day = friday ; arriveby = 20:45 ; departure = peterborough",
+    "reply": "system : the price is [value_price] pounds .",
+    "name": "SNG0271.json",
+    "dp": "dp : train ( inform ( ticket = 16.50 pounds ) )"
+  },
+  {
+    "history": [
+      "user : i need to what trains are leaving friday evening.",
+      "system : where are you looking to depart from ?",
+      "user : i'm leaving from peterborough.",
+      "system : there are [value_count] trains an hour leaving [value_place] all evening . do you know what time you plan to leave ?",
+      "user : not really.  i want to get there by 20:45 though.",
+      "system : [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . will this work for you ?",
+      "user : yes, that's perfect. what is the price?",
+      "system : the price is [value_price] pounds .",
+      "user : thank you very much. that is all for today."
+    ],
+    "belief": "belief : train leaveat = 16:00 ; day = friday ; arriveby = 20:45 ; departure = peterborough",
+    "reply": "system : are you certain you do not need further assistance ?",
+    "name": "SNG0271.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to what trains are leaving friday evening.",
+      "system : where are you looking to depart from ?",
+      "user : i'm leaving from peterborough.",
+      "system : there are [value_count] trains an hour leaving [value_place] all evening . do you know what time you plan to leave ?",
+      "user : not really.  i want to get there by 20:45 though.",
+      "system : [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . will this work for you ?",
+      "user : yes, that's perfect. what is the price?",
+      "system : the price is [value_price] pounds .",
+      "user : thank you very much. that is all for today.",
+      "system : are you certain you do not need further assistance ?",
+      "user : yes i am sure. thank you."
+    ],
+    "belief": "belief : train day = friday ; arriveby = 20:45 ; departure = peterborough",
+    "reply": "system : you are welcome . thank you for using the [value_place] towninfo [value_area] . goodbye .",
+    "name": "SNG0271.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge",
+    "reply": "system : what time do you want to leave ?",
+    "name": "SNG01661.json",
+    "dp": "dp : train ( request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : what time do you want to leave ?",
+      "user : i would like to leave after 15:15"
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = cambridge",
+    "reply": "system : i would love to help ! where are you departing from ?",
+    "name": "SNG01661.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : what time do you want to leave ?",
+      "user : i would like to leave after 15:15",
+      "system : i would love to help ! where are you departing from ?",
+      "user : leicester.also  get train id, travel time, and price"
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = cambridge ; departure = leicester",
+    "reply": "system : [value_time] [value_time] [value_price] pounds [value_count] minutes thats all you could need sir",
+    "name": "SNG01661.json",
+    "dp": "dp : train ( inform ( arrive = 17:54 , time = 105 minutes , leave = 16:09 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : what time do you want to leave ?",
+      "user : i would like to leave after 15:15",
+      "system : i would love to help ! where are you departing from ?",
+      "user : leicester.also  get train id, travel time, and price",
+      "system : [value_time] [value_time] [value_price] pounds [value_count] minutes thats all you could need sir",
+      "user : i will need the train id also please."
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = cambridge ; departure = leicester",
+    "reply": "system : [train_id] leaves [value_place] [value_day] at [value_time] . would you like to book a seat ?",
+    "name": "SNG01661.json",
+    "dp": "dp : train ( inform ( id = tr7878  , depart = leicester , day = friday  , leave = 16:09 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : what time do you want to leave ?",
+      "user : i would like to leave after 15:15",
+      "system : i would love to help ! where are you departing from ?",
+      "user : leicester.also  get train id, travel time, and price",
+      "system : [value_time] [value_time] [value_price] pounds [value_count] minutes thats all you could need sir",
+      "user : i will need the train id also please.",
+      "system : [train_id] leaves [value_place] [value_day] at [value_time] . would you like to book a seat ?",
+      "user : i don't need to book a seat, i just needed the train id."
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = cambridge ; departure = leicester",
+    "reply": "system : the train id is [train_id] . is there anything else i can assist you with ?",
+    "name": "SNG01661.json",
+    "dp": "dp : train ( inform ( id = tr7878 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : what time do you want to leave ?",
+      "user : i would like to leave after 15:15",
+      "system : i would love to help ! where are you departing from ?",
+      "user : leicester.also  get train id, travel time, and price",
+      "system : [value_time] [value_time] [value_price] pounds [value_count] minutes thats all you could need sir",
+      "user : i will need the train id also please.",
+      "system : [train_id] leaves [value_place] [value_day] at [value_time] . would you like to book a seat ?",
+      "user : i don't need to book a seat, i just needed the train id.",
+      "system : the train id is [train_id] . is there anything else i can assist you with ?",
+      "user : thanks a lot. that is all for now."
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = cambridge ; departure = leicester",
+    "reply": "system : thank you for contacting us , have a great day .",
+    "name": "SNG01661.json",
+    "dp": "dp : general ( greet ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from leicester sometime after 9:30."
+    ],
+    "belief": "belief : train leaveat = 09:30 ; departure = leicester",
+    "reply": "system : i can assist you with that . what day would you like to leave ?",
+    "name": "SNG0344.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from leicester sometime after 9:30.",
+      "system : i can assist you with that . what day would you like to leave ?",
+      "user : i need to be in cambridge on monday please."
+    ],
+    "belief": "belief : train leaveat = 09:30 ; destination = cambridge ; day = monday ; departure = leicester",
+    "reply": "system : very well . the earliest train is [train_id] , which leaves at [value_time] . is that alright ?",
+    "name": "SNG0344.json",
+    "dp": "dp : train ( inform ( leave = 10:09 , id = tr0032 ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from leicester sometime after 9:30.",
+      "system : i can assist you with that . what day would you like to leave ?",
+      "user : i need to be in cambridge on monday please.",
+      "system : very well . the earliest train is [train_id] , which leaves at [value_time] . is that alright ?",
+      "user : could you give me the arrival time and price on that please?"
+    ],
+    "belief": "belief : train leaveat = 09:30 ; destination = cambridge ; day = monday ; departure = leicester",
+    "reply": "system : [train_id] arrives at [value_time] and costs [value_price] pounds . may i book that for you ?",
+    "name": "SNG0344.json",
+    "dp": "dp : train ( inform ( ticket = 37.80 pounds , id = tr0032 , leave = 11:54 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from leicester sometime after 9:30.",
+      "system : i can assist you with that . what day would you like to leave ?",
+      "user : i need to be in cambridge on monday please.",
+      "system : very well . the earliest train is [train_id] , which leaves at [value_time] . is that alright ?",
+      "user : could you give me the arrival time and price on that please?",
+      "system : [train_id] arrives at [value_time] and costs [value_price] pounds . may i book that for you ?",
+      "user : yes, that would be terrific."
+    ],
+    "belief": "belief : train leaveat = 09:30 ; destination = cambridge ; day = monday ; departure = leicester | booking people = 1",
+    "reply": "system : great , i have booked your ticket , your reference number is [train_reference] . may i help you with anything else ?",
+    "name": "SNG0344.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from leicester sometime after 9:30.",
+      "system : i can assist you with that . what day would you like to leave ?",
+      "user : i need to be in cambridge on monday please.",
+      "system : very well . the earliest train is [train_id] , which leaves at [value_time] . is that alright ?",
+      "user : could you give me the arrival time and price on that please?",
+      "system : [train_id] arrives at [value_time] and costs [value_price] pounds . may i book that for you ?",
+      "user : yes, that would be terrific.",
+      "system : great , i have booked your ticket , your reference number is [train_reference] . may i help you with anything else ?",
+      "user : okay thank you for everything."
+    ],
+    "belief": "belief : train leaveat = 09:30 ; destination = cambridge ; day = monday ; departure = leicester | booking people = 1",
+    "reply": "system : you are welcome . have a nice day . goodbye .",
+    "name": "SNG0344.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train on saturday that will take me into cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; day = saturday",
+    "reply": "system : where will you depart from ?",
+    "name": "SNG0388.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train on saturday that will take me into cambridge.",
+      "system : where will you depart from ?",
+      "user : i will be departing from norwich."
+    ],
+    "belief": "belief : train destination = cambridge ; day = saturday ; departure = norwich",
+    "reply": "system : there are [value_count] trains do you have a time you would like to travel ?",
+    "name": "SNG0388.json",
+    "dp": "dp : train ( inform ( choice = 19 ) ; request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train on saturday that will take me into cambridge.",
+      "system : where will you depart from ?",
+      "user : i will be departing from norwich.",
+      "system : there are [value_count] trains do you have a time you would like to travel ?",
+      "user : yes i need to arrive by 20:00."
+    ],
+    "belief": "belief : train destination = cambridge ; day = saturday ; arriveby = 20:00 ; departure = norwich",
+    "reply": "system : i have [value_count] arriving at [value_time] . it leaves [value_place] at [value_time] . does that work ?",
+    "name": "SNG0388.json",
+    "dp": "dp : train ( inform ( depart = norwich , arrive = 19:35 , choice = one , leave = 18:16 ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train on saturday that will take me into cambridge.",
+      "system : where will you depart from ?",
+      "user : i will be departing from norwich.",
+      "system : there are [value_count] trains do you have a time you would like to travel ?",
+      "user : yes i need to arrive by 20:00.",
+      "system : i have [value_count] arriving at [value_time] . it leaves [value_place] at [value_time] . does that work ?",
+      "user : sure, they are normally on time. could you book that for 2 people please?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = saturday ; arriveby = 20:00 ; departure = norwich | booking people = 2",
+    "reply": "system : certainly . i have booked you on the [value_time] arriving at [value_time] for [value_count] people . your reference number is [train_reference] . will that be all ?",
+    "name": "SNG0388.json",
+    "dp": "dp : train ( offerbooked ( arrive = 19:35 , ref = c4o2xoza , leave = 18:16 ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train on saturday that will take me into cambridge.",
+      "system : where will you depart from ?",
+      "user : i will be departing from norwich.",
+      "system : there are [value_count] trains do you have a time you would like to travel ?",
+      "user : yes i need to arrive by 20:00.",
+      "system : i have [value_count] arriving at [value_time] . it leaves [value_place] at [value_time] . does that work ?",
+      "user : sure, they are normally on time. could you book that for 2 people please?",
+      "system : certainly . i have booked you on the [value_time] arriving at [value_time] for [value_count] people . your reference number is [train_reference] . will that be all ?",
+      "user : yes, thanks for your help!"
+    ],
+    "belief": "belief : train destination = cambridge ; day = saturday ; arriveby = 20:00 ; departure = norwich | booking people = 2",
+    "reply": "system : it was my pleasure to help . have a wonderful day .",
+    "name": "SNG0388.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from stansted airport to cambridge, please."
+    ],
+    "belief": "belief : train destination = cambridge ; departure = stansted airport",
+    "reply": "system : there are [value_count] trains that make that trip , do you have a day and time ?",
+    "name": "SNG0363.json",
+    "dp": "dp : train ( inform ( choice = 133 ) ; request ( leave , day ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from stansted airport to cambridge, please.",
+      "system : there are [value_count] trains that make that trip , do you have a day and time ?",
+      "user : yes. i need to leave on sunday and arrive by 17:15."
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 17:15 ; departure = stansted airport",
+    "reply": "system : i have train [train_id] that leaves the airport at [value_time] and will get you there by [value_time] . would you like me to book you a ticket ?",
+    "name": "SNG0363.json",
+    "dp": "dp : train ( inform ( arrive = 16:52 , leave = 16:24 , depart = airport  , id = tr7744  ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from stansted airport to cambridge, please.",
+      "system : there are [value_count] trains that make that trip , do you have a day and time ?",
+      "user : yes. i need to leave on sunday and arrive by 17:15.",
+      "system : i have train [train_id] that leaves the airport at [value_time] and will get you there by [value_time] . would you like me to book you a ticket ?",
+      "user : how much is the ticket?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 17:15 ; departure = stansted airport",
+    "reply": "system : the tickets are [value_price] pounds per ticket . would you like to book the train ?",
+    "name": "SNG0363.json",
+    "dp": "dp : train ( inform ( ticket = 8.08 pounds ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from stansted airport to cambridge, please.",
+      "system : there are [value_count] trains that make that trip , do you have a day and time ?",
+      "user : yes. i need to leave on sunday and arrive by 17:15.",
+      "system : i have train [train_id] that leaves the airport at [value_time] and will get you there by [value_time] . would you like me to book you a ticket ?",
+      "user : how much is the ticket?",
+      "system : the tickets are [value_price] pounds per ticket . would you like to book the train ?",
+      "user : not at the moment. thank you."
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 17:15 ; departure = stansted airport",
+    "reply": "system : can i help you with anything else ?",
+    "name": "SNG0363.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train from stansted airport to cambridge, please.",
+      "system : there are [value_count] trains that make that trip , do you have a day and time ?",
+      "user : yes. i need to leave on sunday and arrive by 17:15.",
+      "system : i have train [train_id] that leaves the airport at [value_time] and will get you there by [value_time] . would you like me to book you a ticket ?",
+      "user : how much is the ticket?",
+      "system : the tickets are [value_price] pounds per ticket . would you like to book the train ?",
+      "user : not at the moment. thank you.",
+      "system : can i help you with anything else ?",
+      "user : no, that's all i need right now. thank you!"
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 17:15 ; departure = stansted airport",
+    "reply": "system : you are welcome . have a wonderful day .",
+    "name": "SNG0363.json",
+    "dp": "dp : general ( welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am in need of a train that can arrive by 12:45 an leave on saturday."
+    ],
+    "belief": "belief : train day = saturday ; arriveby = 12:45",
+    "reply": "system : there are [value_count] trains that match your requirement -s . what is your destination , and from where are you traveling ?",
+    "name": "SNG0403.json",
+    "dp": "dp : train ( inform ( choice = 150 ) ; request ( depart , dest ) )"
+  },
+  {
+    "history": [
+      "user : i am in need of a train that can arrive by 12:45 an leave on saturday.",
+      "system : there are [value_count] trains that match your requirement -s . what is your destination , and from where are you traveling ?",
+      "user : i want to get to norwich please."
+    ],
+    "belief": "belief : train day = saturday ; arriveby = 12:45",
+    "reply": "system : there is a train that arrives at [value_place] at [value_time] . would you like to book that ?",
+    "name": "SNG0403.json",
+    "dp": "dp : train ( inform ( arrive = 10:55 , dest = norwich ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am in need of a train that can arrive by 12:45 an leave on saturday.",
+      "system : there are [value_count] trains that match your requirement -s . what is your destination , and from where are you traveling ?",
+      "user : i want to get to norwich please.",
+      "system : there is a train that arrives at [value_place] at [value_time] . would you like to book that ?",
+      "user : does it depart from cambridge?"
+    ],
+    "belief": "belief : train day = saturday ; arriveby = 12:45",
+    "reply": "system : yes , the train goes from [value_place] to [value_place] on [value_day] . it departs at [value_time] and arrives at [value_time] . there is also a train that arrives at [value_time] on the same route .",
+    "name": "SNG0403.json",
+    "dp": "dp : train ( inform ( day = saturday , dest = norwich , depart = cambridge , arrive = 10:55 , arrive =  11:55 , leave = 9:36 ) )"
+  },
+  {
+    "history": [
+      "user : i am in need of a train that can arrive by 12:45 an leave on saturday.",
+      "system : there are [value_count] trains that match your requirement -s . what is your destination , and from where are you traveling ?",
+      "user : i want to get to norwich please.",
+      "system : there is a train that arrives at [value_place] at [value_time] . would you like to book that ?",
+      "user : does it depart from cambridge?",
+      "system : yes , the train goes from [value_place] to [value_place] on [value_day] . it departs at [value_time] and arrives at [value_time] . there is also a train that arrives at [value_time] on the same route .",
+      "user : let me get the train id and price for the one arriving at 11:55."
+    ],
+    "belief": "belief : train destination = norwich ; day = saturday ; departure = cambridge",
+    "reply": "system : the train id is [train_id] and the cost is [value_price] pounds . can i book that for you ?",
+    "name": "SNG0403.json",
+    "dp": "dp : train ( inform ( id = tr9588 , ticket = 14.08 pounds ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am in need of a train that can arrive by 12:45 an leave on saturday.",
+      "system : there are [value_count] trains that match your requirement -s . what is your destination , and from where are you traveling ?",
+      "user : i want to get to norwich please.",
+      "system : there is a train that arrives at [value_place] at [value_time] . would you like to book that ?",
+      "user : does it depart from cambridge?",
+      "system : yes , the train goes from [value_place] to [value_place] on [value_day] . it departs at [value_time] and arrives at [value_time] . there is also a train that arrives at [value_time] on the same route .",
+      "user : let me get the train id and price for the one arriving at 11:55.",
+      "system : the train id is [train_id] and the cost is [value_price] pounds . can i book that for you ?",
+      "user : no, but i have all the information i need. thanks."
+    ],
+    "belief": "belief : train destination = norwich ; day = saturday ; departure = cambridge",
+    "reply": "system : you are quite welcome !",
+    "name": "SNG0403.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge",
+    "reply": "system : when will you be travelling ?",
+    "name": "SNG02026.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : when will you be travelling ?",
+      "user : i'll be leaving friday after 20:45."
+    ],
+    "belief": "belief : train leaveat = 20:45 ; destination = cambridge ; day = friday",
+    "reply": "system : i have several options for you depending on your departure site . where will you be leaving from ?",
+    "name": "SNG02026.json",
+    "dp": "dp : train ( inform ( choice = several ) ; request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : when will you be travelling ?",
+      "user : i'll be leaving friday after 20:45.",
+      "system : i have several options for you depending on your departure site . where will you be leaving from ?",
+      "user : i need to depart from cabridge and go to bishops stortford."
+    ],
+    "belief": "belief : train leaveat = 20:45 ; destination = cambridge ; day = friday",
+    "reply": "system : there are few options to choose from . how many people are traveling ?",
+    "name": "SNG02026.json",
+    "dp": "dp : train ( inform ( choice = few ) ; request ( people ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : when will you be travelling ?",
+      "user : i'll be leaving friday after 20:45.",
+      "system : i have several options for you depending on your departure site . where will you be leaving from ?",
+      "user : i need to depart from cabridge and go to bishops stortford.",
+      "system : there are few options to choose from . how many people are traveling ?",
+      "user : i will have 2 people traveling."
+    ],
+    "belief": "belief : train leaveat = 20:45 ; destination = bishops stortford ; day = friday ; departure = cambridge",
+    "reply": "system : okay , would you like me to book [train_id] ?",
+    "name": "SNG02026.json",
+    "dp": "dp : train ( offerbook ( id = tr4664 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : when will you be travelling ?",
+      "user : i'll be leaving friday after 20:45.",
+      "system : i have several options for you depending on your departure site . where will you be leaving from ?",
+      "user : i need to depart from cabridge and go to bishops stortford.",
+      "system : there are few options to choose from . how many people are traveling ?",
+      "user : i will have 2 people traveling.",
+      "system : okay , would you like me to book [train_id] ?",
+      "user : yes, please. i need the reference number."
+    ],
+    "belief": "belief : train leaveat = 20:45 ; destination = bishops stortford ; day = friday ; departure = cambridge | booking people = 2",
+    "reply": "system : the reference number is [train_reference] . can i help you with anything else ?",
+    "name": "SNG02026.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train to cambridge.",
+      "system : when will you be travelling ?",
+      "user : i'll be leaving friday after 20:45.",
+      "system : i have several options for you depending on your departure site . where will you be leaving from ?",
+      "user : i need to depart from cabridge and go to bishops stortford.",
+      "system : there are few options to choose from . how many people are traveling ?",
+      "user : i will have 2 people traveling.",
+      "system : okay , would you like me to book [train_id] ?",
+      "user : yes, please. i need the reference number.",
+      "system : the reference number is [train_reference] . can i help you with anything else ?",
+      "user : no thank you that is all i needed."
+    ],
+    "belief": "belief : train leaveat = 20:45 ; destination = bishops stortford ; day = friday ; departure = cambridge | booking people = 2",
+    "reply": "system : thank you have a nice day .",
+    "name": "SNG02026.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train from leicester to cambridge.  can you help me with this?"
+    ],
+    "belief": "belief : train destination = cambridge ; departure = leicester",
+    "reply": "system : there are [value_count] trains making that trip , do you have a day and time you would like to travel ?",
+    "name": "SNG0372.json",
+    "dp": "dp : train ( inform ( choice = 133 ) ; request ( leave , day ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train from leicester to cambridge.  can you help me with this?",
+      "system : there are [value_count] trains making that trip , do you have a day and time you would like to travel ?",
+      "user : i would like to leave sunday after 15:30.  are there still any available>"
+    ],
+    "belief": "belief : train leaveat = 15:30 ; destination = cambridge ; day = sunday ; departure = leicester",
+    "reply": "system : [train_id] departs [value_place] at [value_time] , would that work for you ?",
+    "name": "SNG0372.json",
+    "dp": "dp : train ( inform ( leave = 16:09 , depart = leicester , id = tr1784 ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train from leicester to cambridge.  can you help me with this?",
+      "system : there are [value_count] trains making that trip , do you have a day and time you would like to travel ?",
+      "user : i would like to leave sunday after 15:30.  are there still any available>",
+      "system : [train_id] departs [value_place] at [value_time] , would that work for you ?",
+      "user : yes. please make a booking for 1 and be sure to give me a reference number."
+    ],
+    "belief": "belief : train leaveat = 15:30 ; destination = cambridge ; day = sunday ; departure = leicester | booking people = 1",
+    "reply": "system : you are all set for train [train_id] . it will cost [value_price] gbp , payable at the station . the reference number is [train_reference] . can i help you further ?",
+    "name": "SNG0372.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train from leicester to cambridge.  can you help me with this?",
+      "system : there are [value_count] trains making that trip , do you have a day and time you would like to travel ?",
+      "user : i would like to leave sunday after 15:30.  are there still any available>",
+      "system : [train_id] departs [value_place] at [value_time] , would that work for you ?",
+      "user : yes. please make a booking for 1 and be sure to give me a reference number.",
+      "system : you are all set for train [train_id] . it will cost [value_price] gbp , payable at the station . the reference number is [train_reference] . can i help you further ?",
+      "user : great. that is all i need. thank you for your help."
+    ],
+    "belief": "belief : train leaveat = 15:30 ; destination = cambridge ; day = sunday ; departure = leicester | booking people = 1",
+    "reply": "system : you are welcome , enjoy your trip .",
+    "name": "SNG0372.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to book a train from leicester to cambridge.  can you help me with this?",
+      "system : there are [value_count] trains making that trip , do you have a day and time you would like to travel ?",
+      "user : i would like to leave sunday after 15:30.  are there still any available>",
+      "system : [train_id] departs [value_place] at [value_time] , would that work for you ?",
+      "user : yes. please make a booking for 1 and be sure to give me a reference number.",
+      "system : you are all set for train [train_id] . it will cost [value_price] gbp , payable at the station . the reference number is [train_reference] . can i help you further ?",
+      "user : great. that is all i need. thank you for your help.",
+      "system : you are welcome , enjoy your trip .",
+      "user : thank you so much!"
+    ],
+    "belief": "belief : train leaveat = 15:30 ; destination = cambridge ; day = sunday ; departure = leicester | booking people = 1",
+    "reply": "system : you are very welcome . thank you so much for using our service .",
+    "name": "SNG0372.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train to birmingham new street that arrives by 8:00."
+    ],
+    "belief": "belief : train destination = birmingham new street ; arriveby = 08:00",
+    "reply": "system : where are you departing from ?",
+    "name": "SNG0359.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i need a train to birmingham new street that arrives by 8:00.",
+      "system : where are you departing from ?",
+      "user : i am leaving from cambridge on tuesday"
+    ],
+    "belief": "belief : train destination = birmingham new street ; day = tuesday ; arriveby = 08:00 ; departure = cambridge",
+    "reply": "system : okay , i have got a training leaving at [value_time] and arriving by [value_time] , will that be good ?",
+    "name": "SNG0359.json",
+    "dp": "dp : train ( inform ( arrive =  07:44 , leave = 5:01 ) )"
+  },
+  {
+    "history": [
+      "user : i need a train to birmingham new street that arrives by 8:00.",
+      "system : where are you departing from ?",
+      "user : i am leaving from cambridge on tuesday",
+      "system : okay , i have got a training leaving at [value_time] and arriving by [value_time] , will that be good ?",
+      "user : perfect. i'd like 8 tickets please."
+    ],
+    "belief": "belief : train destination = birmingham new street ; day = tuesday ; arriveby = 08:00 ; departure = cambridge | booking people = 8",
+    "reply": "system : okay i have booked you [value_count] tickets on this train . your reference number is [train_reference] . is there anything else ?",
+    "name": "SNG0359.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need a train to birmingham new street that arrives by 8:00.",
+      "system : where are you departing from ?",
+      "user : i am leaving from cambridge on tuesday",
+      "system : okay , i have got a training leaving at [value_time] and arriving by [value_time] , will that be good ?",
+      "user : perfect. i'd like 8 tickets please.",
+      "system : okay i have booked you [value_count] tickets on this train . your reference number is [train_reference] . is there anything else ?",
+      "user : okay. thank you for your help. that is all i believe."
+    ],
+    "belief": "belief : train destination = birmingham new street ; day = tuesday ; arriveby = 08:00 ; departure = cambridge | booking people = 8",
+    "reply": "system : sure . glad to have helped .",
+    "name": "SNG0359.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train from cambridge"
+    ],
+    "belief": "belief : train departure = cambridge",
+    "reply": "system : certainly , where is your destination ?",
+    "name": "SNG0399.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train from cambridge",
+      "system : certainly , where is your destination ?",
+      "user : my destination is norwich."
+    ],
+    "belief": "belief : train destination = norwich ; departure = cambridge",
+    "reply": "system : there are [value_count] trains do you have a day and time you would like to travel ?",
+    "name": "SNG0399.json",
+    "dp": "dp : train ( inform ( choice = 133 ) ; request ( leave , day ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train from cambridge",
+      "system : certainly , where is your destination ?",
+      "user : my destination is norwich.",
+      "system : there are [value_count] trains do you have a day and time you would like to travel ?",
+      "user : i need to leave saturday after 17:00."
+    ],
+    "belief": "belief : train leaveat = 17:00 ; destination = norwich ; day = saturday ; departure = cambridge",
+    "reply": "system : i have [value_count] leaving [value_place] at [value_time] and arriving in [value_place] at [value_time] . would you like to book it ?",
+    "name": "SNG0399.json",
+    "dp": "dp : train ( inform ( dest = norwich  , arrive = 18:55 , leave = 17:36 , depart = cambridge  ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train from cambridge",
+      "system : certainly , where is your destination ?",
+      "user : my destination is norwich.",
+      "system : there are [value_count] trains do you have a day and time you would like to travel ?",
+      "user : i need to leave saturday after 17:00.",
+      "system : i have [value_count] leaving [value_place] at [value_time] and arriving in [value_place] at [value_time] . would you like to book it ?",
+      "user : what is the train id and price?"
+    ],
+    "belief": "belief : train leaveat = 17:00 ; destination = norwich ; day = saturday ; departure = cambridge",
+    "reply": "system : the train id is [train_id] and the cost of the journey will be [value_price] pounds .",
+    "name": "SNG0399.json",
+    "dp": "dp : train ( offerbooked ( id = tr4018  , ticket = 14.08 pounds ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train from cambridge",
+      "system : certainly , where is your destination ?",
+      "user : my destination is norwich.",
+      "system : there are [value_count] trains do you have a day and time you would like to travel ?",
+      "user : i need to leave saturday after 17:00.",
+      "system : i have [value_count] leaving [value_place] at [value_time] and arriving in [value_place] at [value_time] . would you like to book it ?",
+      "user : what is the train id and price?",
+      "system : the train id is [train_id] and the cost of the journey will be [value_price] pounds .",
+      "user : that's everything i needed to know thanks."
+    ],
+    "belief": "belief : train leaveat = 17:00 ; destination = norwich ; day = saturday ; departure = cambridge",
+    "reply": "system : you are welcome . have a great day !",
+    "name": "SNG0399.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hello! i'm looking for a train leaving on thursday departing from bishops stortford."
+    ],
+    "belief": "belief : train day = thursday ; departure = bishops stortford",
+    "reply": "system : ok , and what time are you traveling ?",
+    "name": "SNG0430.json",
+    "dp": "dp : train ( request ( arrive , leave ) )"
+  },
+  {
+    "history": [
+      "user : hello! i'm looking for a train leaving on thursday departing from bishops stortford.",
+      "system : ok , and what time are you traveling ?",
+      "user : i'd like to leave after 21:30."
+    ],
+    "belief": "belief : train leaveat = 21:30 ; day = thursday ; departure = bishops stortford",
+    "reply": "system : train [train_id] leaves bishops strotford for [value_place] on [value_day] at [value_time] . will this suit your needs ?",
+    "name": "SNG0430.json",
+    "dp": "dp : train ( inform ( day = thursday , leave = 23:39 , depart = bishops strotford , dest = cambridge , id = tr3000 ) )"
+  },
+  {
+    "history": [
+      "user : hello! i'm looking for a train leaving on thursday departing from bishops stortford.",
+      "system : ok , and what time are you traveling ?",
+      "user : i'd like to leave after 21:30.",
+      "system : train [train_id] leaves bishops strotford for [value_place] on [value_day] at [value_time] . will this suit your needs ?",
+      "user : that would work for me can i get tickets for 3 people?"
+    ],
+    "belief": "belief : train leaveat = 21:30 ; day = thursday ; departure = bishops stortford | booking people = 3",
+    "reply": "system : great ! i have booked [train_id] for [value_count] people at [value_time] . your reference number is [train_reference] . may i help with anything else ?",
+    "name": "SNG0430.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hello! i'm looking for a train leaving on thursday departing from bishops stortford.",
+      "system : ok , and what time are you traveling ?",
+      "user : i'd like to leave after 21:30.",
+      "system : train [train_id] leaves bishops strotford for [value_place] on [value_day] at [value_time] . will this suit your needs ?",
+      "user : that would work for me can i get tickets for 3 people?",
+      "system : great ! i have booked [train_id] for [value_count] people at [value_time] . your reference number is [train_reference] . may i help with anything else ?",
+      "user : no, that is all i really needed. thanks. have a great day!"
+    ],
+    "belief": "belief : train leaveat = 21:30 ; day = thursday ; departure = bishops stortford | booking people = 3",
+    "reply": "system : glad i could help !",
+    "name": "SNG0430.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross."
+    ],
+    "belief": "belief : train departure = london kings cross",
+    "reply": "system : i have [value_count] trains departing from that location , do you have any more information to narrow it down some ?",
+    "name": "SNG0341.json",
+    "dp": "dp : train ( inform ( choice = 70 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross.",
+      "system : i have [value_count] trains departing from that location , do you have any more information to narrow it down some ?",
+      "user : yes, i'd like to go to cambridge on tuesday, sometime after 13:15."
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = tuesday ; departure = london kings cross",
+    "reply": "system : train [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . would you like to book this train ?",
+    "name": "SNG0341.json",
+    "dp": "dp : train ( inform ( arrive = 14:08 , leave = 13:17 , depart = london kings cross , dest = cambridge , id = tr3456 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross.",
+      "system : i have [value_count] trains departing from that location , do you have any more information to narrow it down some ?",
+      "user : yes, i'd like to go to cambridge on tuesday, sometime after 13:15.",
+      "system : train [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . would you like to book this train ?",
+      "user : i think that will work. what is the ticket price and travel time for that train?"
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = tuesday ; departure = london kings cross",
+    "reply": "system : the ticket price is [value_price] pounds . travel time on this route is [value_count] minutes . would you like me to arrange a booking on this train ?",
+    "name": "SNG0341.json",
+    "dp": "dp : train ( inform ( ticket = 23.60 pounds , time = 51 minutes ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross.",
+      "system : i have [value_count] trains departing from that location , do you have any more information to narrow it down some ?",
+      "user : yes, i'd like to go to cambridge on tuesday, sometime after 13:15.",
+      "system : train [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . would you like to book this train ?",
+      "user : i think that will work. what is the ticket price and travel time for that train?",
+      "system : the ticket price is [value_price] pounds . travel time on this route is [value_count] minutes . would you like me to arrange a booking on this train ?",
+      "user : yes, that sounds good."
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = tuesday ; departure = london kings cross | booking people = 1",
+    "reply": "system : great , i have booked your ticket . your reference number is [train_reference] .",
+    "name": "SNG0341.json",
+    "dp": "dp : train ( offerbooked ( ref = 3tf3uigp ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross.",
+      "system : i have [value_count] trains departing from that location , do you have any more information to narrow it down some ?",
+      "user : yes, i'd like to go to cambridge on tuesday, sometime after 13:15.",
+      "system : train [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . would you like to book this train ?",
+      "user : i think that will work. what is the ticket price and travel time for that train?",
+      "system : the ticket price is [value_price] pounds . travel time on this route is [value_count] minutes . would you like me to arrange a booking on this train ?",
+      "user : yes, that sounds good.",
+      "system : great , i have booked your ticket . your reference number is [train_reference] .",
+      "user : okay thank you for all your help."
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = tuesday ; departure = london kings cross | booking people = 1",
+    "reply": "system : you are quite welcome . is there anything else i can assist you with today ?",
+    "name": "SNG0341.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross.",
+      "system : i have [value_count] trains departing from that location , do you have any more information to narrow it down some ?",
+      "user : yes, i'd like to go to cambridge on tuesday, sometime after 13:15.",
+      "system : train [train_id] leaves [value_place] at [value_time] and arrives in [value_place] at [value_time] . would you like to book this train ?",
+      "user : i think that will work. what is the ticket price and travel time for that train?",
+      "system : the ticket price is [value_price] pounds . travel time on this route is [value_count] minutes . would you like me to arrange a booking on this train ?",
+      "user : yes, that sounds good.",
+      "system : great , i have booked your ticket . your reference number is [train_reference] .",
+      "user : okay thank you for all your help.",
+      "system : you are quite welcome . is there anything else i can assist you with today ?",
+      "user : no, that's all i need today. i appreciate your help."
+    ],
+    "belief": "belief : train leaveat = 13:15 ; destination = cambridge ; day = tuesday ; departure = london kings cross | booking people = 1",
+    "reply": "system : have a wonderful day !",
+    "name": "SNG0341.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want a train from london liverpool street arriving at 9:30"
+    ],
+    "belief": "belief : train arriveby = 09:30 ; departure = london liverpool street",
+    "reply": "system : which day will you be traveling ?",
+    "name": "SNG0284.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i want a train from london liverpool street arriving at 9:30",
+      "system : which day will you be traveling ?",
+      "user : i want to leave on thursday."
+    ],
+    "belief": "belief : train arriveby = 09:30 ; departure = london liverpool street | booking people = 2",
+    "reply": "system : ok , i should be able to do that for you .",
+    "name": "SNG0284.json",
+    "dp": "dp : n"
+  },
+  {
+    "history": [
+      "user : i want a train from london liverpool street arriving at 9:30",
+      "system : which day will you be traveling ?",
+      "user : i want to leave on thursday.",
+      "system : ok , i should be able to do that for you .",
+      "user : i want to go to cambridge, how much will that cost?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:30 ; departure = london liverpool street | booking people = 2",
+    "reply": "system : there are [value_count] trains that will fit your needs , and the tickets are [value_price] pounds each . would you like me to purchase tickets for you ?",
+    "name": "SNG0284.json",
+    "dp": "dp : train ( inform ( ticket = 16.60 pounds , choice = three ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want a train from london liverpool street arriving at 9:30",
+      "system : which day will you be traveling ?",
+      "user : i want to leave on thursday.",
+      "system : ok , i should be able to do that for you .",
+      "user : i want to go to cambridge, how much will that cost?",
+      "system : there are [value_count] trains that will fit your needs , and the tickets are [value_price] pounds each . would you like me to purchase tickets for you ?",
+      "user : yes, that sounds good. thank you."
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:30 ; departure = london liverpool street | booking people = 2",
+    "reply": "system : would you like me to book that for you ?",
+    "name": "SNG0284.json",
+    "dp": "dp : train ( offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want a train from london liverpool street arriving at 9:30",
+      "system : which day will you be traveling ?",
+      "user : i want to leave on thursday.",
+      "system : ok , i should be able to do that for you .",
+      "user : i want to go to cambridge, how much will that cost?",
+      "system : there are [value_count] trains that will fit your needs , and the tickets are [value_price] pounds each . would you like me to purchase tickets for you ?",
+      "user : yes, that sounds good. thank you.",
+      "system : would you like me to book that for you ?",
+      "user : can you tell me how much the ticket is?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:30 ; departure = london liverpool street | booking people = 2",
+    "reply": "system : yes , there are [value_count] that cost [value_price] pounds . you could leave at [value_time] if you would like . can i book that for you ?",
+    "name": "SNG0284.json",
+    "dp": "dp : train ( inform ( choice = 3 , leave = 5:39 , ticket = 16.60 pounds ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want a train from london liverpool street arriving at 9:30",
+      "system : which day will you be traveling ?",
+      "user : i want to leave on thursday.",
+      "system : ok , i should be able to do that for you .",
+      "user : i want to go to cambridge, how much will that cost?",
+      "system : there are [value_count] trains that will fit your needs , and the tickets are [value_price] pounds each . would you like me to purchase tickets for you ?",
+      "user : yes, that sounds good. thank you.",
+      "system : would you like me to book that for you ?",
+      "user : can you tell me how much the ticket is?",
+      "system : yes , there are [value_count] that cost [value_price] pounds . you could leave at [value_time] if you would like . can i book that for you ?",
+      "user : no, thanks. no need. i will do that later. thank you for all the info. have a nice day."
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:30 ; departure = london liverpool street | booking people = 2",
+    "reply": "system : it s my pleasure . goodbye !",
+    "name": "SNG0284.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want to book an evening train from bishops strotford to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; departure = bishops stortford",
+    "reply": "system : certainly , there are lots of trains available . which day would you like to travel ?",
+    "name": "SNG0384.json",
+    "dp": "dp : train ( inform ( choice = lots ) ; request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i want to book an evening train from bishops strotford to cambridge.",
+      "system : certainly , there are lots of trains available . which day would you like to travel ?",
+      "user : sunday please. i'd like to leave after 16:30."
+    ],
+    "belief": "belief : train leaveat = 16:30 ; destination = cambridge ; day = sunday ; departure = bishops stortford",
+    "reply": "system : train [train_id] leaves at bishops strotford at [value_time] and arrives in [value_place] at [value_time] . would you like to book this trip ?",
+    "name": "SNG0384.json",
+    "dp": "dp : train ( inform ( arrive = 18:07 , leave = 17:29 , depart = bishops strotford , dest = cambridge , id = tr5298 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want to book an evening train from bishops strotford to cambridge.",
+      "system : certainly , there are lots of trains available . which day would you like to travel ?",
+      "user : sunday please. i'd like to leave after 16:30.",
+      "system : train [train_id] leaves at bishops strotford at [value_time] and arrives in [value_place] at [value_time] . would you like to book this trip ?",
+      "user : yes, let's book it for four, please. may i have a reference number?"
+    ],
+    "belief": "belief : train leaveat = 16:30 ; destination = cambridge ; day = sunday ; departure = bishops stortford | booking people = 4",
+    "reply": "system : alright , i have got [value_count] tickets booked leaving at [value_time] . your reference number is [train_reference] .",
+    "name": "SNG0384.json",
+    "dp": "dp : booking ( book ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i want to book an evening train from bishops strotford to cambridge.",
+      "system : certainly , there are lots of trains available . which day would you like to travel ?",
+      "user : sunday please. i'd like to leave after 16:30.",
+      "system : train [train_id] leaves at bishops strotford at [value_time] and arrives in [value_place] at [value_time] . would you like to book this trip ?",
+      "user : yes, let's book it for four, please. may i have a reference number?",
+      "system : alright , i have got [value_count] tickets booked leaving at [value_time] . your reference number is [train_reference] .",
+      "user : thank you. that is all i need today."
+    ],
+    "belief": "belief : train leaveat = 16:30 ; destination = cambridge ; day = sunday ; departure = bishops stortford | booking people = 4",
+    "reply": "system : okay . glad i could help you today . enjoy your journey .",
+    "name": "SNG0384.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking to leave for bishops stortford after 15:15 by train."
+    ],
+    "belief": "belief : train leaveat = 05:15 ; destination = bishops stortford",
+    "reply": "system : certainly . where are you departing from ?",
+    "name": "SNG0362.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i am looking to leave for bishops stortford after 15:15 by train.",
+      "system : certainly . where are you departing from ?",
+      "user : i'll be leaving from cambridge."
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = bishops stortford ; departure = cambridge",
+    "reply": "system : i have several trains , when would you like to arrive by ?",
+    "name": "SNG0362.json",
+    "dp": "dp : train ( inform ( choice = several ) ; request ( arrive ) )"
+  },
+  {
+    "history": [
+      "user : i am looking to leave for bishops stortford after 15:15 by train.",
+      "system : certainly . where are you departing from ?",
+      "user : i'll be leaving from cambridge.",
+      "system : i have several trains , when would you like to arrive by ?",
+      "user : the arrival time does not matter, but it should leave on sunday after 15:15."
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = bishops stortford ; day = sunday ; departure = cambridge | booking people = 1",
+    "reply": "system : booking was successful , the total fee is [value_price] gbp payable at the station . reference number is [train_reference] . is there anything else i can help with ?",
+    "name": "SNG0362.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking to leave for bishops stortford after 15:15 by train.",
+      "system : certainly . where are you departing from ?",
+      "user : i'll be leaving from cambridge.",
+      "system : i have several trains , when would you like to arrive by ?",
+      "user : the arrival time does not matter, but it should leave on sunday after 15:15.",
+      "system : booking was successful , the total fee is [value_price] gbp payable at the station . reference number is [train_reference] . is there anything else i can help with ?",
+      "user : were you able to book it for 4 people?"
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = bishops stortford ; day = sunday ; departure = cambridge | booking people = 4",
+    "reply": "system : i was able to book [value_count] tickets . the total fee will be [value_price] pounds , payable at the station . the reference number is [train_reference] . can i help you with anything else ?",
+    "name": "SNG0362.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking to leave for bishops stortford after 15:15 by train.",
+      "system : certainly . where are you departing from ?",
+      "user : i'll be leaving from cambridge.",
+      "system : i have several trains , when would you like to arrive by ?",
+      "user : the arrival time does not matter, but it should leave on sunday after 15:15.",
+      "system : booking was successful , the total fee is [value_price] gbp payable at the station . reference number is [train_reference] . is there anything else i can help with ?",
+      "user : were you able to book it for 4 people?",
+      "system : i was able to book [value_count] tickets . the total fee will be [value_price] pounds , payable at the station . the reference number is [train_reference] . can i help you with anything else ?",
+      "user : okay no that is all today."
+    ],
+    "belief": "belief : train leaveat = 15:15 ; destination = bishops stortford ; day = sunday ; departure = cambridge | booking people = 4",
+    "reply": "system : thank you for using our system !",
+    "name": "SNG0362.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i was wondering if you could help me in finding a train to the airport."
+    ],
+    "belief": "belief : train destination = stansted airport",
+    "reply": "system : sure . where will you be leaving from ?",
+    "name": "SNG0365.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i was wondering if you could help me in finding a train to the airport.",
+      "system : sure . where will you be leaving from ?",
+      "user : i will need to leave from cambridge if that's ok"
+    ],
+    "belief": "belief : train destination = stansted airport ; departure = cambridge",
+    "reply": "system : what day are you travelling ?",
+    "name": "SNG0365.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i was wondering if you could help me in finding a train to the airport.",
+      "system : sure . where will you be leaving from ?",
+      "user : i will need to leave from cambridge if that's ok",
+      "system : what day are you travelling ?",
+      "user : on wednesday. i need the train to arrive by 19:15."
+    ],
+    "belief": "belief : train destination = stansted airport ; day = wednesday ; departure = cambridge",
+    "reply": "system : i have a train that arrives earlier at [value_time] and [value_count] that arrives just before your specified time at [value_time] .",
+    "name": "SNG0365.json",
+    "dp": "dp : train ( inform ( arrive = 18:08 , arrive =  19:08 ) )"
+  },
+  {
+    "history": [
+      "user : i was wondering if you could help me in finding a train to the airport.",
+      "system : sure . where will you be leaving from ?",
+      "user : i will need to leave from cambridge if that's ok",
+      "system : what day are you travelling ?",
+      "user : on wednesday. i need the train to arrive by 19:15.",
+      "system : i have a train that arrives earlier at [value_time] and [value_count] that arrives just before your specified time at [value_time] .",
+      "user : i'd like to book 3 tickets on the train arriving at 19:08, please. and would it be possible to have a reference number for the booking?"
+    ],
+    "belief": "belief : train destination = stansted airport ; day = wednesday ; departure = cambridge | booking people = 3",
+    "reply": "system : ok , you have [value_count] tickets reserved on [train_id] , departing [value_place] at [value_time] , arriving stansted at [value_time] . total fee is [value_price] gbp . reference [train_reference] . will that be all today ?",
+    "name": "SNG0365.json",
+    "dp": "dp : n"
+  },
+  {
+    "history": [
+      "user : i was wondering if you could help me in finding a train to the airport.",
+      "system : sure . where will you be leaving from ?",
+      "user : i will need to leave from cambridge if that's ok",
+      "system : what day are you travelling ?",
+      "user : on wednesday. i need the train to arrive by 19:15.",
+      "system : i have a train that arrives earlier at [value_time] and [value_count] that arrives just before your specified time at [value_time] .",
+      "user : i'd like to book 3 tickets on the train arriving at 19:08, please. and would it be possible to have a reference number for the booking?",
+      "system : ok , you have [value_count] tickets reserved on [train_id] , departing [value_place] at [value_time] , arriving stansted at [value_time] . total fee is [value_price] gbp . reference [train_reference] . will that be all today ?",
+      "user : yes, it will. thanks so much. have a nice day."
+    ],
+    "belief": "belief : train destination = stansted airport ; day = wednesday ; departure = cambridge | booking people = 3",
+    "reply": "system : you are very welcome . enjoy your day too . bye .",
+    "name": "SNG0365.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street."
+    ],
+    "belief": "belief : train destination = london liverpool street",
+    "reply": "system : i would love to help ! where s your destination ?",
+    "name": "SNG02053.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street.",
+      "system : i would love to help ! where s your destination ?",
+      "user : i would like to go to london liverpool street."
+    ],
+    "belief": "belief : train destination = london liverpool street",
+    "reply": "system : i would love to help ! where are you departing from ?",
+    "name": "SNG02053.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street.",
+      "system : i would love to help ! where s your destination ?",
+      "user : i would like to go to london liverpool street.",
+      "system : i would love to help ! where are you departing from ?",
+      "user : i am departing from cambridge."
+    ],
+    "belief": "belief : train destination = london liverpool street ; departure = cambridge",
+    "reply": "system : how about [train_id] that leaves at [value_time] ?",
+    "name": "SNG02053.json",
+    "dp": "dp : train ( offerbook ( leave = 05:59 , ticket = tr5154 ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street.",
+      "system : i would love to help ! where s your destination ?",
+      "user : i would like to go to london liverpool street.",
+      "system : i would love to help ! where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : help me  get price and train id"
+    ],
+    "belief": "belief : train leaveat = 05:59 ; destination = london liverpool street ; departure = cambridge",
+    "reply": "system : the price is [value_price] pounds . train id is [train_id] . would you like to make a reservation for this train ?",
+    "name": "SNG02053.json",
+    "dp": "dp : train ( inform ( id = tr5154 , ticket = 16.60 pounds ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street.",
+      "system : i would love to help ! where s your destination ?",
+      "user : i would like to go to london liverpool street.",
+      "system : i would love to help ! where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : help me  get price and train id",
+      "system : the price is [value_price] pounds . train id is [train_id] . would you like to make a reservation for this train ?",
+      "user : not today, thank you. does the train arrive by 09:15?"
+    ],
+    "belief": "belief : train leaveat = 05:59 ; destination = london liverpool street ; departure = cambridge",
+    "reply": "system : no , it arrives at [value_time] .",
+    "name": "SNG02053.json",
+    "dp": "dp : train ( inform ( arrive = 7:27 ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street.",
+      "system : i would love to help ! where s your destination ?",
+      "user : i would like to go to london liverpool street.",
+      "system : i would love to help ! where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : help me  get price and train id",
+      "system : the price is [value_price] pounds . train id is [train_id] . would you like to make a reservation for this train ?",
+      "user : not today, thank you. does the train arrive by 09:15?",
+      "system : no , it arrives at [value_time] .",
+      "user : can you go ahead and book it and get me a price please?"
+    ],
+    "belief": "belief : train destination = london liverpool street ; departure = cambridge",
+    "reply": "system : before booking , could you please confirm either the time you would like to depart or arrive ?",
+    "name": "SNG02053.json",
+    "dp": "dp : train ( request ( leave , arrive ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street.",
+      "system : i would love to help ! where s your destination ?",
+      "user : i would like to go to london liverpool street.",
+      "system : i would love to help ! where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : help me  get price and train id",
+      "system : the price is [value_price] pounds . train id is [train_id] . would you like to make a reservation for this train ?",
+      "user : not today, thank you. does the train arrive by 09:15?",
+      "system : no , it arrives at [value_time] .",
+      "user : can you go ahead and book it and get me a price please?",
+      "system : before booking , could you please confirm either the time you would like to depart or arrive ?",
+      "user : i need to arrive at 09:15."
+    ],
+    "belief": "belief : train destination = london liverpool street ; arriveby = 09:15 ; departure = cambridge",
+    "reply": "system : how about [train_id] which leaves on [value_day] at [value_time] and arrives by [value_time] . it is [value_price] pounds and total trip is [value_count] minutes . would you like me to book that ?",
+    "name": "SNG02053.json",
+    "dp": "dp : train ( inform ( id = tr5154 , arrive = 07:27 , day = friday , leave = 05:59 , ticket = 16.60 pounds , time = 88 minutes ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a train going to london liverpool street.",
+      "system : i would love to help ! where s your destination ?",
+      "user : i would like to go to london liverpool street.",
+      "system : i would love to help ! where are you departing from ?",
+      "user : i am departing from cambridge.",
+      "system : how about [train_id] that leaves at [value_time] ?",
+      "user : help me  get price and train id",
+      "system : the price is [value_price] pounds . train id is [train_id] . would you like to make a reservation for this train ?",
+      "user : not today, thank you. does the train arrive by 09:15?",
+      "system : no , it arrives at [value_time] .",
+      "user : can you go ahead and book it and get me a price please?",
+      "system : before booking , could you please confirm either the time you would like to depart or arrive ?",
+      "user : i need to arrive at 09:15.",
+      "system : how about [train_id] which leaves on [value_day] at [value_time] and arrives by [value_time] . it is [value_price] pounds and total trip is [value_count] minutes . would you like me to book that ?",
+      "user : no i don't need to book. thanks for the information."
+    ],
+    "belief": "belief : train destination = london liverpool street ; arriveby = 09:15 ; departure = cambridge",
+    "reply": "system : you are welcome . have a great time !",
+    "name": "SNG02053.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from bishops stortford."
+    ],
+    "belief": "belief : train departure = bishops stortford",
+    "reply": "system : there are [value_count] trains departing from that location , would you like to narrow it down some ?",
+    "name": "SNG0311.json",
+    "dp": "dp : train ( inform ( choice = 70 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from bishops stortford.",
+      "system : there are [value_count] trains departing from that location , would you like to narrow it down some ?",
+      "user : i am looking to go to cambridge on thursday."
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; departure = bishops stortford",
+    "reply": "system : i have [value_count] available trains . is there a particular time you would like to leave or arrive by ?",
+    "name": "SNG0311.json",
+    "dp": "dp : train ( inform ( choice = 10 ) ; request ( leave , arrive ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from bishops stortford.",
+      "system : there are [value_count] trains departing from that location , would you like to narrow it down some ?",
+      "user : i am looking to go to cambridge on thursday.",
+      "system : i have [value_count] available trains . is there a particular time you would like to leave or arrive by ?",
+      "user : i need to leave on thursday and get there by 9:15, is that ok?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:15 ; departure = bishops stortford",
+    "reply": "system : yes . there are [value_count] available trains . [value_count] leaves at [value_time] and arrives by [value_time] and the other leaves by [value_time] and arrives by [value_time] . which would you prefer ?",
+    "name": "SNG0311.json",
+    "dp": "dp : train ( inform ( arrive = 6:07 , arrive =  8:07 , choice = two , leave = 5:29 , leave =  7:29 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from bishops stortford.",
+      "system : there are [value_count] trains departing from that location , would you like to narrow it down some ?",
+      "user : i am looking to go to cambridge on thursday.",
+      "system : i have [value_count] available trains . is there a particular time you would like to leave or arrive by ?",
+      "user : i need to leave on thursday and get there by 9:15, is that ok?",
+      "system : yes . there are [value_count] available trains . [value_count] leaves at [value_time] and arrives by [value_time] and the other leaves by [value_time] and arrives by [value_time] . which would you prefer ?",
+      "user : i'd like the later one, please. i'll need 8 tickets."
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:15 ; departure = bishops stortford | booking people = 8",
+    "reply": "system : sure , we have [value_count] other option [train_id] leaves at [value_time] and arrives at [value_time] . for [value_count] people your reference number is [train_reference] .",
+    "name": "SNG0311.json",
+    "dp": "dp : train ( inform ( choice = one other option , id = tr1242 , arrive = 08:07 , leave = 07:29 ) ; offerbooked ( ref = 6a76vgsk ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from bishops stortford.",
+      "system : there are [value_count] trains departing from that location , would you like to narrow it down some ?",
+      "user : i am looking to go to cambridge on thursday.",
+      "system : i have [value_count] available trains . is there a particular time you would like to leave or arrive by ?",
+      "user : i need to leave on thursday and get there by 9:15, is that ok?",
+      "system : yes . there are [value_count] available trains . [value_count] leaves at [value_time] and arrives by [value_time] and the other leaves by [value_time] and arrives by [value_time] . which would you prefer ?",
+      "user : i'd like the later one, please. i'll need 8 tickets.",
+      "system : sure , we have [value_count] other option [train_id] leaves at [value_time] and arrives at [value_time] . for [value_count] people your reference number is [train_reference] .",
+      "user : okay great! thanks for all your help."
+    ],
+    "belief": "belief : train destination = cambridge ; day = thursday ; arriveby = 09:15 ; departure = bishops stortford | booking people = 8",
+    "reply": "system : it s my pleasure . goodbye !",
+    "name": "SNG0311.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : yes. i'm looking for a train, please."
+    ],
+    "belief": "belief : none",
+    "reply": "system : of course . where will you be departing from and arriving ? when would you like to leave ?",
+    "name": "SNG0324.json",
+    "dp": "dp : train ( request ( depart , leave , dest ) )"
+  },
+  {
+    "history": [
+      "user : yes. i'm looking for a train, please.",
+      "system : of course . where will you be departing from and arriving ? when would you like to leave ?",
+      "user : i need to leave from cambridge on sunday."
+    ],
+    "belief": "belief : train day = sunday ; departure = cambridge",
+    "reply": "system : there are [value_count] trains leaving [value_place] on [value_day] , do you have a destination or time ?",
+    "name": "SNG0324.json",
+    "dp": "dp : train ( inform ( day = sunday , choice = 202 , depart = cambridge ) ; request ( leave , dest ) )"
+  },
+  {
+    "history": [
+      "user : yes. i'm looking for a train, please.",
+      "system : of course . where will you be departing from and arriving ? when would you like to leave ?",
+      "user : i need to leave from cambridge on sunday.",
+      "system : there are [value_count] trains leaving [value_place] on [value_day] , do you have a destination or time ?",
+      "user : well, i'm thinking i need to leave sometime after 10:45 for norwich."
+    ],
+    "belief": "belief : train leaveat = 10:45 ; destination = norwich ; day = sunday ; departure = cambridge",
+    "reply": "system : there is a train leaving [value_place] for [value_place] at [value_time] which arrives at [value_time] . shall i book it for you ?",
+    "name": "SNG0324.json",
+    "dp": "dp : train ( inform ( dest = norwich  , depart = cambridge  , arrive = 12:55 , leave = 11:36 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : yes. i'm looking for a train, please.",
+      "system : of course . where will you be departing from and arriving ? when would you like to leave ?",
+      "user : i need to leave from cambridge on sunday.",
+      "system : there are [value_count] trains leaving [value_place] on [value_day] , do you have a destination or time ?",
+      "user : well, i'm thinking i need to leave sometime after 10:45 for norwich.",
+      "system : there is a train leaving [value_place] for [value_place] at [value_time] which arrives at [value_time] . shall i book it for you ?",
+      "user : yes, i'd like one ticket please."
+    ],
+    "belief": "belief : train leaveat = 10:45 ; destination = norwich ; day = sunday ; departure = cambridge | booking people = 1",
+    "reply": "system : your booking was successful . the ticket fee is [value_price] pounds and is payable at the station . your reference number is [train_reference] . may i assist you with anything else today ?",
+    "name": "SNG0324.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : yes. i'm looking for a train, please.",
+      "system : of course . where will you be departing from and arriving ? when would you like to leave ?",
+      "user : i need to leave from cambridge on sunday.",
+      "system : there are [value_count] trains leaving [value_place] on [value_day] , do you have a destination or time ?",
+      "user : well, i'm thinking i need to leave sometime after 10:45 for norwich.",
+      "system : there is a train leaving [value_place] for [value_place] at [value_time] which arrives at [value_time] . shall i book it for you ?",
+      "user : yes, i'd like one ticket please.",
+      "system : your booking was successful . the ticket fee is [value_price] pounds and is payable at the station . your reference number is [train_reference] . may i assist you with anything else today ?",
+      "user : thank you very much.  i am all set.  have a nice day."
+    ],
+    "belief": "belief : train leaveat = 10:45 ; destination = norwich ; day = sunday ; departure = cambridge | booking people = 1",
+    "reply": "system : you too . goodbye .",
+    "name": "SNG0324.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train that will depart on sunday and arrive by 18:00."
+    ],
+    "belief": "belief : train day = sunday ; arriveby = 18:00",
+    "reply": "system : i have found the listings for the [value_day] departures . what is your destination ? would you like me to book a trip ?",
+    "name": "SNG0280.json",
+    "dp": "dp : train ( inform ( choice = listings , day = sunday ) ; offerbook ( none = none ) ; request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train that will depart on sunday and arrive by 18:00.",
+      "system : i have found the listings for the [value_day] departures . what is your destination ? would you like me to book a trip ?",
+      "user : i am going to cambridge from leicester. and, yes, please book it for me."
+    ],
+    "belief": "belief : train day = sunday ; arriveby = 18:00",
+    "reply": "system : for how many tickets ?",
+    "name": "SNG0280.json",
+    "dp": "dp : train ( request ( people ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train that will depart on sunday and arrive by 18:00.",
+      "system : i have found the listings for the [value_day] departures . what is your destination ? would you like me to book a trip ?",
+      "user : i am going to cambridge from leicester. and, yes, please book it for me.",
+      "system : for how many tickets ?",
+      "user : 7 please"
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 18:00 ; departure = leicester | booking people = 7",
+    "reply": "system : your booking was successful . train id is [train_id] . total fee is [value_price] gbp . reference number is [train_reference] . anything else i can help with today ?",
+    "name": "SNG0280.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train that will depart on sunday and arrive by 18:00.",
+      "system : i have found the listings for the [value_day] departures . what is your destination ? would you like me to book a trip ?",
+      "user : i am going to cambridge from leicester. and, yes, please book it for me.",
+      "system : for how many tickets ?",
+      "user : 7 please",
+      "system : your booking was successful . train id is [train_id] . total fee is [value_price] gbp . reference number is [train_reference] . anything else i can help with today ?",
+      "user : thank you!"
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 18:00 ; departure = leicester | booking people = 7",
+    "reply": "system : i am glad i could help . is there anything else ?",
+    "name": "SNG0280.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train that will depart on sunday and arrive by 18:00.",
+      "system : i have found the listings for the [value_day] departures . what is your destination ? would you like me to book a trip ?",
+      "user : i am going to cambridge from leicester. and, yes, please book it for me.",
+      "system : for how many tickets ?",
+      "user : 7 please",
+      "system : your booking was successful . train id is [train_id] . total fee is [value_price] gbp . reference number is [train_reference] . anything else i can help with today ?",
+      "user : thank you!",
+      "system : i am glad i could help . is there anything else ?",
+      "user : that's all, thank you !"
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 18:00 ; departure = leicester | booking people = 7",
+    "reply": "system : excellent . have a great day !",
+    "name": "SNG0280.json",
+    "dp": "dp : general ( greet ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train that will depart on sunday and arrive by 18:00.",
+      "system : i have found the listings for the [value_day] departures . what is your destination ? would you like me to book a trip ?",
+      "user : i am going to cambridge from leicester. and, yes, please book it for me.",
+      "system : for how many tickets ?",
+      "user : 7 please",
+      "system : your booking was successful . train id is [train_id] . total fee is [value_price] gbp . reference number is [train_reference] . anything else i can help with today ?",
+      "user : thank you!",
+      "system : i am glad i could help . is there anything else ?",
+      "user : that's all, thank you !",
+      "system : excellent . have a great day !",
+      "user : okay, you too. thanks again."
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; arriveby = 18:00 ; departure = leicester | booking people = 7",
+    "reply": "system : you are welcome . goodbye .",
+    "name": "SNG0280.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross"
+    ],
+    "belief": "belief : train departure = london kings cross",
+    "reply": "system : sure . where are you going ?",
+    "name": "SNG0427.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross",
+      "system : sure . where are you going ?",
+      "user : i would like to go to cambridge, after 11:15"
+    ],
+    "belief": "belief : train leaveat = 11:15 ; destination = cambridge ; departure = london kings cross",
+    "reply": "system : okay , and what day do you want to make the trip ?",
+    "name": "SNG0427.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross",
+      "system : sure . where are you going ?",
+      "user : i would like to go to cambridge, after 11:15",
+      "system : okay , and what day do you want to make the trip ?",
+      "user : i want to leave on monday."
+    ],
+    "belief": "belief : train leaveat = 11:15 ; destination = cambridge ; day = monday ; departure = london kings cross",
+    "reply": "system : great , [train_id] from [value_place] to [value_place] leaves [value_day] at [value_time] . can i book this for you ?",
+    "name": "SNG0427.json",
+    "dp": "dp : train ( inform ( day = monday , dest = cambridge , id = tr5720  , leave = 11:17 , depart = london kings cross  ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross",
+      "system : sure . where are you going ?",
+      "user : i would like to go to cambridge, after 11:15",
+      "system : okay , and what day do you want to make the trip ?",
+      "user : i want to leave on monday.",
+      "system : great , [train_id] from [value_place] to [value_place] leaves [value_day] at [value_time] . can i book this for you ?",
+      "user : actually, can i have the price, and the travel time please?"
+    ],
+    "belief": "belief : train leaveat = 11:15 ; destination = cambridge ; day = monday ; departure = london kings cross",
+    "reply": "system : the cost is [value_price] pounds and the trip will take [value_count] minutes .",
+    "name": "SNG0427.json",
+    "dp": "dp : train ( inform ( ticket = 23.60 pounds , time = 51 minutes ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train departing from london kings cross",
+      "system : sure . where are you going ?",
+      "user : i would like to go to cambridge, after 11:15",
+      "system : okay , and what day do you want to make the trip ?",
+      "user : i want to leave on monday.",
+      "system : great , [train_id] from [value_place] to [value_place] leaves [value_day] at [value_time] . can i book this for you ?",
+      "user : actually, can i have the price, and the travel time please?",
+      "system : the cost is [value_price] pounds and the trip will take [value_count] minutes .",
+      "user : great that's all the info i need, thank you for your help today."
+    ],
+    "belief": "belief : train leaveat = 11:15 ; destination = cambridge ; day = monday ; departure = london kings cross",
+    "reply": "system : thank you very much . have a nice day .",
+    "name": "SNG0427.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train on wednesday departing form broxbourne"
+    ],
+    "belief": "belief : train day = wednesday ; departure = broxbourne",
+    "reply": "system : there are many results . where is your destination ?",
+    "name": "SNG0420.json",
+    "dp": "dp : train ( inform ( choice = many ) ; request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train on wednesday departing form broxbourne",
+      "system : there are many results . where is your destination ?",
+      "user : i'm heading into cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; departure = broxbourne",
+    "reply": "system : there are a number of trains to choose from . what time would you like to depart ?",
+    "name": "SNG0420.json",
+    "dp": "dp : train ( inform ( choice = a number of ) ; request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train on wednesday departing form broxbourne",
+      "system : there are many results . where is your destination ?",
+      "user : i'm heading into cambridge.",
+      "system : there are a number of trains to choose from . what time would you like to depart ?",
+      "user : departure time is flexible but i would need to get into cambridge by 21:30."
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; arriveby = 21:30 ; departure = broxbourne",
+    "reply": "system : there are [value_count] trains that arrive by [value_time] . each train takes [value_count] hour . when would you prefer to depart ?",
+    "name": "SNG0420.json",
+    "dp": "dp : train ( inform ( arrive = 21:30 , time = 1 hour , choice = 15 ) ; request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train on wednesday departing form broxbourne",
+      "system : there are many results . where is your destination ?",
+      "user : i'm heading into cambridge.",
+      "system : there are a number of trains to choose from . what time would you like to depart ?",
+      "user : departure time is flexible but i would need to get into cambridge by 21:30.",
+      "system : there are [value_count] trains that arrive by [value_time] . each train takes [value_count] hour . when would you prefer to depart ?",
+      "user : what is the earliest departing train and the price of a ticket for it?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; arriveby = 21:30 ; departure = broxbourne",
+    "reply": "system : the earliest train departs at [value_time] and is [value_price] pounds . would you like a ticket ?",
+    "name": "SNG0420.json",
+    "dp": "dp : train ( inform ( ticket = 17.90 pounds , leave = 05:32 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train on wednesday departing form broxbourne",
+      "system : there are many results . where is your destination ?",
+      "user : i'm heading into cambridge.",
+      "system : there are a number of trains to choose from . what time would you like to depart ?",
+      "user : departure time is flexible but i would need to get into cambridge by 21:30.",
+      "system : there are [value_count] trains that arrive by [value_time] . each train takes [value_count] hour . when would you prefer to depart ?",
+      "user : what is the earliest departing train and the price of a ticket for it?",
+      "system : the earliest train departs at [value_time] and is [value_price] pounds . would you like a ticket ?",
+      "user : that's okay. no need to book now. but can i get the travel time for that train?"
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; arriveby = 21:30 ; departure = broxbourne",
+    "reply": "system : the travel time for the train is [value_count] minutes .",
+    "name": "SNG0420.json",
+    "dp": "dp : train ( inform ( time = 60 minutes ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train on wednesday departing form broxbourne",
+      "system : there are many results . where is your destination ?",
+      "user : i'm heading into cambridge.",
+      "system : there are a number of trains to choose from . what time would you like to depart ?",
+      "user : departure time is flexible but i would need to get into cambridge by 21:30.",
+      "system : there are [value_count] trains that arrive by [value_time] . each train takes [value_count] hour . when would you prefer to depart ?",
+      "user : what is the earliest departing train and the price of a ticket for it?",
+      "system : the earliest train departs at [value_time] and is [value_price] pounds . would you like a ticket ?",
+      "user : that's okay. no need to book now. but can i get the travel time for that train?",
+      "system : the travel time for the train is [value_count] minutes .",
+      "user : okay, thanks!  that's all i needed!  have a good day!"
+    ],
+    "belief": "belief : train destination = cambridge ; day = wednesday ; arriveby = 21:30 ; departure = broxbourne",
+    "reply": "system : glad i could help !",
+    "name": "SNG0420.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to london kings cross to arrive by 21:15."
+    ],
+    "belief": "belief : train destination = london kings cross ; arriveby = 21:15",
+    "reply": "system : sure , which day would you like to travel ?",
+    "name": "SNG0445.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to london kings cross to arrive by 21:15.",
+      "system : sure , which day would you like to travel ?",
+      "user : i am travelling on thursday and going to cambridge."
+    ],
+    "belief": "belief : train destination = london kings cross ; day = thursday ; arriveby = 21:15",
+    "reply": "system : might i suggest train [train_id] leaving [value_place] at [value_time] and arriving at [value_place] at [value_time] . would that work for you ?",
+    "name": "SNG0445.json",
+    "dp": "dp : train ( inform ( arrive = 19:51 , leave = 19:00 , depart = cambridge , dest = london kings cross , id = tr6595 ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to london kings cross to arrive by 21:15.",
+      "system : sure , which day would you like to travel ?",
+      "user : i am travelling on thursday and going to cambridge.",
+      "system : might i suggest train [train_id] leaving [value_place] at [value_time] and arriving at [value_place] at [value_time] . would that work for you ?",
+      "user : yes, that does work.  could you book it for 1 person please?"
+    ],
+    "belief": "belief : train destination = london kings cross ; day = thursday ; arriveby = 21:15 ; departure = cambridge | booking people = 1",
+    "reply": "system : okay , i went ahead and reserved your ticket for train id [train_id] . the cost will be [value_price] gbp payable at the station , and your reference number is [train_reference] .",
+    "name": "SNG0445.json",
+    "dp": "dp : train ( offerbooked ( ref = gktt3otz , ticket = 23.6 gbp , id = tr6595 ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to london kings cross to arrive by 21:15.",
+      "system : sure , which day would you like to travel ?",
+      "user : i am travelling on thursday and going to cambridge.",
+      "system : might i suggest train [train_id] leaving [value_place] at [value_time] and arriving at [value_place] at [value_time] . would that work for you ?",
+      "user : yes, that does work.  could you book it for 1 person please?",
+      "system : okay , i went ahead and reserved your ticket for train id [train_id] . the cost will be [value_price] gbp payable at the station , and your reference number is [train_reference] .",
+      "user : that's everything i needed. thank you!"
+    ],
+    "belief": "belief : train destination = london kings cross ; day = thursday ; arriveby = 21:15 ; departure = cambridge | booking people = 1",
+    "reply": "system : you are welcome . have a great day !",
+    "name": "SNG0445.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train out of kings lynn please."
+    ],
+    "belief": "belief : train departure = kings lynn",
+    "reply": "system : where will you be going ?",
+    "name": "SNG0323.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train out of kings lynn please.",
+      "system : where will you be going ?",
+      "user : i want to go to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; departure = kings lynn",
+    "reply": "system : when will you be leaving ?",
+    "name": "SNG0323.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train out of kings lynn please.",
+      "system : where will you be going ?",
+      "user : i want to go to cambridge.",
+      "system : when will you be leaving ?",
+      "user : i would like to leave after 14:15 on tuesday please"
+    ],
+    "belief": "belief : train leaveat = 14:15 ; destination = cambridge ; day = tuesday ; departure = kings lynn",
+    "reply": "system : [train_id] departs at [value_time] would that work for you ?",
+    "name": "SNG0323.json",
+    "dp": "dp : train ( inform ( id = tr8932 , leave = 15:11 ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train out of kings lynn please.",
+      "system : where will you be going ?",
+      "user : i want to go to cambridge.",
+      "system : when will you be leaving ?",
+      "user : i would like to leave after 14:15 on tuesday please",
+      "system : [train_id] departs at [value_time] would that work for you ?",
+      "user : yes, please give me travel time."
+    ],
+    "belief": "belief : train leaveat = 14:15 ; destination = cambridge ; day = tuesday ; departure = kings lynn",
+    "reply": "system : that will be [value_count] minutes .",
+    "name": "SNG0323.json",
+    "dp": "dp : train ( inform ( time = 47 minutes ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train out of kings lynn please.",
+      "system : where will you be going ?",
+      "user : i want to go to cambridge.",
+      "system : when will you be leaving ?",
+      "user : i would like to leave after 14:15 on tuesday please",
+      "system : [train_id] departs at [value_time] would that work for you ?",
+      "user : yes, please give me travel time.",
+      "system : that will be [value_count] minutes .",
+      "user : great, that's all i need, thanks!"
+    ],
+    "belief": "belief : train leaveat = 14:15 ; destination = cambridge ; day = tuesday ; departure = kings lynn",
+    "reply": "system : you are welcome . please contact us again if we can help in the future . have a great day .",
+    "name": "SNG0323.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train. the train should depart from bournemouth and should leave on sunday."
+    ],
+    "belief": "belief : train day = sunday ; departure = broxbourne",
+    "reply": "system : where is your destination for that day ?",
+    "name": "SNG1305.json",
+    "dp": "dp : train ( request ( dest ) )"
+  },
+  {
+    "history": [
+      "user : i am looking for a train. the train should depart from bournemouth and should leave on sunday.",
+      "system : where is your destination for that day ?",
+      "user : i'm sorry i misspoke earlier, i'm actually looking to leave from broxbourne and would like to go to cambridge."
+    ],
+    "belief": "belief : train destination = cambridge ; day = sunday ; departure = broxbourne",
+    "reply": "system : there is train on [value_day] at [value_time] that goes from [value_place] to [value_place]",
+    "name": "SNG1305.json",
+    "dp": "dp : train ( inform ( day = sunday  , leave = 08:32 , depart = broxbourne  , dest = cambridge ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to cambridge that arrives by 19:30."
+    ],
+    "belief": "belief : train destination = cambridge ; arriveby = 19:30",
+    "reply": "system : where are you departing from ?",
+    "name": "SNG0368.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to cambridge that arrives by 19:30.",
+      "system : where are you departing from ?",
+      "user : i'm departing from ely."
+    ],
+    "belief": "belief : train destination = cambridge ; arriveby = 19:30 ; departure = ely",
+    "reply": "system : do you have a day you would like to travel ?",
+    "name": "SNG0368.json",
+    "dp": "dp : train ( request ( day ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to cambridge that arrives by 19:30.",
+      "system : where are you departing from ?",
+      "user : i'm departing from ely.",
+      "system : do you have a day you would like to travel ?",
+      "user : yes, wednesday. i also need the departure time and price, please."
+    ],
+    "belief": "belief : train destination = cambridge ; arriveby = 19:30 ; departure = ely",
+    "reply": "system : the latest train arrives at [value_time] on a [value_day] , departs at [value_time] and the cost of the ticket is [value_price] pounds .",
+    "name": "SNG0368.json",
+    "dp": "dp : train ( inform ( ticket = 4.40 pounds , day = wednesday , arrive = 17:52 , leave = 17:35 ) )"
+  },
+  {
+    "history": [
+      "user : i'd like a train to cambridge that arrives by 19:30.",
+      "system : where are you departing from ?",
+      "user : i'm departing from ely.",
+      "system : do you have a day you would like to travel ?",
+      "user : yes, wednesday. i also need the departure time and price, please.",
+      "system : the latest train arrives at [value_time] on a [value_day] , departs at [value_time] and the cost of the ticket is [value_price] pounds .",
+      "user : okay that is all i need to know for now."
+    ],
+    "belief": "belief : train destination = cambridge ; arriveby = 19:30 ; departure = ely",
+    "reply": "system : okay . let us know if we can be of further assistance .",
+    "name": "SNG0368.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : am  looking for a train. the train should arrive by 18:00 and should go to stevenage."
+    ],
+    "belief": "belief : train destination = stevenage ; arriveby = 18:00",
+    "reply": "system : can you provide me with your departure site ?",
+    "name": "SNG1319.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : am  looking for a train. the train should arrive by 18:00 and should go to stevenage.",
+      "system : can you provide me with your departure site ?",
+      "user : i am departing from cambridge on tuesday."
+    ],
+    "belief": "belief : train destination = stevenage ; arriveby = 18:00",
+    "reply": "system : there are many options available . is there a certain time you would like to leave ?",
+    "name": "SNG1319.json",
+    "dp": "dp : train ( inform ( choice = many ) ; request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : am  looking for a train. the train should arrive by 18:00 and should go to stevenage.",
+      "system : can you provide me with your departure site ?",
+      "user : i am departing from cambridge on tuesday.",
+      "system : there are many options available . is there a certain time you would like to leave ?",
+      "user : what one gets me there before, but closest to 18:00?"
+    ],
+    "belief": "belief : train destination = stevenage ; day = tuesday ; arriveby = 18:00",
+    "reply": "system : train [train_id] arrives at [value_time] . it is the closest to your required arrival time . would you like to reserve any tickets today ?",
+    "name": "SNG1319.json",
+    "dp": "dp : train ( inform ( id = tr5343 , arrive = 16:10 ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : am  looking for a train. the train should arrive by 18:00 and should go to stevenage.",
+      "system : can you provide me with your departure site ?",
+      "user : i am departing from cambridge on tuesday.",
+      "system : there are many options available . is there a certain time you would like to leave ?",
+      "user : what one gets me there before, but closest to 18:00?",
+      "system : train [train_id] arrives at [value_time] . it is the closest to your required arrival time . would you like to reserve any tickets today ?",
+      "user : no, i have decided not to book today, thank you, goodbye."
+    ],
+    "belief": "belief : train destination = stevenage ; day = tuesday ; arriveby = 18:00",
+    "reply": "system : you are welcome . have a good day .",
+    "name": "SNG1319.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant"
+    ],
+    "belief": "belief : restaurant food = vegetarian",
+    "reply": "system : i am sorry could you repeat your request ? there seems to be an error .",
+    "name": "SNG01890.json",
+    "dp": "dp : n"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday."
+    ],
+    "belief": "belief : restaurant food = vegetarian | train day = monday",
+    "reply": "system : where did you want to depart from , sir ?",
+    "name": "SNG01890.json",
+    "dp": "dp : train ( request ( depart ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday.",
+      "system : where did you want to depart from , sir ?",
+      "user : i am departing from cambridge and going to bishops stortford."
+    ],
+    "belief": "belief : restaurant food = vegetarian | train destination = bishops stortford ; day = monday ; departure = cambridge",
+    "reply": "system : there are [value_count] trains from [value_place] to [value_place] on [value_day] . do you want to leave at any certain time ?",
+    "name": "SNG01890.json",
+    "dp": "dp : train ( inform ( day = monday , dest = bishops stortford , depart = cambridge , choice = 5 ) ; request ( leave ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday.",
+      "system : where did you want to depart from , sir ?",
+      "user : i am departing from cambridge and going to bishops stortford.",
+      "system : there are [value_count] trains from [value_place] to [value_place] on [value_day] . do you want to leave at any certain time ?",
+      "user : what is the first train after 11:30?"
+    ],
+    "belief": "belief : restaurant food = vegetarian | train leaveat = 11:30 ; destination = bishops stortford ; day = monday ; departure = cambridge",
+    "reply": "system : [train_id] leaves at [value_time]",
+    "name": "SNG01890.json",
+    "dp": "dp : train ( inform ( id = tr4861 , leave = 13:29 ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday.",
+      "system : where did you want to depart from , sir ?",
+      "user : i am departing from cambridge and going to bishops stortford.",
+      "system : there are [value_count] trains from [value_place] to [value_place] on [value_day] . do you want to leave at any certain time ?",
+      "user : what is the first train after 11:30?",
+      "system : [train_id] leaves at [value_time]",
+      "user : could you give me the arrival time and price also please?"
+    ],
+    "belief": "belief : restaurant food = vegetarian | train leaveat = 11:30 ; destination = bishops stortford ; day = monday ; departure = cambridge",
+    "reply": "system : yes , it arrives by [value_time] and costs [value_price] pounds . would you like to book ?",
+    "name": "SNG01890.json",
+    "dp": "dp : train ( inform ( arrive = 14:07 , ticket = 10.10 pounds ) ; offerbook ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday.",
+      "system : where did you want to depart from , sir ?",
+      "user : i am departing from cambridge and going to bishops stortford.",
+      "system : there are [value_count] trains from [value_place] to [value_place] on [value_day] . do you want to leave at any certain time ?",
+      "user : what is the first train after 11:30?",
+      "system : [train_id] leaves at [value_time]",
+      "user : could you give me the arrival time and price also please?",
+      "system : yes , it arrives by [value_time] and costs [value_price] pounds . would you like to book ?",
+      "user : yes, please book the train for 1 person."
+    ],
+    "belief": "belief : restaurant food = vegetarian | train leaveat = 11:30 ; destination = bishops stortford ; day = monday ; departure = cambridge | booking people = 1",
+    "reply": "system : i have booked you a ticket . the reference number is [train_reference] . anything else i can assist with ?",
+    "name": "SNG01890.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday.",
+      "system : where did you want to depart from , sir ?",
+      "user : i am departing from cambridge and going to bishops stortford.",
+      "system : there are [value_count] trains from [value_place] to [value_place] on [value_day] . do you want to leave at any certain time ?",
+      "user : what is the first train after 11:30?",
+      "system : [train_id] leaves at [value_time]",
+      "user : could you give me the arrival time and price also please?",
+      "system : yes , it arrives by [value_time] and costs [value_price] pounds . would you like to book ?",
+      "user : yes, please book the train for 1 person.",
+      "system : i have booked you a ticket . the reference number is [train_reference] . anything else i can assist with ?",
+      "user : i'm confused. did i ask you to book a ticket? i can book my own passage, thank you very much!"
+    ],
+    "belief": "belief : restaurant food = vegetarian | train leaveat = 11:30 ; destination = bishops stortford ; day = monday ; departure = cambridge | booking people = 1",
+    "reply": "system : thanks for your service",
+    "name": "SNG01890.json",
+    "dp": "dp : general ( welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday.",
+      "system : where did you want to depart from , sir ?",
+      "user : i am departing from cambridge and going to bishops stortford.",
+      "system : there are [value_count] trains from [value_place] to [value_place] on [value_day] . do you want to leave at any certain time ?",
+      "user : what is the first train after 11:30?",
+      "system : [train_id] leaves at [value_time]",
+      "user : could you give me the arrival time and price also please?",
+      "system : yes , it arrives by [value_time] and costs [value_price] pounds . would you like to book ?",
+      "user : yes, please book the train for 1 person.",
+      "system : i have booked you a ticket . the reference number is [train_reference] . anything else i can assist with ?",
+      "user : i'm confused. did i ask you to book a ticket? i can book my own passage, thank you very much!",
+      "system : thanks for your service",
+      "user : thank you also. have a nice day."
+    ],
+    "belief": "belief : restaurant food = vegetarian | train leaveat = 11:30 ; destination = bishops stortford ; day = monday ; departure = cambridge | booking people = 1",
+    "reply": "system : you also . let us know if we can assist you with anything more .",
+    "name": "SNG01890.json",
+    "dp": "dp : general ( welcome ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i need to find a good vegetarian restaurant",
+      "system : i am sorry could you repeat your request ? there seems to be an error .",
+      "user : i meant train.  i need a train ticket for monday.",
+      "system : where did you want to depart from , sir ?",
+      "user : i am departing from cambridge and going to bishops stortford.",
+      "system : there are [value_count] trains from [value_place] to [value_place] on [value_day] . do you want to leave at any certain time ?",
+      "user : what is the first train after 11:30?",
+      "system : [train_id] leaves at [value_time]",
+      "user : could you give me the arrival time and price also please?",
+      "system : yes , it arrives by [value_time] and costs [value_price] pounds . would you like to book ?",
+      "user : yes, please book the train for 1 person.",
+      "system : i have booked you a ticket . the reference number is [train_reference] . anything else i can assist with ?",
+      "user : i'm confused. did i ask you to book a ticket? i can book my own passage, thank you very much!",
+      "system : thanks for your service",
+      "user : thank you also. have a nice day.",
+      "system : you also . let us know if we can assist you with anything more .",
+      "user : okay, thanks. goodbye."
+    ],
+    "belief": "belief : restaurant food = vegetarian | train leaveat = 11:30 ; destination = bishops stortford ; day = monday ; departure = cambridge | booking people = 1",
+    "reply": "system : you are welcome . enjoy your visit to [value_place] !",
+    "name": "SNG01890.json",
+    "dp": "dp : general ( bye ( none = none ) ; welcome ( none = none ) )"
+  }
+]

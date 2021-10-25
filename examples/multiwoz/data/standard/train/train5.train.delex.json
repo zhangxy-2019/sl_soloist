@@ -1,0 +1,3211 @@
+{
+  "SNG0263.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {
+        "info": {
+          "leaveAt": "08:30",
+          "destination": "birmingham new street",
+          "day": "friday",
+          "departure": "cambridge"
+        },
+        "reqt": [
+          "duration",
+          "price"
+        ],
+        "fail_info": {}
+      },
+      "message": [
+        "You are looking for a <span class='emphasis'>train</span>. The train should go to <span class='emphasis'>birmingham new street</span> and should depart from <span class='emphasis'>cambridge</span>",
+        "The train should leave on <span class='emphasis'>friday</span> and should <span class='emphasis'>leave after 08:30</span>",
+        "Make sure you get <span class='emphasis'>travel time</span> and <span class='emphasis'>price</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "i am looking for a train from [value_place] to [value_place] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 133|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "the next train leaving from [value_place] for [value_place] departs [value_day] at [value_time] , and will arrive by [value_time] .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "birmingham new street",
+              "day": "not mentioned",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "i need a train that departs after [value_time] on [value_day] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 133|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "i have a train leaving [value_place] arriving at [value_place] on [value_day] at [value_time] . would you like me to book this for you ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "birmingham new street",
+              "day": "not mentioned",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "yes please , that sounds perfect .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 133|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "and how many tickets will you need for your trip ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "birmingham new street",
+              "day": "not mentioned",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "actually , i do not need booking . please just give me the train s travel time and price .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 15|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "the travel time is [value_count] minutes , and the price is [value_price] pounds . how else can i help ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "08:30",
+              "destination": "birmingham new street",
+              "day": "friday",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "no thank you . not at this time .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 15|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "glad to be of help . have a nice day . bye .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "08:30",
+              "destination": "birmingham new street",
+              "day": "friday",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0347.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {
+        "info": {
+          "leaveAt": "12:00",
+          "destination": "birmingham new street",
+          "day": "saturday",
+          "departure": "cambridge"
+        },
+        "reqt": [
+          "arriveBy",
+          "duration",
+          "price"
+        ],
+        "fail_info": {}
+      },
+      "message": [
+        "You are looking for a <span class='emphasis'>train</span>. The train should leave on <span class='emphasis'>saturday</span> and should <span class='emphasis'>leave after 12:00</span>",
+        "The train should go to <span class='emphasis'>birmingham new street</span> and should depart from <span class='emphasis'>cambridge</span>",
+        "Make sure you get <span class='emphasis'>arrival time</span>, <span class='emphasis'>travel time</span>, and <span class='emphasis'>price</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "i am looking for a train leaving on [value_day] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 404|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "what time would you like the train for ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "not mentioned",
+              "day": "saturday",
+              "arriveBy": "not mentioned",
+              "departure": "not mentioned"
+            }
+          }
+        }
+      },
+      {
+        "text": "i would like to leave after [value_time] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 252|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "we can certainly arrange that . can you tell me where you will be leaving from and where you would like to go ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "12:00",
+              "destination": "not mentioned",
+              "day": "saturday",
+              "arriveBy": "not mentioned",
+              "departure": "not mentioned"
+            }
+          }
+        }
+      },
+      {
+        "text": "i'll be leaving from [value_place] and going to [value_place] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 12|restaurant not booked;hotel not booked;train booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "text": "      booking was successful , the total fee is [value_price] gbp payable at the station . reference number is [train_reference] . is there anything else i can help with ?      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [
+                {
+                  "trainID": "TR4137",
+                  "reference": "9LZNG2V4"
+                }
+              ],
+              "people": "1"
+            },
+            "semi": {
+              "leaveAt": "12:00",
+              "destination": "birmingham new street",
+              "day": "saturday",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "yes can you tell me when the train arrives and how long the journey will be ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 12|restaurant not booked;hotel not booked;train booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "text": "      gladly . the train arrives at [value_time] and the trip will take [value_count] minutes . is there anything else i may assist you with today ?      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [
+                {
+                  "trainID": "TR4137",
+                  "reference": "9LZNG2V4"
+                }
+              ],
+              "people": "1"
+            },
+            "semi": {
+              "leaveAt": "12:00",
+              "destination": "birmingham new street",
+              "day": "saturday",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "yes how much is the ticket ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 12|restaurant not booked;hotel not booked;train booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "text": "      it s [value_price] gbp , payable at the station . may i help with anything else ?      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [
+                {
+                  "trainID": "TR4137",
+                  "reference": "9LZNG2V4"
+                }
+              ],
+              "people": "1"
+            },
+            "semi": {
+              "leaveAt": "12:00",
+              "destination": "birmingham new street",
+              "day": "saturday",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "that s everything i needed thanks . bye .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 12|restaurant not booked;hotel not booked;train booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "text": "      you are welcome , have a great day !      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [
+                {
+                  "trainID": "TR4137",
+                  "reference": "9LZNG2V4"
+                }
+              ],
+              "people": "1"
+            },
+            "semi": {
+              "leaveAt": "12:00",
+              "destination": "birmingham new street",
+              "day": "saturday",
+              "arriveBy": "not mentioned",
+              "departure": "cambridge"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0318.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {
+        "info": {
+          "destination": "cambridge",
+          "day": "sunday",
+          "arriveBy": "10:45",
+          "departure": "norwich"
+        },
+        "reqt": [
+          "duration",
+          "trainID",
+          "leaveAt"
+        ],
+        "fail_info": {}
+      },
+      "message": [
+        "You are looking for a <span class='emphasis'>train</span>. The train should leave on <span class='emphasis'>sunday</span> and should go to <span class='emphasis'>cambridge</span>",
+        "The train should depart from <span class='emphasis'>norwich</span> and should <span class='emphasis'>arrive by 10:45</span>",
+        "Make sure you get <span class='emphasis'>travel time</span>, <span class='emphasis'>train ID</span>, and <span class='emphasis'>departure time</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "i am looking for a train to [value_place] please .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 1414|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "there are many trains to [value_place] . where will you be departing from ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "cambridge",
+              "day": "not mentioned",
+              "arriveBy": "not mentioned",
+              "departure": "not mentioned"
+            }
+          }
+        }
+      },
+      {
+        "text": "i'll be departing from [value_place] on [value_day] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "ok , there does not appear to be any trains leaving then . could you leave later ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "cambridge",
+              "day": "Sunday",
+              "arriveBy": "not mentioned",
+              "departure": "Norwhich"
+            }
+          }
+        }
+      },
+      {
+        "text": "i can leave at [value_time] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "i apologize for the earlier confusion . we have several trains that will meet your needs . [train_id] departs [value_place] on [value_day] at [value_time] . will that work for you ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "10:45",
+              "destination": "cambridge",
+              "day": "Sunday",
+              "arriveBy": "not mentioned",
+              "departure": "norwich"
+            }
+          }
+        }
+      },
+      {
+        "text": "yes . can you tell me the total travel time as well ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "it is going to be [value_count] minutes total .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "10:45",
+              "destination": "cambridge",
+              "day": "Sunday",
+              "arriveBy": "not mentioned",
+              "departure": "norwich"
+            }
+          }
+        }
+      },
+      {
+        "text": "great , that s all i need . goodbye !",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "have a nice day .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "10:45",
+              "destination": "cambridge",
+              "day": "Sunday",
+              "arriveBy": "not mentioned",
+              "departure": "norwich"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG02186.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "topic": {
+        "taxi": false,
+        "police": false,
+        "restaurant": false,
+        "hospital": false,
+        "hotel": false,
+        "general": false,
+        "attraction": false,
+        "train": false,
+        "booking": false
+      },
+      "attraction": {},
+      "train": {
+        "info": {
+          "destination": "stansted airport",
+          "day": "thursday",
+          "arriveBy": "09:45",
+          "departure": "cambridge"
+        },
+        "reqt": [
+          "duration",
+          "leaveAt"
+        ],
+        "fail_info": {}
+      },
+      "message": [
+        "You are looking for a <span class='emphasis'>train</span>. The train should depart from <span class='emphasis'>cambridge</span> and should <span class='emphasis'>arrive by 09:45</span>",
+        "The train should leave on <span class='emphasis'>thursday</span> and should go to <span class='emphasis'>stansted airport</span>",
+        "Make sure you get <span class='emphasis'>travel time</span> and <span class='emphasis'>departure time</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "i am looking for a train . i need to leave [value_place] and i would like to arrive by [value_time] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 294|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "could you tell me your intended destination please ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "not mentioned",
+              "day": "not mentioned",
+              "arriveBy": "09:45",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "i need to get to the [value_place] on [value_day] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "i have [value_count] different trains that would get you to [value_place] by [value_time] on [value_day] . what time would you like to leave ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "Stansted Airport",
+              "day": "Thursday",
+              "arriveBy": "09:45",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "it does not matter what time i leave , just so i arrive by [value_time] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "how about [train_id] ? it leaves at [value_time] ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "Stansted Airport",
+              "day": "Thursday",
+              "arriveBy": "09:45",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "sure . can i just get the travel time and departure time please",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "train [train_id] arrives at [value_place] [value_day] at [value_time] . travel time is [value_count] minutes , and you would leave at [value_time] . can i book it for you ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "Stansted Airport",
+              "day": "Thursday",
+              "arriveBy": "09:45",
+              "departure": "cambridge"
+            }
+          }
+        }
+      },
+      {
+        "text": "no that will not be necessary . thank you for the information .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 0|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "you are welcome . please let us know if there is anything else we can help with .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "Stansted Airport",
+              "day": "Thursday",
+              "arriveBy": "09:45",
+              "departure": "cambridge"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0434.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {
+        "info": {
+          "destination": "cambridge",
+          "day": "wednesday",
+          "arriveBy": "08:30",
+          "departure": "peterborough"
+        },
+        "reqt": [
+          "duration",
+          "leaveAt",
+          "trainID"
+        ],
+        "fail_info": {}
+      },
+      "message": [
+        "You are looking for a <span class='emphasis'>train</span>. The train should depart from <span class='emphasis'>peterborough</span> and should <span class='emphasis'>arrive by 08:30</span>",
+        "The train should go to <span class='emphasis'>cambridge</span> and should leave on <span class='emphasis'>wednesday</span>",
+        "Make sure you get <span class='emphasis'>travel time</span>, <span class='emphasis'>departure time</span>, and <span class='emphasis'>train ID</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "i am looking for a train leaving [value_place] arriving by [value_time]",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 35|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "there are [value_count] trains do you have a destination and day ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "not mentioned",
+              "day": "not mentioned",
+              "arriveBy": "08:30",
+              "departure": "peterborough"
+            }
+          }
+        }
+      },
+      {
+        "text": "yes , i am headed to [value_place] on [value_day] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 5|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "[train_id] leaves at [value_time] and will arrive at [value_time] . would you like me to book it ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "cambridge",
+              "day": "wednesday",
+              "arriveBy": "08:30",
+              "departure": "peterborough"
+            }
+          }
+        }
+      },
+      {
+        "text": "can you also tell me the travel time ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 5|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "duration for this particular trip is [value_count] minutes .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "cambridge",
+              "day": "wednesday",
+              "arriveBy": "08:30",
+              "departure": "peterborough"
+            }
+          }
+        }
+      },
+      {
+        "text": "ok , that is all the information i need . i cannot book it quite yet . thanks for all of your help . have a nice day .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 79 ; train : 5|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "you are welcome . have a great day !",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "not mentioned",
+              "destination": "cambridge",
+              "day": "wednesday",
+              "arriveBy": "08:30",
+              "departure": "peterborough"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

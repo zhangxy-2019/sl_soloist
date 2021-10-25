@@ -1,0 +1,2826 @@
+{
+  "SNG01971.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "topic": {
+        "taxi": false,
+        "police": false,
+        "restaurant": false,
+        "hospital": false,
+        "hotel": false,
+        "general": false,
+        "attraction": false,
+        "train": false,
+        "booking": false
+      },
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>particular restaurant</span>. Its name is called <span class='emphasis'>prezzo</span>",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>4 people</span> at <span class='emphasis'>11:00</span> on <span class='emphasis'>friday</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "name": "prezzo"
+        },
+        "fail_info": {},
+        "book": {
+          "time": "11:00",
+          "day": "friday",
+          "invalid": false,
+          "people": "4"
+        },
+        "fail_book": {}
+      }
+    },
+    "log": [
+      {
+        "text": "i am looking for a particular restaurant . its name is called [restaurant_name]",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 1 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "[restaurant_name] is an [value_food] restaurant in the [value_area] . their phone number is [restaurant_phone] . would you like me to make a reservation for you ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "not mentioned",
+              "name": "prezzo",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "yes please , [value_count] people at [value_time] on [value_day] . can you please provide me with the reference number ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 1 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "      you booking was successful . the table will be reserved for [value_count] minutes . reference number is [restaurant_reference] .      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "prezzo",
+                  "reference": "WYZGXOVQ"
+                }
+              ],
+              "time": "11:00",
+              "day": "friday",
+              "people": "4"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "not mentioned",
+              "name": "prezzo",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thank you for helping me book a table for [value_count] at [restaurant_name] and providing the reference number",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 1 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "      you are more than welcome !      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "prezzo",
+                  "reference": "WYZGXOVQ"
+                }
+              ],
+              "time": "11:00",
+              "day": "friday",
+              "people": "4"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "not mentioned",
+              "name": "prezzo",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "WOZ20242.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": "Task 03495: You want to find a moderately priced restaurant and it should be in the north part of town. Don't go for the first venue the system offers you, ask if there is anything else. You want to know the phone number.",
+      "restaurant": {
+        "info": {
+          "pricerange": "moderate",
+          "area": "north"
+        },
+        "reqt": [
+          "phone"
+        ],
+        "fail_info": {}
+      }
+    },
+    "log": [
+      {
+        "text": "i would like a restaurant in the [value_area] part of town that is in the medium price range .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 2 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "what type of food are you looking for ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "i do not care",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 2 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "the [restaurant_name] serves [value_food] food , is located in the [value_area] part of town and in the [value_pricerange] price range .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "is there another [value_count] as well ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 2 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "yes , there is also [restaurant_name] which is an [value_food] restaurant . would you be interested in more information on that [value_count] ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "yes could you give me the phone number for [restaurant_name] ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 2 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "their number is [restaurant_phone] .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "which part of town it is in ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 2 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "it is located in the [value_area] part of town",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thank you goodbye .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 2 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "have a nice day .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0731.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>restaurant</span>. The restaurant should serve <span class='emphasis'>thai</span> food and should be in the <span class='emphasis'>expensive</span> price range",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>6 people</span> at <span class='emphasis'>15:45</span> on <span class='emphasis'>sunday</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "food": "thai",
+          "pricerange": "expensive"
+        },
+        "fail_info": {},
+        "book": {
+          "time": "15:45",
+          "day": "sunday",
+          "invalid": false,
+          "people": "6"
+        },
+        "fail_book": {}
+      }
+    },
+    "log": [
+      {
+        "text": "can you help me find and [value_pricerange] [value_food] restaurant ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 2 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "[restaurant_name] is an [value_pricerange] [value_food] restaurant on the [value_area] side . would you like to book there ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "thai",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "that would be great . i need a table on [value_day] at [value_time] for [value_count] people , please .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 1 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "      i have made your reservation . the reference number is [restaurant_reference] . is there anything else i can assist you with today ?      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "sala thong",
+                  "reference": "S2AY04JF"
+                }
+              ],
+              "time": "15:45",
+              "day": "sunday",
+              "people": "6"
+            },
+            "semi": {
+              "food": "thai",
+              "pricerange": "expensive",
+              "name": "sala thong",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thank you . i think that s all i need today , goodbye .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 1 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "      thank you for calling , enjoy , goodbye !      ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "sala thong",
+                  "reference": "S2AY04JF"
+                }
+              ],
+              "time": "15:45",
+              "day": "sunday",
+              "people": "6"
+            },
+            "semi": {
+              "food": "thai",
+              "pricerange": "expensive",
+              "name": "sala thong",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "WOZ20267.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": "Task 00528: You are looking for and it should serve mediterranean food. You don't care about the price range. Don't go for the first venue the system offers you, ask if there is anything else. You want to know the address and phone number of the venue.",
+      "restaurant": {
+        "info": {
+          "food": "mediterranean",
+          "pricerange": "dontcare"
+        },
+        "reqt": [
+          "address",
+          "phone"
+        ],
+        "fail_info": {}
+      }
+    },
+    "log": [
+      {
+        "text": "i am looking for a restaurant serving [value_food] food .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 3 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "[restaurant_name] is an [value_pricerange] restaurant in the city [value_area] that serves [value_food] food .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mediterranean",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "is there another venue ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 3 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "there is [restaurant_name] if you are looking for a [value_pricerange] restaurant .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mediterranean",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "what is the address and phone number ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 3 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "[restaurant_name] is located at [restaurant_address] and their phone number is [restaurant_phone] .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mediterranean",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thank you , goodbye .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 3 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "you are welcome , goodbye",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mediterranean",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "i do not care about the price . thank you goodbye .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 3 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "thank you . goodbye .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mediterranean",
+              "pricerange": "don't care",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "WOZ20255.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": "Task 05946: You are looking for a restaurant in the centre and it should serve caribbean food. If there is no such venue how about modern european type of food. Make sure you get the address of the venue.",
+      "restaurant": {
+        "info": {
+          "food": "modern european",
+          "area": "centre"
+        },
+        "reqt": [
+          "address"
+        ],
+        "fail_info": {}
+      }
+    },
+    "log": [
+      {
+        "text": "i would like a restaurant in the [value_area] of town that serves caribbean food",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 0 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "no records match your request , i am sorry .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "caribbean",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "how about [value_food] food ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 4 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "we have [value_food] in the [value_area] area in several price range -s . do you have a preference ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "the price range does not matter . please suggest [value_count] to me .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 4 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "[restaurant_name] is good but [value_pricerange] . would you like their address or phone number ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "don't care",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "of course",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 4 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "their address is [restaurant_address] and their phone number is [restaurant_phone]",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "don't care",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thank you for your help . that s all i need .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 4 ; hotel : 33 ; attraction : 79 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "you are welcome . enjoy your dining experience .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "don't care",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  }
+}

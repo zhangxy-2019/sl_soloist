@@ -1,0 +1,2865 @@
+{
+  "SNG1397.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "topic": {
+        "taxi": false,
+        "police": false,
+        "restaurant": false,
+        "hospital": false,
+        "hotel": false,
+        "general": false,
+        "attraction": false,
+        "train": false,
+        "booking": false
+      },
+      "attraction": {
+        "info": {
+          "type": "college",
+          "area": "centre"
+        },
+        "reqt": [
+          "postcode",
+          "address",
+          "phone"
+        ],
+        "fail_info": {}
+      },
+      "train": {},
+      "message": [
+        "You are looking for <span class='emphasis'>places to go</span> in town. The attraction should be in the type of <span class='emphasis'>college</span> and should be in the <span class='emphasis'>centre</span>",
+        "Make sure you get <span class='emphasis'>postcode</span>, <span class='emphasis'>address</span>, and <span class='emphasis'>phone number</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "hello i am looking for a [attraction_type] , can you help me ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 18 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "there are [value_count] [attraction_type]s in the city . are you looking for [value_count] in particular ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "college",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "do you have any in the [value_area] ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 13 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "there are [value_count] located in the [value_area] . would you prefer [value_count] that is interesting ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "college",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "sure ! which [value_count] do you recommend ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 13 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "i love [attraction_name] over on [attraction_address] .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "college",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "what is the phone number and postcode for that [value_count] ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "the postcode is [attraction_postcode] and they can be reached at [attraction_phone] . is there anything else i can assist you with ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "college",
+              "name": "downing college",
+              "area": "centre"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "could i get the complete address please ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "sure , the complete address for [attraction_name] is [attraction_address] post code [attraction_postcode] . may i assist with anything else ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "college",
+              "name": "downing college",
+              "area": "centre"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "no , you have helped me . thank you !",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "great . i hope you enjoy your visit . call us back if you need further assistance . goodbye .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "college",
+              "name": "downing college",
+              "area": "centre"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG1173.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "topic": {
+        "taxi": false,
+        "police": false,
+        "restaurant": false,
+        "hospital": false,
+        "hotel": false,
+        "general": false,
+        "attraction": false,
+        "train": false,
+        "booking": false
+      },
+      "attraction": {
+        "info": {
+          "name": "downing college"
+        },
+        "reqt": [
+          "area"
+        ],
+        "fail_info": {}
+      },
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>particular attraction</span>. Its name is called <span class='emphasis'>downing college</span>",
+        "Make sure you get <span class='emphasis'>area</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "yes , hello . i am looking for a particular attraction called [attraction_name] .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "it is located on [attraction_address] , in the [value_area] .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "downing college",
+              "area": "not mentioned"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thank you so much !",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "you are welcome ! did you need anything else today ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "downing college",
+              "area": "not mentioned"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "no , that was all . goodbye .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "thanks and enjoy !",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "downing college",
+              "area": "not mentioned"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG1107.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {
+        "info": {
+          "type": "museum",
+          "area": "east"
+        },
+        "reqt": [
+          "postcode",
+          "entrance fee"
+        ],
+        "fail_info": {}
+      },
+      "train": {},
+      "message": [
+        "You are looking for <span class='emphasis'>places to go</span> in town. The attraction should be in the type of <span class='emphasis'>museum</span> and should be in the <span class='emphasis'>east</span>",
+        "Make sure you get <span class='emphasis'>postcode</span> and <span class='emphasis'>entrance fee</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "hi , i would like to find a [attraction_type] please .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 23 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "we have many [attraction_type]s in town what area are you interested in ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "museum",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "i do not mind but i would prefer something in the [value_area]",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 4 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "how does [attraction_name] sound ? it is located on [attraction_address] and there is no entrance fee ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "museum",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "what is the postcode ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 4 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "sure their postcode is [attraction_postcode] . is there anything else ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "museum",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "no , that s all i need . thanks so much for your help .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 4 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "you are welcome , have a wonderful day .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "museum",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG1151.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "topic": {
+        "taxi": false,
+        "police": false,
+        "restaurant": false,
+        "hospital": false,
+        "hotel": false,
+        "general": false,
+        "attraction": false,
+        "train": false,
+        "booking": false
+      },
+      "attraction": {
+        "info": {
+          "type": "boat"
+        },
+        "reqt": [
+          "area"
+        ],
+        "fail_info": {}
+      },
+      "train": {},
+      "message": [
+        "You are looking for <span class='emphasis'>places to go</span> in town. The attraction should be in the type of <span class='emphasis'>boat</span>",
+        "Make sure you get <span class='emphasis'>area</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "hi , i want to find some water and go boating somewhere around town . what do you have listed ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 4 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "i have some great choices for you . there are [value_count] place -s in the [value_area] of town , [value_count] in the [value_area] and [value_count] in [value_area] . do you have a specific location ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "boat",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "i think maybe the [value_area] for this trip .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "the [attraction_name] is in the [value_area] of town . it s located at [attraction_address] . may i help you with anything else ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "boat",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "that is all i need , thank you .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 1 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "have a wonderful time in [value_place] !",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "boat",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG1115.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {
+        "info": {
+          "area": "east"
+        },
+        "reqt": [
+          "entrance fee",
+          "postcode"
+        ],
+        "fail_info": {
+          "area": "north"
+        }
+      },
+      "train": {},
+      "message": [
+        "You are looking for <span class='emphasis'>places to go</span> in town. The attraction should be in the <span class='emphasis'>east</span>",
+        "Make sure you get <span class='emphasis'>entrance fee</span> and <span class='emphasis'>postcode</span>"
+      ],
+      "restaurant": {}
+    },
+    "log": [
+      {
+        "text": "i am looking for an [value_area] based place to go in town .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 10 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "how about [attraction_name] ? it s in the [value_area] . [attraction_name] is also in the [value_area] .",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "can you tell me what the entrance fee is for those ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 10 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "the [attraction_name] costs [value_count] pounds . there is no information on the admission price for [attraction_name] . would you like their phone number ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "no , thanks . can i get the postcode for [attraction_name] , please ?",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 10 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "yes , of course . it is [attraction_postcode] . is there anything else i can find out for you ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thank you very much !",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 10 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "so , is that all you needed today ?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "yes , that s all . thank you .",
+        "metadata": {},
+        "db_pointer_str": "restaurant : 110 ; hotel : 33 ; attraction : 10 ; train : 2828|restaurant not booked;hotel not booked;train not booked",
+        "db_pointer": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "text": "you are welcome . goodbye !",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "",
+              "pricerange": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  }
+}

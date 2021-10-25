@@ -1,0 +1,169 @@
+[
+  {
+    "history": [
+      "user : i'm trying to find a good museum in town."
+    ],
+    "belief": "belief : attraction type = museum",
+    "reply": "system : there are a multitude of museums in town . what side of town are you in ?",
+    "name": "SNG1129.json",
+    "dp": "dp : attraction ( request ( area ) ; inform ( type = museum , choice = a multitude ) )"
+  },
+  {
+    "history": [
+      "user : i'm trying to find a good museum in town.",
+      "system : there are a multitude of museums in town . what side of town are you in ?",
+      "user : i am open to any side of town!"
+    ],
+    "belief": "belief : attraction type = museum",
+    "reply": "system : would you be interested in [attraction_name] ?",
+    "name": "SNG1129.json",
+    "dp": "dp : attraction ( inform ( name = broughton house gallery ) )"
+  },
+  {
+    "history": [
+      "user : i'm trying to find a good museum in town.",
+      "system : there are a multitude of museums in town . what side of town are you in ?",
+      "user : i am open to any side of town!",
+      "system : would you be interested in [attraction_name] ?",
+      "user : that would be great. can i get the postcode, please?"
+    ],
+    "belief": "belief : attraction type = museum ; name = broughton house gallery",
+    "reply": "system : sure . the postcode is [attraction_postcode] . is there anything else i can answer for you today ?",
+    "name": "SNG1129.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm trying to find a good museum in town.",
+      "system : there are a multitude of museums in town . what side of town are you in ?",
+      "user : i am open to any side of town!",
+      "system : would you be interested in [attraction_name] ?",
+      "user : that would be great. can i get the postcode, please?",
+      "system : sure . the postcode is [attraction_postcode] . is there anything else i can answer for you today ?",
+      "user : no, that's all. you've been a great help, thanks. i'm sure my visit will be fun. goodbye!"
+    ],
+    "belief": "belief : attraction type = museum ; name = broughton house gallery",
+    "reply": "system : thank you , goodbye .",
+    "name": "SNG1129.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : yes, hello. i'm looking for a particular attraction called downing college."
+    ],
+    "belief": "belief : attraction name = downing college",
+    "reply": "system : it is located on [attraction_address] , in the [value_area] .",
+    "name": "SNG1173.json",
+    "dp": "dp : attraction ( inform ( area = centre , addr = regent street ) )"
+  },
+  {
+    "history": [
+      "user : yes, hello. i'm looking for a particular attraction called downing college.",
+      "system : it is located on [attraction_address] , in the [value_area] .",
+      "user : thank you so much!"
+    ],
+    "belief": "belief : attraction name = downing college",
+    "reply": "system : you are welcome ! did you need anything else today ?",
+    "name": "SNG1173.json",
+    "dp": "dp : general ( welcome ( none = none ) ; reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : yes, hello. i'm looking for a particular attraction called downing college.",
+      "system : it is located on [attraction_address] , in the [value_area] .",
+      "user : thank you so much!",
+      "system : you are welcome ! did you need anything else today ?",
+      "user : no, that was all.  good bye."
+    ],
+    "belief": "belief : attraction name = downing college",
+    "reply": "system : thanks and enjoy !",
+    "name": "SNG1173.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place in the centre of town that is a nightclub."
+    ],
+    "belief": "belief : attraction type = nightclub ; area = centre",
+    "reply": "system : there are [value_count] nightclubs in the [value_area] area , the [value_count] with the lowest entrance fee is [attraction_name] which is [value_count] pounds to get in .",
+    "name": "SNG1061.json",
+    "dp": "dp : attraction ( inform ( fee = 4 pounds , area = centre , name = soul tree nightclub , type = nightclubs , choice = 5 ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place in the centre of town that is a nightclub.",
+      "system : there are [value_count] nightclubs in the [value_area] area , the [value_count] with the lowest entrance fee is [attraction_name] which is [value_count] pounds to get in .",
+      "user : that sounds like it will work. can i get their address and postcode?"
+    ],
+    "belief": "belief : attraction type = nightclub ; area = centre",
+    "reply": "system : of course ! they are located at [value_count] [attraction_address] with postcode [attraction_postcode] . anything else i can do for you ?",
+    "name": "SNG1061.json",
+    "dp": "dp : general ( reqmore ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place in the centre of town that is a nightclub.",
+      "system : there are [value_count] nightclubs in the [value_area] area , the [value_count] with the lowest entrance fee is [attraction_name] which is [value_count] pounds to get in .",
+      "user : that sounds like it will work. can i get their address and postcode?",
+      "system : of course ! they are located at [value_count] [attraction_address] with postcode [attraction_postcode] . anything else i can do for you ?",
+      "user : no, that's all i need today. thank you for your help!"
+    ],
+    "belief": "belief : attraction type = nightclub ; area = centre",
+    "reply": "system : you are welcome ! have fun ! goodbye !",
+    "name": "SNG1061.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place to go in the centre of town."
+    ],
+    "belief": "belief : attraction area = centre",
+    "reply": "system : we offer lots to do in the center of town . we have everything from boats and parks to nightclubs . are you in the mood for anything particular ?",
+    "name": "SNG1072.json",
+    "dp": "dp : attraction ( request ( type ) ; inform ( area = center of town , type = boats , type =  parks , type =  nightclubs , choice = lots ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place to go in the centre of town.",
+      "system : we offer lots to do in the center of town . we have everything from boats and parks to nightclubs . are you in the mood for anything particular ?",
+      "user : do you have any suggestions? i would just need the postcode and phone number and let me know what kind of attraction you suggest. thanks!"
+    ],
+    "belief": "belief : attraction area = centre",
+    "reply": "system : if you are interested in architecture , there is [attraction_name] . the phone number is [attraction_phone] and the postcode is [attraction_postcode] .",
+    "name": "SNG1072.json",
+    "dp": "dp : attraction ( recommend ( post = cb58bs , phone = 01223452587 , name = all saints church , type = architecture ) )"
+  },
+  {
+    "history": [
+      "user : i'm looking for a place to go in the centre of town.",
+      "system : we offer lots to do in the center of town . we have everything from boats and parks to nightclubs . are you in the mood for anything particular ?",
+      "user : do you have any suggestions? i would just need the postcode and phone number and let me know what kind of attraction you suggest. thanks!",
+      "system : if you are interested in architecture , there is [attraction_name] . the phone number is [attraction_phone] and the postcode is [attraction_postcode] .",
+      "user : great, thank you so much! i will check it out."
+    ],
+    "belief": "belief : attraction area = centre",
+    "reply": "system : you are quite welcome ! thanks for contacting the [value_place] towninfo centre and have a great day !",
+    "name": "SNG1072.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  },
+  {
+    "history": [
+      "user : hi! can you please help me? i'm looking for information on great saint mary's church."
+    ],
+    "belief": "belief : attraction name = great saint mary's church",
+    "reply": "system : yes i can ! [attraction_name] is located in the center of town at [attraction_address] in postcode [attraction_postcode] . the entry fee is [value_count] pounds .",
+    "name": "SNG1148.json",
+    "dp": "dp : attraction ( inform ( area = center of town , name = great saint mary's church , price = 2 pounds , post = cb23pq , addr = market square ) )"
+  },
+  {
+    "history": [
+      "user : hi! can you please help me? i'm looking for information on great saint mary's church.",
+      "system : yes i can ! [attraction_name] is located in the center of town at [attraction_address] in postcode [attraction_postcode] . the entry fee is [value_count] pounds .",
+      "user : thanks very much, that's all i need for now. goodbye."
+    ],
+    "belief": "belief : attraction name = great saint mary's church",
+    "reply": "system : okay . let us know if you need more help .",
+    "name": "SNG1148.json",
+    "dp": "dp : general ( bye ( none = none ) )"
+  }
+]
