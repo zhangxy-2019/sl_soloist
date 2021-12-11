@@ -1,0 +1,6153 @@
+{
+  "SNG0480.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>place to dine</span>. The restaurant should be in the <span class='emphasis'>expensive</span> price range and should serve <span class='emphasis'>european</span> food",
+        "The restaurant should be in the <span class='emphasis'>north</span>",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>8 people</span> at <span class='emphasis'>15:00</span> on <span class='emphasis'>tuesday</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "food": "european",
+          "pricerange": "expensive",
+          "area": "north"
+        },
+        "fail_info": {},
+        "book": {
+          "time": "15:00",
+          "day": "tuesday",
+          "invalid": false,
+          "people": "8",
+          "privateroom":"yes"
+        },
+        "fail_book": {}
+      }
+    },
+    "log": [
+      {
+        "text": "I am looking for a place to dine. I would like european food in the expensive price range.",
+        "metadata": {}
+      },
+      {
+        "text": "I was able to find five restaurants that meet you requests. Eraina is a great choice. Would you like me to book you a table?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "european",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Is it in the north area?",
+        "metadata": {}
+      },
+      {
+        "text": "No, it is in the centre.  City Stop restaurant is an expensive European restaurant in the north end.  Would you like a reservation there?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "european",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes please. I would like to book a table for 8 people on Tuesday at 15:00.",
+        "metadata": {}
+      },
+      {
+        "text": "We have made your reservation thank you!",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "city stop restaurant",
+                  "reference": "5U8L4DTQ"
+                }
+              ],
+              "time": "15:00",
+              "day": "tuesday",
+              "people": "8"
+            },
+            "semi": {
+              "food": "european",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "That's great - can you give me the reference number?",
+        "metadata": {}
+      },
+      {
+        "text": "Sure, their phone number is 01223368786. DO you need any more help?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "city stop restaurant",
+                  "reference": "5U8L4DTQ"
+                }
+              ],
+              "time": "15:00",
+              "day": "tuesday",
+              "people": "8"
+            },
+            "semi": {
+              "food": "european",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No, i need the reference number, not the phone number.",
+        "metadata": {}
+      },
+      {
+        "text": "sorry for that - 5U8L4DTQ. Anything else i can help you with?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "city stop restaurant",
+                  "reference": "5U8L4DTQ"
+                }
+              ],
+              "time": "15:00",
+              "day": "tuesday",
+              "people": "8"
+            },
+            "semi": {
+              "food": "european",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, please help me book a private room.",
+        "metadata": {}
+      },
+      {
+        "text": "Ok, a private room is booked. Is there anything else i can help with?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "city stop restaurant",
+                  "reference": "5U8L4DTQ"
+                }
+              ],
+              "time": "15:00",
+              "day": "tuesday",
+              "people": "8",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "european",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "thats all - thanks for great service!",
+        "metadata": {}
+      },
+      {
+        "text": "Happy to help anytime, bye!",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "city stop restaurant",
+                  "reference": "5U8L4DTQ"
+                }
+              ],
+              "time": "15:00",
+              "day": "tuesday",
+              "people": "8",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "european",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0553.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>place to dine</span>. The restaurant should be in the <span class='emphasis'>expensive</span> price range and should be in the <span class='emphasis'>centre</span>",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>6 people</span> at <span class='emphasis'>13:00</span> on <span class='emphasis'>thursday</span>",
+        "If the booking fails how about <span class='emphasis'>12:00</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "pricerange": "expensive",
+          "area": "centre"
+        },
+        "fail_info": {},
+        "book": {
+          "pre_invalid": true,
+          "time": "12:00",
+          "day": "thursday",
+          "invalid": false,
+          "people": "6",
+          "privateroom":"yes"
+        },
+        "fail_book": {
+          "time": "13:00",
+          "privateroom":"yes"
+        }
+      }
+    },
+    "log": [
+      {
+        "text": "I could really use something to eat.",
+        "metadata": {}
+      },
+      {
+        "text": "I have over 100 restaurants to choose from, would you mind narrowing down your search for me with perhaps a food type or price range?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Expensive restaurant in the centre, please.",
+        "metadata": {}
+      },
+      {
+        "text": "Any particular type of food you're hankering for?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Not really. Which is your favorite? I'll book that for 13:00 Thursday. There will be 6 of us.",
+        "metadata": {}
+      },
+      {
+        "text": "I'm sorry, I have not found anything for that time yet.  Can you choose another day or time please?  Are you sure you don't have a preference for food type?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "16:00",
+              "day": "thursday",
+              "people": "6"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Let's try to book it for 12:00 then for 6 people on Thursday. I'll also need a reference number.",
+        "metadata": {}
+      },
+      {
+        "text": "Which restaurant do you want to book at?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "16:00",
+              "day": "thursday",
+              "people": "6"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "I'm not sure.  Just something expensive.  We are celebrating.",
+        "metadata": {}
+      },
+      {
+        "text": "I booked you at Curry Queen. Your table will be reserved for 15 minutes. Reference number is C06RJUNL.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "curry queen",
+                  "reference": "C06RJUNL"
+                }
+              ],
+              "time": "12:00",
+              "day": "thursday",
+              "people": "6"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Thanks. By the way, could you please help me book a private room?",
+        "metadata": {}
+      },
+      {
+        "text": "Yes, a private room is booked for you. Anything else i can help with?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "curry queen",
+                  "reference": "C06RJUNL"
+                }
+              ],
+              "time": "12:00",
+              "day": "thursday",
+              "people": "6",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Thank you for your help. This is all I needed.",
+        "metadata": {}
+      },
+      {
+        "text": "You're welcome.  Please come again if you need more help.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "curry queen",
+                  "reference": "C06RJUNL"
+                }
+              ],
+              "time": "12:00",
+              "day": "thursday",
+              "people": "6",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0482.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>restaurant</span>. The restaurant should serve <span class='emphasis'>italian</span> food and should be in the <span class='emphasis'>expensive</span> price range",
+        "Make sure you get <span class='emphasis'>postcode</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "food": "italian",
+          "pricerange": "expensive"
+        },
+        "reqt": [
+          "postcode",
+          "delivery fee"
+        ],
+        "fail_info": {}
+      }
+    },
+    "log": [
+      {
+        "text": "Is there a restaurant that serves italian food in the expensive price bracket?",
+        "metadata": {}
+      },
+      {
+        "text": "Yes, there are 5 such places. 4 are in the centre and 1 is in the south. Would you like to book at one?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Absolutely! Thank you! ",
+        "metadata": {}
+      },
+      {
+        "text": "Which area of town would you prefer?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "How about the center?",
+        "metadata": {}
+      },
+      {
+        "text": "Great, how about don pasquale pizzeria? May I book this for you?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "That sounds good. No I don't need a reservation, but could you tell me the postcode?",
+        "metadata": {}
+      },
+      {
+        "text": "Certainly, the postcode for don pasquale pizzeria is cb23nj.  Would you like any other information?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, i would like to know about the delivery service. What is the delivery fee? ",
+        "metadata": {}
+      },
+      {
+        "text": "The delivery charges 6 pounds. Anything else?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No thanks. That will do it for me. Have a good day. ",
+        "metadata": {}
+      },
+      {
+        "text": "Thank you, you too.  Goodbye.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "WOZ20260.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": "Task 05622: You want to find an expensive restaurant and it should be in the east part of town. Don't go for the first venue the system offers you, ask if there is anything else. Make sure you get the address and postcode of the venue.",
+      "restaurant": {
+        "info": {
+          "pricerange": "expensive",
+          "area": "east"
+        },
+        "reqt": [
+          "address",
+          "postcode",
+          "dish"
+        ],
+        "fail_info": {}
+      }
+    },
+    "log": [
+      {
+        "text": "I am looking for a restaurant on the eastern side of town.",
+        "metadata": {}
+      },
+      {
+        "text": "pizza hut fen ditton is moderately priced and at the east side of the city.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "is there another one as well?",
+        "metadata": {}
+      },
+      {
+        "text": "Yes there are 8 more. What type of food do you want? ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Is there anything British available?",
+        "metadata": {}
+      },
+      {
+        "text": "There is one restaurant serving British food on the east side of town. Their name is Grafton Hotel Restaurant. Would you like their contact information?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "british",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "What is the address and postcode?",
+        "metadata": {}
+      },
+      {
+        "text": "Grafton Hotel Restaurant is located at Grafton Hotel 619 Newmarket Road Fen Ditton, in postal code C.B 5, 8 P.A. Would you like me to find any additional information?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "british",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, can you recommend a signature dish?",
+        "metadata": {}
+      },
+      {
+        "text": "Of course, the signature dish of Grafton Hotel Restaurant is [restaurant_dish].",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "british",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No, I think that does it. Thank you for the info.",
+        "metadata": {}
+      },
+      {
+        "text": "You're welcome. Thank you for calling us today.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "british",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Goodbye. ",
+        "metadata": {}
+      },
+      {
+        "text": "goodbye",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "british",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "east"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SSNG0024.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>restaurant</span>. The restaurant should be in the <span class='emphasis'>centre</span> and should be in the <span class='emphasis'>expensive</span> price range",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>3 people</span> at <span class='emphasis'>19:00</span> on <span class='emphasis'>friday</span>",
+        "If the booking fails how about different <span class='emphasis'>restaurant</span> in the same <span class='emphasis'>area</span> and <span class='emphasis'>pricerange</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "pricerange": "expensive",
+          "area": "centre"
+        },
+        "restaurant": "the cambridge chop house",
+        "fail_info": {
+          "pricerange": "expensive",
+          "area": "east"
+        },
+        "hotel": false,
+        "book": {
+          "pre_invalid": true,
+          "people": "3",
+          "day": "friday",
+          "invalid": false,
+          "time": "18:00",
+          "privateroom":"yes"
+        },
+        "fail_book": {
+          "time": "19:00"
+        }
+      }
+    },
+    "log": [
+      {
+        "text": "I am looking for an expensive place to eat in the centre of town.",
+        "metadata": {}
+      },
+      {
+        "text": "I have 33 restaurants that meet your requests.  Can you tell me what kind of food you are looking for?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "The type of food doesn't matter. I just need a table for 3 for Friday night at 19:00.",
+        "metadata": {}
+      },
+      {
+        "text": "Would you like me to try and make a reservation for the Cambridge Chop House?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "centre"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes and lets book for next weekend,instead,thank you.",
+        "metadata": {}
+      },
+      {
+        "text": "There is no availability at that time. Would you like to try another time or restaurant? ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "3",
+              "day": "friday",
+              "time": "19:00"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "the cambridge chop house",
+              "area": "centre"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Can you try to find another restaurant in the same area and pricerange? ",
+        "metadata": {}
+      },
+      {
+        "text": "How about Fitzbillies restaurant? It's also an expensive British restaurant in the centre of the city",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "3",
+              "day": "friday",
+              "time": "19:00"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "dont care",
+              "area": "centre"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, try that please. ",
+        "metadata": {}
+      },
+      {
+        "text": "Alright, I have your table booked at Fitzbillies restaurant. The table will be reserved for 15 minutes. Your reference number is: BCVPHB3U. Anything else today?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "fitzbillies restaurant",
+                  "reference": "BCVPHB3U"
+                }
+              ],
+              "people": "3",
+              "day": "friday",
+              "time": "19:00"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "dont care",
+              "area": "centre"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes. Could you please help me book a private room?",
+        "metadata": {}
+      },
+      {
+        "text": "Sure. A private room is reserved. Anything else i can help with?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "fitzbillies restaurant",
+                  "reference": "BCVPHB3U"
+                }
+              ],
+              "people": "3",
+              "day": "friday",
+              "time": "19:00",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "dont care",
+              "area": "centre"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No thanks, that is everything",
+        "metadata": {}
+      },
+      {
+        "text": "No problem.  Enjoy your meal on Friday.  Good bye.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "fitzbillies restaurant",
+                  "reference": "BCVPHB3U"
+                }
+              ],
+              "people": "3",
+              "day": "friday",
+              "time": "19:00",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "dont care",
+              "area": "centre"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SSNG0016.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>place to dine</span>. The restaurant should be in the <span class='emphasis'>west</span> and should be in the <span class='emphasis'>expensive</span> price range",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>6 people</span> at <span class='emphasis'>19:45</span> on <span class='emphasis'>sunday</span>",
+        "If the booking fails how about different <span class='emphasis'>restaurant</span> in the same <span class='emphasis'>area</span> and <span class='emphasis'>pricerange</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "pricerange": "expensive",
+          "area": "west"
+        },
+        "restaurant": "cambridge lodge restaurant",
+        "fail_info": {},
+        "hotel": false,
+        "book": {
+          "pre_invalid": true,
+          "people": "6",
+          "day": "sunday",
+          "invalid": false,
+          "time": "18:45",
+          "privateroom":"yes"
+        },
+        "fail_book": {
+          "time": "19:45"
+        }
+      }
+    },
+    "log": [
+      {
+        "text": "I need to find a restaurant in the west area and more on the expensive side. ",
+        "metadata": {}
+      },
+      {
+        "text": "There are 9 restaurants that meet that criteria. Is there a type of cuisine you would prefer?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "west"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "I don't have a preference.",
+        "metadata": {}
+      },
+      {
+        "text": "I have a listing for Cambridge lodge restaurant that serves British food,can I book you a table there?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "time": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "west"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "That sounds good. I would like a reservation for 6 people at 19:45 on Sunday.",
+        "metadata": {}
+      },
+      {
+        "text": "I'm sorry. That booking was unsuccessful. Would you like me to try another time or another restaurant?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "people": "6",
+              "day": "sunday",
+              "time": "19:45"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "cambridge lodge restaurant",
+              "area": "west"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Is there another restaurant available at that time in the same area and price range?",
+        "metadata": {}
+      },
+      {
+        "text": "Yes, I can book you at Graffiti. The reference number is UYW8JK6T. May I help with anything else?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "graffiti",
+                  "reference": "UYW8JK6T"
+                }
+              ],
+              "people": "6",
+              "day": "sunday",
+              "time": "19:45"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "west"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, can you help me book a private room? ",
+        "metadata": {}
+      },
+      {
+        "text": "Ok, a private room is booked. Would you like more information?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "graffiti",
+                  "reference": "UYW8JK6T"
+                }
+              ],
+              "people": "6",
+              "day": "sunday",
+              "time": "19:45"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "west"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "I think that is all, thank you, cheers. ",
+        "metadata": {}
+      },
+      {
+        "text": "Good day. ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "graffiti",
+                  "reference": "UYW8JK6T"
+                }
+              ],
+              "people": "6",
+              "day": "sunday",
+              "time": "19:45"
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "west"
+            }
+          },
+          "bus": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "people": "",
+              "day": "",
+              "stay": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0461.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>restaurant</span>. The restaurant should be in the <span class='emphasis'>moderate</span> price range and should serve <span class='emphasis'>hungarian</span> food",
+        "If there is no such restaurant, how about one that serves <span class='emphasis'>modern european</span> food",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>1 people</span> at <span class='emphasis'>14:45</span> on <span class='emphasis'>saturday</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "food": "modern european",
+          "pricerange": "moderate"
+        },
+        "fail_info": {
+          "food": "hungarian",
+          "pricerange": "moderate"
+        },
+        "book": {
+          "time": "14:45",
+          "day": "saturday",
+          "invalid": false,
+          "people": "1",
+          "privateroom":"yes"
+        },
+        "fail_book": {
+          "privateroom":"yes"
+        }
+      }
+    },
+    "log": [
+      {
+        "text": "I need a moderately priced restaurant that serves hungarian food.",
+        "metadata": {}
+      },
+      {
+        "text": "I am sorry, there are no restaurants that meet your requests. Would you like to change your price range or food type?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "hungarian",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Oh, okay. Well, I guess I would like to find a restaurant that serves modern European food. Is there such a place available?",
+        "metadata": {}
+      },
+      {
+        "text": "There are two restaurants in the centre area and one in the south part of town. Do you have a preference?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No, I do not.",
+        "metadata": {}
+      },
+      {
+        "text": "I would recommend Riverside Brasserie, located at  Doubletree by Hilton Cambridge Granta Place Mill Lane.  Can I make a reservation for you?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Sure please, I need a table at 14:45 for 1 person on saturday",
+        "metadata": {}
+      },
+      {
+        "text": "Your table at riverside brasserie is booked, one person at 14:45 on Saturday. Your booking reference is UZD82IFV. Can I help you with anything else? ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "riverside brasserie",
+                  "reference": "UZD82IFV"
+                }
+              ],
+              "time": "14:45",
+              "day": "saturday",
+              "people": "1"
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "moderate",
+              "name": "riverside brasserie",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes. Could you please help me book a private room?",
+        "metadata": {}
+      },
+      {
+        "text": "Sure, there is a private room booked for you. Anything else i can help with?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "riverside brasserie",
+                  "reference": "UZD82IFV"
+                }
+              ],
+              "time": "14:45",
+              "day": "saturday",
+              "people": "1",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "moderate",
+              "name": "riverside brasserie",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No, that would be it. Thanks. Have a nice day. ",
+        "metadata": {}
+      },
+      {
+        "text": "Alright, thank you. Goodbye.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "riverside brasserie",
+                  "reference": "UZD82IFV"
+                }
+              ],
+              "time": "14:45",
+              "day": "saturday",
+              "people": "1",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "modern european",
+              "pricerange": "moderate",
+              "name": "riverside brasserie",
+              "area": "not mentioned"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "SNG0688.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": [
+        "You are looking for a <span class='emphasis'>restaurant</span>. The restaurant should serve <span class='emphasis'>italian</span> food and should be in the <span class='emphasis'>south</span>",
+        "Once you find the <span class='emphasis'>restaurant</span> you want to book a table for <span class='emphasis'>1 people</span> at <span class='emphasis'>12:15</span> on <span class='emphasis'>sunday</span>",
+        "Make sure you get the <span class='emphasis'>reference number</span>"
+      ],
+      "restaurant": {
+        "info": {
+          "food": "italian",
+          "area": "south"
+        },
+        "fail_info": {},
+        "book": {
+          "time": "12:15",
+          "day": "sunday",
+          "invalid": false,
+          "people": "1",
+          "privateroom":"yes"
+        },
+        "fail_book": {}
+      }
+    },
+    "log": [
+      {
+        "text": "I am looking for Italian food on the south side of the city.",
+        "metadata": {}
+      },
+      {
+        "text": "Do you prefer moderately priced or expensive? ",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "not mentioned",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No preference, please.",
+        "metadata": {}
+      },
+      {
+        "text": "I have Pizza Hut Cherry Hinton which is in the moderate price range and Frankie and Bennys which is in the more expensive price range. Which would you prefer?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "dont care",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "I'll pass on the Pizza Hut. Yuck. Let's go with Frankie & Benny's. Can I get a table for 1 on Sunday at 12:15 please? ",
+        "metadata": {}
+      },
+      {
+        "text": "Your table is booked and will be reserved for 15 minutes. Your reference number is C6EU44QQ. Is there anything else I can help you with today?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "frankie and bennys",
+                  "reference": "C6EU44QQ"
+                }
+              ],
+              "time": "12:15",
+              "day": "sunday",
+              "people": "1"
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "dont care",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "I wanted the reservation for 12:15, is that what you booked for me? ",
+        "metadata": {}
+      },
+      {
+        "text": "Yes, you have a reservation for 1 person, at 12:15 on Sunday, at frankie and bennys. Can I help you with anything else today?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "frankie and bennys",
+                  "reference": "C6EU44QQ"
+                }
+              ],
+              "time": "12:15",
+              "day": "sunday",
+              "people": "1"
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "dont care",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, i also need a private room for lunch.",
+        "metadata": {}
+      },
+      {
+        "text": "Ok, a private room is reserved for you. May i help you with anything else?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "frankie and bennys",
+                  "reference": "C6EU44QQ"
+                }
+              ],
+              "time": "12:15",
+              "day": "sunday",
+              "people": "1",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "dont care",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "No, that is all I need. Thank you!",
+        "metadata": {}
+      },
+      {
+        "text": "Great! Enjoy your meal, let me know if I can help with anything else.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [
+                {
+                  "name": "frankie and bennys",
+                  "reference": "C6EU44QQ"
+                }
+              ],
+              "time": "12:15",
+              "day": "sunday",
+              "people": "1",
+              "privateroom":"yes"
+            },
+            "semi": {
+              "food": "italian",
+              "pricerange": "dont care",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "WOZ20566.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": "Task 12246: You want to find an expensive restaurant and it should be in the south part of town. Make sure you get the address, phone number, and type of food.",
+      "restaurant": {
+        "info": {
+          "pricerange": "expensive",
+          "area": "south"
+        },
+        "reqt": [
+          "address",
+          "phone",
+          "food",
+          "delivery fee"
+        ],
+        "fail_info": {}
+      }
+    },
+    "log": [
+      {
+        "text": "I want to visit an expensive restaurant in the south part of town. I need the address, phone number, and type of food.",
+        "metadata": {}
+      },
+      {
+        "text": "There are five expensive restaurants available in the south part of the city.  Mexican, Italian, Indian, and two Chinese restaurants are available.  What type of food would you like?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Mexican will be fine. Could I have the address and phone please? ",
+        "metadata": {}
+      },
+      {
+        "text": "Chiquito restaurant bar is a mexican restaurant located in the south part of town in the expensive price range.  Their phone number is 01223 400170 and their address is 2G Cambridge Leisure Park Cherry Hinton Road Cherry Hinton.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mexican",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Thanks. I'd like to know more about the delivery service, how much does the delivery charge?",
+        "metadata": {}
+      },
+      {
+        "text": "The delivery fee is 5 pounds.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mexican",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Thank you. Goodbye.",
+        "metadata": {}
+      },
+      {
+        "text": "Goodbye.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "mexican",
+              "pricerange": "expensive",
+              "name": "not mentioned",
+              "area": "south"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  "WOZ20449.json": {
+    "goal": {
+      "taxi": {},
+      "police": {},
+      "hospital": {},
+      "hotel": {},
+      "attraction": {},
+      "train": {},
+      "message": "Task 02898: You are looking for a moderately priced restaurant and it should be in the north part of town. Don't go for the first venue the system offers you, ask if there is anything else. You want to know the phone number.",
+      "restaurant": {
+        "info": {
+          "pricerange": "moderate",
+          "area": "north"
+        },
+        "reqt": [
+          "phone",
+          "dish",
+          "postcode"
+        ],
+        "fail_info": {}
+      }
+    },
+    "log": [
+      {
+        "text": "Hello, I am looking for a moderately priced restaurant on the north side of town. ",
+        "metadata": {}
+      },
+      {
+        "text": "I recommend golden wok. It is in the north part of town with a moderate price range.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "not mentioned",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, I am looking for a moderately priced restaurant in the north part of town. ",
+        "metadata": {}
+      },
+      {
+        "text": "I recommend golden wok. It is in the north part of town with a moderate price range.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "I don't want Golden Wok, is there anything else?",
+        "metadata": {}
+      },
+      {
+        "text": "Yes, your other option is The Nirala. It serves Indian food and is also located in the north part of town.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Okay. What is their phone number?",
+        "metadata": {}
+      },
+      {
+        "text": "The phone number is 01223 360966.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "By the way, what is their postcode?",
+        "metadata": {}
+      },
+      {
+        "text": "The postcode of The Nirala is cb41uy. Is there anything else i can help with?",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Yes, could you please recommend a signature dish?",
+        "metadata": {}
+      },
+      {
+        "text": "Certainly, The Nirala is famous for its [value_dish].",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      },
+      {
+        "text": "Thank you.  Goodbye.",
+        "metadata": {}
+      },
+      {
+        "text": "Thank you, enjoy your meal.",
+        "metadata": {
+          "taxi": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "departure": "",
+              "arriveBy": ""
+            }
+          },
+          "police": {
+            "book": {
+              "booked": []
+            },
+            "semi": {}
+          },
+          "restaurant": {
+            "book": {
+              "booked": [],
+              "time": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "food": "don't care",
+              "pricerange": "moderate",
+              "name": "not mentioned",
+              "area": "north"
+            }
+          },
+          "hospital": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "department": ""
+            }
+          },
+          "hotel": {
+            "book": {
+              "booked": [],
+              "stay": "",
+              "day": "",
+              "people": ""
+            },
+            "semi": {
+              "name": "",
+              "area": "",
+              "parking": "",
+              "pricerange": "",
+              "stars": "",
+              "internet": "",
+              "type": ""
+            }
+          },
+          "attraction": {
+            "book": {
+              "booked": []
+            },
+            "semi": {
+              "type": "",
+              "name": "",
+              "area": ""
+            }
+          },
+          "train": {
+            "book": {
+              "booked": [],
+              "people": ""
+            },
+            "semi": {
+              "leaveAt": "",
+              "destination": "",
+              "day": "",
+              "arriveBy": "",
+              "departure": ""
+            }
+          }
+        }
+      }
+    ]
+  }
+}
